@@ -7,7 +7,7 @@ Application Noob
 Présentation
 ------------
 
-Sommaire test
+Sommaire
 
 <ol>
 <li>Titre 1</li>
