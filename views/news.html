@@ -1,13 +1,15 @@
-<section class="panel" ng-init="tab = 1" ng-controller="NewsCtrl">
+<section class="panel"  ng-controller="NewsCtrl as news">
 	<ul class="nav nav-pills">
-		<li><a href="" ng-click="tab=1">Tous les tweets</a></li>
-		<li><a href =""ng-click="tab=2">Noob</a></li>
-		<li><a href =""ng-click="tab=3">Artheon</a></li>
+		<li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Tous les tweets</a></li>
+		<li ng-class="{ active:news.isSelected(2)}"><a href =""ng-click="news.selectTab(2)">Noob</a></li>
+		<li ng-class="{ active:news.isSelected(3)}"><a href =""ng-click="news.selectTab(3)">Artheon</a></li>
+		<li ng-class="{ active:news.isSelected(4)}"><a href =""ng-click="news.selectTab(4)">Gaea</a></li>
+
 
 
 	</ul>
 	
-	<div class="panel" ng-show="tab === 1">
+	<div class="panel" ng-show="news.isSelected(1)">
 		<!--https://dev.twitter.com/web/embedded-timelines#customization            pour custom-->
 		<a  class="twitter-timeline" href="https://twitter.com/Noob_la_serie" data-widget-id="539786771002052609" data-chrome="noheader noborders noscrollbar">Tweets de @Noob_la_serie</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -17,11 +19,11 @@
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 
-	<div class="panel" ng-show="tab === 2">	
+	<div class="panel" ng-show="news.isSelected(2)">	
 		<a class="twitter-timeline" href="https://twitter.com/Noob_la_serie" data-widget-id="539786771002052609"  data-chrome="noheader noborders noscrollbar">Tweets de @Noob_la_serie</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
-	<div class="panel" ng-show="tab === 3">
+	<div class="panel" ng-show="news.isSelected(3)">
 		<a class="twitter-timeline" href="https://twitter.com/ArtheonNoob" data-widget-id="539787475779325952"  data-chrome="noheader noborders noscrollbar">Tweets de @ArtheonNoob</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
