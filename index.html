@@ -13,6 +13,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <!-- endbuild -->
   </head>
   <body ng-app="applinoobApp">
@@ -31,7 +32,7 @@
           
       </div>
 
-      <div ng-view=""></div>      
+      <div class="page {{ pageClass }}" ng-view></div>      
     </div>
     
     <footer class="footer">
@@ -78,6 +79,8 @@
         <script src="scripts/controllers/accueil.js"></script>
         <script src="scripts/controllers/news.js"></script>
         <script src="scripts/controllers/episodes.js"></script>
+        <script src="scripts/controllers/videos.js"></script>
+        <script src="scripts/controllers/saison1.js"></script>
         <!-- endbuild -->
 </body>
 </html>

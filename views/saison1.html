@@ -1,6 +1,6 @@
 
 <section class="panel" ng-controller="EpisodesCtrl"> 
-<div class="list" >
+<div class="list col-xs-12" >
 
         <table class="table table-striped">
         	<tr ng-repeat="item in items"  > <!--href="#/{{item.episode}}" -->
@@ -9,7 +9,7 @@
 		          <h2>{{ item.nom }}</h2>
 		          <h4>{{ item.saison }}</h4>
 		           <h4>{{ item.episode }}</h4>
-		           <img ng-src="{{ item.image }}"> 
+		           <img class="img-responsive" ng-src="{{ item.image }}"> 
 		          <h4>{{ item.synopsis }}</h4>
 		          <EpisodesDir></EpisodesDir>
 		      	</td>

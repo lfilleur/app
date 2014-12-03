@@ -8,6 +8,6 @@
  * Controller of the applinoobApp
  */
 var app = angular.module('applinoobApp');
-  app.controller('VideosCtrl', function ($scope) {
-    $scope.pageClass = 'videos';
+  app.controller('Saison1Ctrl', function ($scope) {
+    $scope.pageClass = 'saison1';
   });
