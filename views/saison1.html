@@ -1,9 +1,11 @@
 
 <section class="panel" ng-controller="EpisodesCtrl"> 
-    <div class="list" >
+<div class="list" >
+
         <table class="table table-striped">
         	<tr ng-repeat="item in items"  > <!--href="#/{{item.episode}}" -->
 		        <td>
+		         
 		          <h2>{{ item.nom }}</h2>
 		          <h4>{{ item.saison }}</h4>
 		           <h4>{{ item.episode }}</h4>
@@ -13,5 +15,7 @@
 		      	</td>
      		 </tr>
       </table>
+       
+
       </div>
 </section>

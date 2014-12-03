@@ -2,16 +2,17 @@
 
 /**
  * @ngdoc function
- * @name applinoobApp.controller:AboutCtrl
+ * @name applinoobApp.controller:NewsCtrl
  * @description
- * # AboutCtrl
+ * # NewsCtrl
  * Controller of the applinoobApp
  */
-angular.module('applinoobApp')
-  .controller('NewsCtrl', function ($scope) {
+var app = angular.module('applinoobApp');
+  app.controller('NewsCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
   });
