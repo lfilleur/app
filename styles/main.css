@@ -189,3 +189,15 @@ body {
 @-webkit-keyframes slideOutLeft {
 	to 		{ -webkit-transform: translateX(-100%); }
 }
+
+.btnaventure {
+    margin-bottom: 50px;
+    position: fixed;
+    top : 100px;
+    
+}
+
+.btnbas {
+    position: fixed;
+    bottom: 100px;
+}
