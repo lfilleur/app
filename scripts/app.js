@@ -2,14 +2,24 @@
 
 /**
  * @ngdoc overview
- * @name applinoobApp
+ * @name app
  * @description
- * # applinoobApp
+ * # app
  *
  * Main module of the application.
  */
+ var Newsmod = angular.module('news',[]);
+var Videomod = angular.module('videos',[]);
+var Saison1mod = angular.module('saison1',[]);
+/*var Episodemod = angular.module('episodes',[]);*/
+var Cartemod = angular.module('carte',[]);
+var Accueilmod = angular.module('accueil',[]);
 var app = angular
-  .module('applinoobApp', [
+  .module('app', [
+    'news',
+    'videos',
+    'carte',
+    'saison1',
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -17,6 +27,8 @@ var app = angular
     'ngSanitize',
     'ngTouch'
   ]);
+
+
   app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -27,17 +39,17 @@ var app = angular
         templateUrl: 'views/news.html',
         controller: 'NewsCtrl'
       })
-	  .when('/videos', {
+    .when('/videos', {
         templateUrl: 'views/videos.html',
         controller: 'VideosCtrl'
       })
-	  .when('/carte', {
+    .when('/carte', {
         templateUrl: 'views/carte.html',
         controller: 'CarteCtrl'
       })
     .when('/saison1', {
         templateUrl: 'views/saison1.html',
-        controller: 'EpisodesCtrl'
+        controller: 'Saison1Ctrl'
       })
       .otherwise({
         redirectTo: '/'
@@ -56,3 +68,4 @@ app.directive('back', ['$window', function($window) {
             }
         };
     }]);
+

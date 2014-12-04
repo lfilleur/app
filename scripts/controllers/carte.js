@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name applinoobApp.controller:AboutCtrl
+ * @name carte.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the applinoobApp
+ * Controller of the carte
  */
-angular.module('applinoobApp')
+angular.module('carte')
   .controller('CarteCtrl', function ($scope) {
      $scope.pageClass = 'carte';
   });

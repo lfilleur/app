@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name applinoobApp.controller:AboutCtrl
+ * @name videos.controller:AboutCtrl
  * @description
- * # AboutCtrl
- * Controller of the applinoobApp
+ * # VideosCtrl
+ * Controller of the videos
  */
-var app = angular.module('applinoobApp');
+var app = angular.module('videos');
   app.controller('VideosCtrl', function ($scope) {
     $scope.pageClass = 'videos';
   });

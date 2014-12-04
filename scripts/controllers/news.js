@@ -4,7 +4,7 @@
  * Controller of the applinoobApp
  */
 
-var app = angular.module('applinoobApp');
+var app = angular.module('news');
 
 
   app.controller('NewsCtrl', function () {
