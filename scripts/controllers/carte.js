@@ -7,7 +7,9 @@
  * # AboutCtrl
  * Controller of the carte
  */
-angular.module('carte')
-  .controller('CarteCtrl', function ($scope) {
-     $scope.pageClass = 'carte';
-  });
+var Cartemod = angular.module('carte');
+ 
+Cartemod.controller('CarteCtrl', function ($scope) {
+      $scope.pageClass = 'carte';
+    
+});

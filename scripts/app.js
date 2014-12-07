@@ -19,7 +19,9 @@ var Cartemod = angular.module('carte',['ngAnimate',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch']);
+    'ngTouch',
+    'grimoire'
+    ]);
 
 Cartemod.config(function ($routeProvider) {
     $routeProvider
@@ -29,7 +31,7 @@ Cartemod.config(function ($routeProvider) {
       })
       .when('/profil', {
         templateUrl: 'views/profil.html',
-        controller: 'ProfilCtrl'
+        controller: 'ListeMonstreCtrl'
       })
        .otherwise({
         redirectTo: '/accueil'
@@ -44,14 +46,14 @@ var app = angular
     'videos',
     'carte',
     'saison1',
-    'accueil',
-    'grimoire',
+    'accueil',    
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    
   ]);
 
 
@@ -76,11 +78,7 @@ var app = angular
     .when('/saison1', {
         templateUrl: 'views/saison1.html',
         controller: 'Saison1Ctrl'
-      })
-    .when('/grimoire', {
-        templateUrl: 'views/grimoire.html',
-        controller: 'GrimoireCtrl'
-      })
+      })   
       .otherwise({
         redirectTo: '/'
       });

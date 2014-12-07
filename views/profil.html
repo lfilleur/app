@@ -1,3 +1,12 @@
-<section class="panel" ng-controller="ProfilCtrl"> 
+
+<!-- avant structure de tt le profil dans un ctrl profil -->
+
+<section  ng-controller="ListeMonstreCtrl"> 
+	<div ng-init="a=1">{{a}}</div>
+	
+     <div class="row" ng-repeat="m in listeMonstre">
+	     {{response.nom_bete}}
+	     <img src="images/{{response.id_Bete}}.png">
+	</div>
 
 </section>
