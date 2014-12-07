@@ -8,18 +8,44 @@
  *
  * Main module of the application.
  */
- var Newsmod = angular.module('news',[]);
+var Newsmod = angular.module('news',[]);
 var Videomod = angular.module('videos',[]);
 var Saison1mod = angular.module('saison1',[]);
-/*var Episodemod = angular.module('episodes',[]);*/
-var Cartemod = angular.module('carte',[]);
+var Grimoiremod = angular.module('grimoire',[]);
 var Accueilmod = angular.module('accueil',[]);
+
+var Cartemod = angular.module('carte',['ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch']);
+
+Cartemod.config(function ($routeProvider) {
+    $routeProvider
+      .when('/carte', {
+        templateUrl: 'carte.html',
+        controller: 'CarteCtrl'
+      })
+      .when('/profil', {
+        templateUrl: 'views/profil.html',
+        controller: 'ProfilCtrl'
+      })
+       .otherwise({
+        redirectTo: '/accueil'
+      });
+  });
+
+
+
 var app = angular
   .module('app', [
     'news',
     'videos',
     'carte',
     'saison1',
+    'accueil',
+    'grimoire',
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -44,12 +70,16 @@ var app = angular
         controller: 'VideosCtrl'
       })
     .when('/carte', {
-        templateUrl: 'views/carte.html',
+        templateUrl: 'carte.html',
         controller: 'CarteCtrl'
       })
     .when('/saison1', {
         templateUrl: 'views/saison1.html',
         controller: 'Saison1Ctrl'
+      })
+    .when('/grimoire', {
+        templateUrl: 'views/grimoire.html',
+        controller: 'GrimoireCtrl'
       })
       .otherwise({
         redirectTo: '/'
