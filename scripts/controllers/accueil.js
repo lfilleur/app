@@ -7,7 +7,8 @@
  * # AccueilCtrl
  * Controller of the accueil
  */
-angular.module('accueil')
-  .controller('AccueilCtrl', function ($scope) {
-     $scope.pageClass = 'accueil';
+var app = angular.module('accueil');
+  app.controller('AccueilCtrl', function ($scope) {
+    $scope.pageClass = 'accueil';
   });
+ 
