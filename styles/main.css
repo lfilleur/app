@@ -195,15 +195,31 @@ body {
 }
 
 .btnaventure {
-    margin-bottom: 50px;
-    position: fixed;
-    top : 100px;
+  position: fixed; 
+  top:150px; 
+  left:0;
+  right:0;/*ajout */
+
+    
+}
+
+.btnplay {
+ position: fixed; 
+  top:330px; 
+  left:0;
+  right:0;  /*ajout */
+  
     
 }
 
 .btnbas {
-    position: fixed;
-    bottom: 100px;
+   position: absolute;
+  bottom: 20px;
+  position: fixed;  /*ajout */
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  
+
 }
 
 .navbar {
