@@ -20,6 +20,7 @@ var app = angular.module('grimoire');
       });
 
        function httpSuccess (response){
+        alert('acces autorisé');
          $scope.listeMonstre = response;
          
       }

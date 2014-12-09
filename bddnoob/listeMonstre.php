@@ -1,6 +1,6 @@
 <?php
 //header('Content-Type: application/json; charset=utf-8');
- //header("Access-Control-Allow-Origin: *"); //mettre sa dans index.html, mais grunt prend pas index.php
+header("Access-Control-Allow-Origin: *"); 
 
 include("classes/config.class.php");
 include("classes/noobMobileException.class.php");
