@@ -11,7 +11,7 @@ var app = angular.module('grimoire');
 
   app.controller('ListeMonstreCtrl', function($scope, $http) {
 
-      var url = 'http://localhost/bddnoob/listeMonstre.php';
+      var url = 'http://smartsheep.reaco.fr/php/listeMonstre.php';
      
       $http.get(url).success(httpSuccess).error(function(){
 
@@ -21,6 +21,7 @@ var app = angular.module('grimoire');
 
        function httpSuccess (response){
          $scope.listeMonstre = response;
+         
       }
 
   });
