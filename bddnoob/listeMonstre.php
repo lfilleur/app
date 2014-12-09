@@ -1,5 +1,6 @@
 <?php
 //header('Content-Type: application/json; charset=utf-8');
+header("Access-Control-Allow-Origin: *"); 
 
 include("classes/config.class.php");
 include("classes/noobMobileException.class.php");
