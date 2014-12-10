@@ -4,9 +4,9 @@
 <section id="sectionMonstre" ng-controller="ListeMonstreCtrl" > 
 	
 	
-     <div class="row" ng-repeat="m in listeMonstre">
-	     {{m.nom_Bete}}
-	     <img src="images/monstre/{{m.id_Bete}}.png">
+     <div ng-repeat="m in listeMonstre">
+     	<img src="images/monstre/{{m.id_Bete}}.png">
+	     {{m.nom_Bete}}	     
 	</div>
 
 </section>
@@ -14,9 +14,9 @@
 <section  id="sectionPerso" ng-controller="ListePersoCtrl" > 
 	
 	
-     <div class="row" ng-repeat="p in listePerso">
-	     {{p.nom_Perso}}
-	     <img src="images/perso/{{p.id_Perso}}.png">
+     <div ng-repeat="p in listePerso track by p.id_Personnage">
+     	<img src="images/perso/{{p.id_Personnage}}.png">
+	     {{p.nom_Personnage}}
 	</div>
 
 </section>

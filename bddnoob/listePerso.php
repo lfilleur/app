@@ -22,7 +22,7 @@ try {
     exit;
 }
 
-$arrayMonstre = array();
+$arrayPersonnage = array();
 
 $req = "SELECT id_Personnage , nom_Personnage FROM personnage WHERE statut_Personnage = 0";
 
