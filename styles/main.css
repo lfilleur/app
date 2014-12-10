@@ -122,17 +122,13 @@ body {
 }
 
 .btnaventure {
-  position: fixed; 
-  top:127px; 
-  left:0;
-  right:0;/*ajout */
+ padding-top: 50px;
 
     
 }
 
 .btnplay {
- position: fixed; 
-  top:330px; 
+
   left:0;
   right:0;  /*ajout */
   
@@ -140,9 +136,8 @@ body {
 }
 
 .btnbas {
-   position: absolute;
-  bottom: 20px;
-  position: fixed;  /*ajout */
+ 
+  bottom: 20px; 
   width: 100%;
   /* Set the fixed height of the footer here */
   
@@ -151,6 +146,8 @@ body {
 
 .navbar {
     background-color: white;
+    position: relative;
+}
     
 }
 
@@ -176,6 +173,8 @@ body {
 
 .videos {
     padding-top: 70px;
+
+	
 }
 
 .news {
@@ -184,4 +183,18 @@ body {
 
 .carte {
     padding-top: 70px;
+}
+.background {
+
+
+      background: url(images/fond.jpg) no-repeat center center fixed; 
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+.conteneur{
+
+  position: absolute;
+bottom: 0;
 }

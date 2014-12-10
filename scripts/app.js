@@ -31,7 +31,7 @@ Cartemod.config(function ($routeProvider) {
       })
       .when('/profil', {
         templateUrl: 'views/profil.html',
-        controller: 'ListeMonstreCtrl'
+        controller: 'ListeMonstreCtrl' //changer mettre un controlleur generique
       })
        .otherwise({
         redirectTo: '/accueil'

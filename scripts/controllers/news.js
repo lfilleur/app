@@ -7,8 +7,9 @@
 var app = angular.module('news');
 
 
-  app.controller('NewsCtrl', function () {
-      
+  app.controller('NewsCtrl', function ($scope) {
+          $scope.pageClass = 'videos';
+
       
     
 	this.tab=1;

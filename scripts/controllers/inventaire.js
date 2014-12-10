@@ -20,13 +20,31 @@ var app = angular.module('grimoire');
       });
 
        function httpSuccess (response){
-        alert('acces autorisé');
+        
          $scope.listeMonstre = response;
          
       }
 
   });
  
+
+ app.controller('ListePersoCtrl', function($scope, $http) {
+
+      var url = 'http://smartsheep.reaco.fr/php/listePerso.php';
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouvé la liste de Personnages');
+
+      });
+
+       function httpSuccess (response){
+        
+         $scope.listePerso = response;
+         
+      }
+
+  });
 
   	
   
