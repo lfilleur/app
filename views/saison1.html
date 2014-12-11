@@ -2,14 +2,14 @@
 <div class="list col-xs-12" >
 
         <table class="table table-striped">
-        	<tr ng-repeat="item in items"  > 
-		        <td>		         
-		          <h2>{{ item.nom }}</h2>
-		          <h4>{{ item.saison }}</h4>
-		           <h4>{{ item.episode }}</h4>
-		           <img class="img-responsive" ng-src="{{ item.image }}"> 
-		          <h4>{{ item.synopsis }}</h4>
-		          <EpisodesDir></EpisodesDir>
+        	<tr ng-repeat="v in listeSaison1"  > 
+		        <td>
+
+		          <h2>{{ v.nom_Video }}</h2>
+		          <h4>Saison: {{ v.saison_Video }}</h4>
+		           <h4>Episode: {{ v.episode_Video }}</h4>		           
+		          <iframe width="560" height="315" src="{{ v.url_Video }}" frameborder="0" ></iframe>;
+		          
 		      	</td>
      		 </tr>
       </table>
