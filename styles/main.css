@@ -110,17 +110,15 @@
 }
 
 .btnaventure {
- padding-top: 110px;
-
+ padding-top: 135px;
+ position: fixed;
     
 }
 
 .btnplay {
-
   left:0;
   right:0;  /*ajout */
-  
-    
+  padding-top: 30px;
 }
 
 
@@ -160,4 +158,15 @@
 .container{
     position: fixed;
     bottom: 20px;
+}
+
+.nuage {
+  padding-top: 120px;
+}
+
+
+.titles {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
 }
