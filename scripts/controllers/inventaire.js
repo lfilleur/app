@@ -46,6 +46,24 @@ var app = angular.module('grimoire');
 
   });
 
+  app.controller('ListeLieuCtrl', function($scope, $http) {
+
+      var url = 'http://smartsheep.reaco.fr/php/listeLieu.php';
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouvé la liste de Lieux');
+
+      });
+
+       function httpSuccess (response){
+        
+         $scope.listeLieu = response;
+         
+      }
+
+  });
+
   	
   
 

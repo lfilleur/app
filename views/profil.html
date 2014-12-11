@@ -1,5 +1,4 @@
 
-<!-- avant structure de tt le profil dans un ctrl profil -->
 
 <section id="sectionMonstre" ng-controller="ListeMonstreCtrl" > 
 	
@@ -14,9 +13,20 @@
 <section  id="sectionPerso" ng-controller="ListePersoCtrl" > 
 	
 	
-     <div ng-repeat="p in listePerso track by p.id_Personnage">
+     <div ng-repeat="p in listePerso">
      	<img src="images/perso/{{p.id_Personnage}}.png">
 	     {{p.nom_Personnage}}
+	</div>
+
+</section>
+
+<section  id="sectionLieu" ng-controller="ListeLieuCtrl" > 
+	
+	
+     <div ng-repeat="l in listeLieu track by $index">     	
+	     <h2>{{l.nom_Lieu}}</h2>
+	     <h3>{{l.nom_TypeLieu}}</h3>
+	     <img src="images/lieu/{{l.id_Lieu}}.png">
 	</div>
 
 </section>
