@@ -8,7 +8,8 @@
 		          <h2>{{ v.nom_Video }}</h2>
 		          <h4>Saison: {{ v.saison_Video }}</h4>
 		           <h4>Episode: {{ v.episode_Video }}</h4>		           
-		          <iframe width="560" height="315" src="{{ v.url_Video }}" frameborder="0" ></iframe>;
+		          <iframe width="560" height="315" src="{{ v.url_Video | trusted }}" frameborder="0" ></iframe>;
+		        	
 		          
 		      	</td>
      		 </tr>

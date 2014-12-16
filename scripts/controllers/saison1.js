@@ -25,6 +25,11 @@ var app = angular.module('saison1');
       }
 
   });
+   app.filter('trusted', ['$sce', function ($sce) {
+    return function(url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+}]);
 
 
   /*,function urlVideo($scope){
