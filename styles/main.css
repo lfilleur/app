@@ -170,3 +170,35 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+#inventaire {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#bonus {
+    position: fixed;
+    top: 60px;
+    left: 10px;  
+}
+
+#aide {
+    position: fixed;
+    top: 110px;
+    left: 10px; 
+}
+
+ #footercarte {
+     bottom : 0;
+     position: fixed;
+     width : 100%;
+     height : 60px;
+ }
+
+.infos {
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+}
+
