@@ -11,6 +11,10 @@
 var Newsmod = angular.module('news',[]);
 var Videomod = angular.module('videos',[]);
 var Saison1mod = angular.module('saison1',[]);
+var Saison2mod = angular.module('saison2',[]);
+var Saison3mod = angular.module('saison3',[]);
+var Saison4mod = angular.module('saison4',[]);
+var Saison5mod = angular.module('saison5',[]);
 var Grimoiremod = angular.module('grimoire',[]);
 var Accueilmod = angular.module('accueil',[]);
 
@@ -46,6 +50,10 @@ var app = angular
     'videos',
     'carte',
     'saison1',
+    'saison2',
+    'saison3',
+    'saison4',
+    'saison5',
     'accueil',    
     'ngAnimate',
     'ngCookies',
@@ -78,6 +86,22 @@ var app = angular
     .when('/saison1', {
         templateUrl: 'views/saison1.html',
         controller: 'Saison1Ctrl'
+      }) 
+      .when('/saison2', {
+        templateUrl: 'views/saison2.html',
+        controller: 'Saison2Ctrl'
+      }) 
+      .when('/saison3', {
+        templateUrl: 'views/saison3.html',
+        controller: 'Saison3Ctrl'
+      }) 
+      .when('/saison4', {
+        templateUrl: 'views/saison4.html',
+        controller: 'Saison4Ctrl'
+      }) 
+      .when('/saison5', {
+        templateUrl: 'views/saison5.html',
+        controller: 'Saison5Ctrl'
       })   
       .otherwise({
         redirectTo: '/'
