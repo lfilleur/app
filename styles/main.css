@@ -216,3 +216,19 @@
 #pbar {
     padding-top: 10px;
 }
+
+#lvl {
+    margin-left: 2px;
+    margin-right: 7px;
+}
+
+.grimoire {
+    text-align: center;
+}
+
+.imggrimoire {
+    max-height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
