@@ -69,7 +69,7 @@
 
 .video-thumb{
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
 
 }
@@ -95,7 +95,7 @@
 
 .colvideo {
     margin-bottom: 2px;
-    
+
 }
 
 .imgcenter {
@@ -200,5 +200,12 @@
     position: fixed;
     bottom:20px;
     right: 20px;
+}
+
+.titlevideo
+
+{
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
 }
 

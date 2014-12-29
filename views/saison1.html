@@ -1,14 +1,18 @@
+<div class="header navbar navbar-default navbar-fixed-top">
+            <a href ="#accueil"> <img id="logo" src="images/logonoob.png"> </a>
+</div>
+
 <section ng-controller="Saison1Ctrl"> 
-<div class="list col-xs-12" >
+<div class="list col-xs-12">
 
         <table class="table table-striped">
-        	<tr ng-repeat="v in listeSaison1"  > 
+        	<tr ng-repeat="v in listeSaison1"> 
 		        <td>
 
-		          <h2>{{ v.nom_Video }}</h2>
-		          <h4>Saison: {{ v.saison_Video }}</h4>
-		           <h4>Episode: {{ v.episode_Video }}</h4>		           
-		          <iframe  src="{{ v.url_Video | trusted }}" frameborder="0" ></iframe>;
+		          <h2 class="titlevideo">{{ v.nom_Video }}</h2>
+		          <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }} </p>
+		          <p>Durée :{{ v.duree_Video }}min</p>           
+		          <iframe  src="{{ v.url_Video | trusted }}" frameborder="0" ></iframe>
 		        	
 		          
 		      	</td>
@@ -17,4 +21,11 @@
        
 
       </div>
-</section>
+  </section>
+
+<footer class="footer" >
+          <div class="container" >
+              <a href back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+			
+          </div>
+</footer>
