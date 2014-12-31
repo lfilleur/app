@@ -30,3 +30,24 @@
 	</div>
 
 </section>
+
+<section  id="sectionStuff" ng-controller="ListeStuffCtrl" > 	
+	
+     <div ng-repeat="l in listeStuff track by $index">     	
+	     <h2>{{l.nom_Stuff}}</h2>
+	     <h3>{{l.description_Stuff}}</h3>
+	     <img src="images/stuff/{{l.id_Stuff}}.png">
+	</div>
+
+</section>
+
+
+<section  id="sectionHautFait" ng-controller="ListeHautFaitCtrl" > 	
+	
+     <div ng-repeat="l in listeHautFait track by $index">     	
+	     <h2>{{l.nom_HautFait}}</h2>
+	     <h3>{{l.description_HautFait}}</h3>
+	     <img src="images/stuff/{{l.id_HautFait}}.png">
+	</div>
+
+</section>

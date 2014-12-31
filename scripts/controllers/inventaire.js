@@ -63,6 +63,41 @@ var app = angular.module('grimoire');
       }
 
   });
+    app.controller('ListeStuffCtrl', function($scope, $http) {
+
+      var url = 'http://smartsheep.reaco.fr/php/listeStuff.php';
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouvé la liste de Stuff');
+
+      });
+
+       function httpSuccess (response){
+        
+         $scope.listeStuff = response;
+         
+      }
+
+  });
+    app.controller('ListeHautFaitCtrl', function($scope, $http) {
+
+      var url = 'http://smartsheep.reaco.fr/php/listeHautFait.php';
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouvé la liste de Haut Fait');
+
+      });
+
+       function httpSuccess (response){
+        
+         $scope.listeHautfait = response;
+         
+      }
+
+  });
+
 
   	
   
