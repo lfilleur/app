@@ -16,14 +16,15 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
   </head>
-<body ng-app="carte">   <!--POURQUOI NG APP = CARTE ? -->
+<body ng-app="app">   
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-   <div class="container">
+   <div >   <!--class="container"    ?pourquoi meme que footer?-->
       
+       
        
        <p data-toggle="modal" data-target="#myModal">
             <img src="images/inventaire.png" id="inventaire">
@@ -35,12 +36,26 @@
       
        <p>
             <img src="images/aide.png" id="aide">
+
        </p>
-       
+        <div class="btnplay col-xs-12">
+        <a href="#cartetop"><button type="button" class="btn btn-default imgcenter titles">Monter</button></a>
+    </div>
+    <div class="btnplay col-xs-12">
+        <a href="#cartebottom"><button type="button" class="btn btn-default imgcenter titles">Descendre</button></a>
+    </div>
+              
       
-      <div ng-view></div>   
+      
+      
+      <div ng-view></div> 
+
    
     </div>
+     
+    
+        
+    
     
     <div role="tabpanel">
 
@@ -377,9 +392,7 @@
     </div>
     
      <!-- Modal -->
-    
-    
-    
+   
     
     
     

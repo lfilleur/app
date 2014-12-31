@@ -37,6 +37,18 @@ Cartemod.config(function ($routeProvider) {
         templateUrl: 'views/profil.html',
         controller: 'ListeMonstreCtrl' 
       })
+       .when('/cartetop', {
+        templateUrl: 'views/cartetop.html',
+        controller: 'CarteTopCtrl' 
+      })
+        .when('/cartebottom', {
+        templateUrl: 'views/cartebottom.html',
+        controller: 'CarteBottomCtrl' 
+      })
+         .when('/cartecenter', {
+        templateUrl: 'views/cartecenter.html',
+        controller: 'CarteCenterCtrl'                         /*A VOIR POUR METTRE CENTRER PAS DEFAUT OU PAS*/
+      })
        .otherwise({
         redirectTo: '/accueil'
       });
