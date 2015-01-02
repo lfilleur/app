@@ -37,17 +37,17 @@ Cartemod.config(function ($routeProvider) {
         templateUrl: 'views/profil.html',
         controller: 'ListeMonstreCtrl' 
       })
-       .when('/cartetop', {
+       .when('/cartetop', {                                     /* a viré si use area*/
         templateUrl: 'views/cartetop.html',
         controller: 'CarteTopCtrl' 
       })
-        .when('/cartebottom', {
+        .when('/cartebottom', {                                /* a viré si use area*/
         templateUrl: 'views/cartebottom.html',
         controller: 'CarteBottomCtrl' 
       })
          .when('/cartecenter', {
         templateUrl: 'views/cartecenter.html',
-        controller: 'CarteCenterCtrl'                         /*A VOIR POUR METTRE CENTRER PAS DEFAUT OU PAS*/
+        controller: 'CarteCenterCtrl'                         /*A VOIR POUR METTRE CENTRER PAS DEFAUT OU PAS*/ /* a viré si use area*/
       })
        .otherwise({
         redirectTo: '/accueil'
@@ -115,6 +115,10 @@ var app = angular
         templateUrl: 'views/saison5.html',
         controller: 'Saison5Ctrl'
       })   
+	   .when('/cartetest', {                               /* a viré aprés test*/
+        templateUrl: 'cartetest.html',
+        controller: 'cartetestCtrl'
+      })  
       .otherwise({
         redirectTo: '/'
       });
