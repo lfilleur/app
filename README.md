@@ -10,20 +10,23 @@ Présentation
 Sommaire
 
 <ol>
-<li>Titre 1</li>
+<li>Génération de l'application grâce à cordova</li>
 <li>Titre 2</li>
 <li>Titre 3</li>
 </ol>
 
 
-## Titre de catégorie ##
+## Génération de l'application grâce à cordova ##
 
-Demo d'une<a href="http://kiranriehl.fr">URL</a> 
+<ol>
+<li>Executer "grunt build" dans le dossier de l'application</li>
+<li>Copier les fichiers dans le dossier "dist" de l'application</li>
+<li>Coller ces fichiers dans le dossier "cordovaapp/www"</li>
+<li>Executer "cordova build android"</li>
+<li>Récupérer le fichier "CordovaApp-debug.apk dans "cordovaapp\platforms\android\ant-build" et l'installer sur votre téléphone</li>
+</ol>
 
 
-## Titre de la catégorie 2 ##
 
-* La liste à puce
-* La liste à puce 2
 
 Demo de __texte en gras__ 
