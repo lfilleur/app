@@ -44,7 +44,11 @@
                     </div>
 
 
-                                                                  <!--BESTIAIRE -->
+                                                                  <!--MENU GRIMOIRE -->
+
+
+
+
 
                     <div class="tab-pane row" id="tab_b">
                         <div class="row grimoire">
@@ -72,36 +76,32 @@
                             </div>
                         </div>
                     </div>
-                                                                 <!-- PERSONNAGE-->
+                                                                 <!-- BETES-->
 
-                     <div class="tab-pane" id="tab_d">
-                        <div class="row grimoire">
-                          <a href="carte#tab_e" data-toggle="pill">
-                            <div class="col-xs-4">
-                              <img src="images/perso/5.png" class="img-responsive imggrimoire">
-                            </div>
-                          </a>
-                          <div class="col-xs-4">
-                            <img src="images/perso/6.png" class="img-responsive imggrimoire">
-                          </div>
-                          <div class="col-xs-4">
-                            <img src="images/perso/7.png" class="img-responsive imggrimoire">
-                          </div>
-                      </div>
-                      <div class="row grimoire">
-                          <div class="col-xs-4">
-                            <img src="images/perso/9.png" class="img-responsive imggrimoire">
-                          </div>
-                          <div class="col-xs-4">
-                            <img src="images/perso/10.png" class="img-responsive imggrimoire">
-                          </div>
-                          <div class="col-xs-4">
-                            <img src="images/perso/11.png" class="img-responsive imggrimoire">
-                          </div>
 
-                       </div>
+  
+  
+    
+
+
+                     <div class="tab-pane" id="tab_d" ng-controller="ListeMonstreCtrl">
+                        <div class="row grimoire"   ng-repeat="m in listeMonstre" >                           
+                          
+                            <a href="carte#{{m.nom_Bete}}" data-toggle="pill">
+                              <div class="col-xs-4" >
+                               
+                               <img src="images/monstre/{{m.id_Bete}}.png">
+                               {{m.nom_Bete}}
+                             
+
+                              </div>
+                            </a>
+
+                           
+                        </div>
+                    
                     </div>
-                                                      <!-- PERSONNAGE CLIQUER-->
+                                                      <!-- BESTIAIRE CLIQUER-->
                 <div class="tab-pane" id="tab_e">
                   <div class="row">
                   <div class="col-xs-4">
