@@ -5,7 +5,7 @@
 <section ng-controller="Saison3Ctrl"> 
 <div class="list col-xs-12" >
 
-        <table class="table table-striped">
+        <table class="table table-striped tableauVideo">
         	<tr ng-repeat="v in listeSaison3"  > 
 		        <td>
 
@@ -13,7 +13,7 @@
 		          <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }}</p>
 		          <p>Durée :{{ v.duree_Video }}min</p> 	           
 		          <iframe  src="{{ v.url_Video | trusted }}" frameborder="0" ></iframe>
-		        	
+		          <p>Synopsis : {{ v.synopsis_Video }}</p>
 		          
 		      	</td>
      		 </tr>
