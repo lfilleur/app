@@ -1,0 +1,52 @@
+
+
+   <div>   <!-- MON MENU QUI APPELLE LES PANEL QUI SONT SENSER ETRE INCLUS-->
+      
+          <p data-toggle="modal" data-target="#myModal">
+                <img src="../images/inventaire.png" id="inventaire">
+           </p>
+          
+           <p data-toggle="modal" data-target="#myModal1"> <!-- LES ANCRES -->
+                <img src="/images/bonus.png" id="bonus">
+           </p>
+          
+           <p>
+                <img src="/images/aide.png" id="aide">
+           </p>
+              
+   
+   </div>   
+
+
+      <!-- ICI Jappelle mes vue partiel-->
+       <div role="tabpanel"> 
+    
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-include="'partials/myModal.html'">
+          
+           </div>
+     </div>  
+   
+
+        <!-- ICI Jappelle mes vue partiel-->
+        <div role="tabpanel">
+
+           <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"ng-include="'partials/myModal1.html'">
+       
+          </div>
+    </div>       
+    
+
+   
+    
+    
+    
+<footer id="footercarte" >
+          <div class="container" >
+              <a href back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+          </div>
+           <div class="infos" >
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </div> 
+</footer>
+
+ 

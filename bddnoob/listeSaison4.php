@@ -24,7 +24,7 @@ try {
 
 $arraySaison4 = array();
 
-$req = "SELECT id_Video , nom_Video, saison_Video, episode_Video,duree_Video,url_Video FROM video WHERE sup_Video = 0 and saison_Video = 4";
+$req = "SELECT id_Video , nom_Video, saison_Video, episode_Video,duree_Video,url_Video,synopsis_Video FROM video WHERE sup_Video = 0 and saison_Video = 4";
 
 $res = null;
 # Perform the query
@@ -43,7 +43,7 @@ try{
 # Collect the results
 while($obj = mysqli_fetch_object($res)) {
     
-    $obj->nom_Bete =  utf8_encode($obj->nom_Bete);
+    $obj->nom_Video =  utf8_encode($obj->nom_Video);
     array_push($arraySaison4,$obj);
 }
 

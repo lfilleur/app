@@ -29,29 +29,12 @@ var Cartemod = angular.module('carte',['ngAnimate',
 
 Cartemod.config(function ($routeProvider) {
     $routeProvider
-      .when('/carte', {
-        templateUrl: 'carte.html',
-        controller: 'CarteCtrl'
-      })
+     
       .when('/profil', {
-        templateUrl: 'views/profil.html',
+        templateUrl: 'views/profil.html',                        /* A MODIFIER QUAND MISE EN MARCHE DES SCRIPT DANS GRIMOIRE*/
         controller: 'ListeMonstreCtrl' 
       })
-       .when('/cartetop', {                                     /* a viré si use area*/
-        templateUrl: 'views/cartetop.html',
-        controller: 'CarteTopCtrl' 
-      })
-        .when('/cartebottom', {                                /* a viré si use area*/
-        templateUrl: 'views/cartebottom.html',
-        controller: 'CarteBottomCtrl' 
-      })
-         .when('/cartecenter', {
-        templateUrl: 'views/cartecenter.html',
-        controller: 'CarteCenterCtrl'                         /*A VOIR POUR METTRE CENTRER PAS DEFAUT OU PAS*/ /* a viré si use area*/
-      })
-       .otherwise({
-        redirectTo: '/accueil'
-      });
+    
   });
 
 
@@ -92,7 +75,7 @@ var app = angular
         controller: 'VideosCtrl'
       })
     .when('/carte', {
-        templateUrl: 'carte.html',
+        templateUrl: 'views/carte.html',
         controller: 'CarteCtrl'
       })
     .when('/saison1', {

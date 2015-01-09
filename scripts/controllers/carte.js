@@ -10,6 +10,11 @@
 var Cartemod = angular.module('carte');
  
 Cartemod.controller('CarteCtrl', function ($scope) {
-      $scope.pageClass = 'carte';
-    
+     
+  
 });
+
+
+
+
+
