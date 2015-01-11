@@ -6,7 +6,7 @@
 <div class="list col-xs-12" >
 
         <table class="table table-striped tableauVideo">
-        	<tr ng-repeat="v in listeSaison5"  > 
+        	<tr ng-repeat="v in listeSaison5 | orderBy:'episode_Video'"  > 
 		        <td>
 
 		          <h2 class="titlevideo">{{ v.nom_Video }}</h2>
