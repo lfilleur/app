@@ -268,7 +268,6 @@ margin-bottom: 60px;
 }
 
 
-
 .drop-up {
     top: auto;
     bottom: 100% !important;
@@ -290,3 +289,9 @@ margin-bottom: 60px;
     text-align: center;
     padding-top: 5px;
 }
+
+.videoc
+{
+  padding-left: 0px;
+}
+
