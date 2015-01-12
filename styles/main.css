@@ -156,7 +156,7 @@
 }
 
 .container{
-    position: fixed;
+    
     bottom: 20px;
 }
 
@@ -250,8 +250,6 @@ margin-bottom: 60px;
 
 
 
-
-
 .essai{
 
   height: 100%;
@@ -269,3 +267,26 @@ margin-bottom: 60px;
   padding-bottom: 10px;
 }
 
+
+
+.drop-up {
+    top: auto;
+    bottom: 100% !important;
+}
+
+.iconback {
+    width: 38px;
+}
+
+.comment {
+    font-size: 28px;
+}
+
+.footernews {
+    padding-top: 10px;
+}
+
+.iconnews {
+    text-align: center;
+    padding-top: 5px;
+}
