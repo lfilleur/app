@@ -18,10 +18,10 @@
                   <div class="tab-content col-xs-9">
                     <div class="tab-pane active row" id="tab_a">
                         <div class="col-xs-4">
-                            <img src="images/emilien.jpg" class="img-responsive">
+                            <img src="images/Couette.png" class="img-responsive">
                         </div>
                         <div class="col-xs-8">
-                            <p>Mims</p>
+                            <p>Clara</p>
                             <p>Classement : 3200/3200</p>
                             <p>Grade : Novice</p>
                             <p>Niveau : 1</p>
@@ -55,14 +55,14 @@
 
                             <a href="carte#tab_d" data-toggle="pill">
                                 <div class="col-xs-6">
-                                    <img src="images/monstre/5.png" class="img-responsive imggrimoire">
+                                    <img src="images/monstre/0.png" class="img-responsive imggrimoire">
                                     Bestiaire
                                 </div>
                             </a> 
 
                             <a href="carte#tab_g" data-toggle="pill">
                             <div class="col-xs-6">
-                                 <img src="images/perso/4.png" class="img-responsive imggrimoire">
+                                 <img src="images/perso/0.png" class="img-responsive imggrimoire">
                                 Personnages
                             </div>
                           </a>                          
@@ -72,14 +72,14 @@
                         <div class="row grimoire">
                           <a href="carte#tab_h" data-toggle="pill">
                             <div class="col-xs-6">
-                                 <img src="images/lieu/4.png" class="img-responsive imggrimoire">
+                                 <img src="images/lieu/0.png" class="img-responsive imggrimoire">
                                 Lieux
                             </div>
                           </a>
 
                           <a href="carte#tab_i" data-toggle="pill">
                             <div class="col-xs-6">
-                                 <img src="images/stuff/1.jpg" class="img-responsive imggrimoire">
+                                 <img src="images/stuff/0.png" class="img-responsive imggrimoire">
                                 Stuff
                             </div>
                           </a>
@@ -95,7 +95,7 @@
                             <a href="carte#{{m.nom_Bete}}" data-toggle="pill">
                               <div class="col-xs-4 dperso" ng-repeat="m in listeMonstre" >
                                
-                               <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso">
+                               <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso imgcenter">
                                {{m.nom_Bete}}
                               </div>
                             </a>
@@ -139,7 +139,7 @@
                        <div class="row grimoire">
                         <a href="carte#{{p.nom_Personnage}}" data-toggle="pill">
                         <div class="col-xs-4 dperso" ng-repeat="p in listePerso">
-                         <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive hperso">
+                         <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive hperso imgcenter">
                         {{p.nom_Personnage}}
                       </div>
                     </a>
@@ -157,7 +157,7 @@
                        <div class="row grimoire">
                         <a href="carte#{{l.nom_Lieu}}" data-toggle="pill">
                         <div class="col-xs-4 dperso" ng-repeat="l in listeLieu track by $index">
-                         <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive hperso">
+                         <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive hperso imgcenter">
                         {{l.nom_Lieu}}
                       </div>
                     </a>
@@ -174,7 +174,7 @@
                        <div class="row grimoire">
                         <a href="carte#{{l.nom_Stuff}}" data-toggle="pill">
                         <div class="col-xs-4 dperso" ng-repeat="l in listeStuff track by $index">
-                         <img src="images/stuff/{{l.id_Stuff}}.png" class="img-responsive hperso">
+                         <img src="images/stuff/{{l.id_Stuff}}.png" class="img-responsive hperso imgcenter">
                         {{l.nom_Stuff}}
                       </div>
                     </a>
