@@ -17,6 +17,8 @@ var Saison4mod = angular.module('saison4',[]);
 var Saison5mod = angular.module('saison5',[]);
 var Grimoiremod = angular.module('grimoire',[]);
 var Accueilmod = angular.module('accueil',[]);
+var Quete1mod = angular.module('quete1',[]);
+
 
 var Cartemod = angular.module('carte',['ngAnimate',
     'ngCookies',
@@ -24,15 +26,17 @@ var Cartemod = angular.module('carte',['ngAnimate',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'grimoire'
+    'grimoire',
+    'quete1'
     ]);
 
 Cartemod.config(function ($routeProvider) {
     $routeProvider
      
-      .when('/profil', {
-        templateUrl: 'views/profil.html',                        /* A MODIFIER QUAND MISE EN MARCHE DES SCRIPT DANS GRIMOIRE*/
-        controller: 'ListeMonstreCtrl' 
+      
+      .when('/quete1', {
+        templateUrl: 'views/quete1.html',
+        controller: 'Quete1Ctrl'
       })
     
   });
@@ -56,6 +60,7 @@ var app = angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'quete1'
     
   ]);
 
@@ -97,11 +102,11 @@ var app = angular
       .when('/saison5', {
         templateUrl: 'views/saison5.html',
         controller: 'Saison5Ctrl'
-      })   
-	   .when('/cartetest', {                               /* a viré aprés test*/
-        templateUrl: 'cartetest.html',
-        controller: 'cartetestCtrl'
-      })  
+      }) 
+       .when('/quete1', {
+        templateUrl: 'views/quete1.html',
+        controller: 'Quete1Ctrl'
+      })   	     
       .otherwise({
         redirectTo: '/'
       });
