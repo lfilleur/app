@@ -1,0 +1,42 @@
+<div ng-controller="Quete1Ctrl" ng-init="show=1">
+
+	<section id="partie1" ng-show="{{show===1}}" >
+
+			
+			<FORM name="formulaire">
+			<img src="images/perso/5.png">
+     		
+				<INPUT type= "radio" name="perso" value="ok">							
+			
+			<img src="images/perso/6.png">
+			
+				<INPUT type= "radio" name="perso" value="nonok">
+			</FORM>
+			<p>{{texte}}</p>
+			<button onclick="queteSuivante()">Go</button>
+
+			
+
+	</section>
+
+	<section id="partie2" ng-show="{{show===2}}">
+		
+
+		<p>bla</p>
+
+	</section>
+
+	<section id="partie3" ng-show="{{show===3}}">
+		
+		<p>blo</p>
+
+
+	</section>
+
+	<section id="partie4" ng-show="{{show===4}}">
+		
+		<p>bli</p>
+
+
+	</section>
+</div>

@@ -5,10 +5,11 @@
 <section ng-controller="Saison1Ctrl"> 
 <div class="list col-xs-12 videoc">
 
+
         <table class="table table-striped tableauVideo">
         	<tr ng-repeat="v in listeSaison1 | orderBy:'episode_Video'"> 
 		        <td>
-
+               
 		          <h2 class="titlevideo">{{ v.nom_Video }}</h2>
 		          <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }} </p>
 		          <p>Durée :{{ v.duree_Video }}min</p>           
