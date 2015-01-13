@@ -78,6 +78,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width:130px;
    
     
 }
@@ -128,31 +129,16 @@
 }
     
 .imgaventure {
-    height: 185px;
-    width: 185px;
+    
+    width: 130px;
+    position: fixed;
+    bottom: 0;
 }
 
 .btn {
     border-radius: 0px;
     background-color: #2C2F32;
     color: white;
-}
-
-.accueil {
-  background: url(../images/fond.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-.background {
-    background: url(../images/fond.jpg) no-repeat center center fixed; 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-top: -60px;
 }
 
 .container{
@@ -295,3 +281,87 @@ margin-bottom: 60px;
   padding-left: 0px;
 }
 
+.btncontainer {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+
+
+.btn-3 {
+    padding: 20px 50px;
+    border-radius: 7px;
+    background: #b2e810;
+    background-image: -webkit-linear-gradient(top, #b2e810, #71d300);
+    background-image: -moz-linear-gradient(top, #b2e810, #71d300);
+    background-image: -ms-linear-gradient(top, #b2e810, #71d300);
+    background-image: -o-linear-gradient(top, #b2e810, #71d300);
+    background-image: linear-gradient(to bottom, #b2e810, #71d300);
+    text-shadow: 1px 1px #000000;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    border-color: transparent;
+    
+}  
+
+.btn-2 {
+    padding: 20px 25px;
+    border-radius: 7px;
+    background: #19bbca;
+    background-image: -webkit-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -moz-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -ms-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -o-linear-gradient(top, #19bbca, #0086bf);
+    background-image: linear-gradient(to bottom, #19bbca, #0086bf);
+    text-shadow: 1px 1px #000000;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    border-color: transparent;
+    
+}
+
+.btn-1 {
+    padding: 20px 14px;
+    border-radius: 7px;
+    background: #19bbca;
+    background-image: -webkit-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -moz-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -ms-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -o-linear-gradient(top, #19bbca, #0086bf);
+    background-image: linear-gradient(to bottom, #19bbca, #0086bf);
+    text-shadow: 1px 1px #000000;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    border-color: transparent;
+    
+}
+
+#miniatures {
+    width: 170px;
+    padding-left: 10px;
+}
+
+.accueil {
+  background: url(../images/fond2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.background {
+    background: url(../images/fond2.jpg) no-repeat center center fixed; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.gras {
+
+    color: #E4E810;
+    
+}
