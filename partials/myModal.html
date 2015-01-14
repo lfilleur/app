@@ -12,7 +12,7 @@
                     </ul>
                   </div>
                  
-                    <!--PROFIL -->
+                                                                  <!--PROFIL -->
 
 
                   <div class="tab-content col-xs-9">
@@ -45,9 +45,6 @@
 
 
                                                                   <!--MENU GRIMOIRE -->
-
-
-
 
 
                     <div class="tab-pane row" id="tab_b">
@@ -86,13 +83,13 @@
                           </div>
                         </div>
                    
-                                                                 <!-- BETES-->
+                                                     <!-- AFFICHAGE DE LA LISTE DE BETES-->
 
 
-                       <div class="tab-pane" id="tab_d" ng-controller="ListeMonstreCtrl">
+                       <div class="tab-pane " id="tab_d" ng-controller="ListeMonstreCtrl">
                         <div class="row grimoire">                           
                           
-                            <a href="carte#{{m.nom_Bete}}" data-toggle="pill">
+                            <a href="carte#expandBete" data-toggle="pill" ><!--ng-click="$scope.currentMonster = item"-->
                               <div class="col-xs-4 dperso" ng-repeat="m in listeMonstre" >
                                
                                <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso imgcenter">
@@ -103,31 +100,37 @@
                            
                         </div>
                         <a href="carte#tab_b" data-toggle="pill"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>                  
-                    </div>
+                    </div>                  
 
 
 
-                   
-         
-             
-      
-         
+                                                        <!--EXPAND DE LA BETE-->
 
-                                                      <!-- BESTIAIRE CLIQUER-->
-                <div class="tab-pane" id="tab_e">
-                  <div class="row">
-                  <div class="col-xs-4">
-                            <img src="images/perso/5.png" class="img-responsive">
-                        </div>
-                        <div class="col-xs-8">
-                            <p>Nom : Mario</p>
-                            <p>Type : Plombier</p>
-                        </div>   
-                        </div>
-                         <div class="col-xs-12">
-                         <p>Description : C'est un Beau gosse !</p>
-                       </div>
-                    </div>
+                        <div class="tab-pane " id="expandBete" ng-controller="FicheMonstreCtrl">
+                          <div class="row grimoire" ng-repeat="m in ficheMonstre">                           
+                            
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-8">
+                                   <p>{{m.nom_Bete}}</p>
+                                   <p>{{m.nom_TypeBete}}</p>
+                                </div>   
+                            </div>
+                             <div class="col-xs-12">
+                                   <p>{{m.description_Bete}}</p>
+                             </div>
+
+                             
+                          </div>
+                        <a href="carte#tab_d" data-toggle="pill"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>                  
+                    </div> 
+                     
+
+
+
+        
 
 
                                                       <!-- PERSONNAGES -->
@@ -183,7 +186,7 @@
                 </div>
 
 
-                    <!--HAUTS FAITS -->
+                                                                 <!--HAUTS FAITS -->
 
 
                       <div class="tab-pane" id="tab_c">

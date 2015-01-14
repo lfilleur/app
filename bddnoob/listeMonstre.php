@@ -24,7 +24,7 @@ try {
 
 $arrayMonstre = array();
 
-$req = "SELECT id_Bete , nom_Bete FROM bete WHERE statut_Bete = 0";
+$req = "SELECT id_Bete , nom_Bete, description_Bete,nom_TypeBete FROM bete INNER JOIN typebete ON bete.TypeBete_id_typeBete = typebete.id_TypeBete WHERE statut_Bete = 0";
 
 $res = null;
 # Perform the query
