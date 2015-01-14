@@ -2,8 +2,13 @@
             <a href ="#accueil"> <img id="logo" src="images/logonoob.png"> </a>
 </div>
 
-<section class="panel"  ng-controller="NewsCtrl as news">
-	
+<section class="panel newsp"  ng-controller="NewsCtrl as news">
+
+
+<div class="modal-dialog">
+<div class="tab-content col-xs-12 videoc">
+    <div class="tab-pane active" id="tab_y">
+                        
 	<div class="panel" ng-show="news.isSelected(1)">
 		<!--https://dev.twitter.com/web/embedded-timelines#customization            pour custom-->
 		<a  class="twitter-timeline" href="https://twitter.com/Noob_la_serie" data-widget-id="539786771002052609" data-chrome="noheader noborders noscrollbar">Tweets de @Noob_la_serie</a>
@@ -45,24 +50,55 @@
 </div>
 
 
+</div>
 
-
+ 
+                    <div class="tab-pane row" id="tab_z">
+                     
+                        <div class="col-xs-12">
+                            <p>Clara</p>
+                            <p>Classement : 3200/3200</p>
+                            <p>Grade : Novice</p>
+                            <p>Niveau : 1</p>
+                      
+                        </div>
+                        </div>
+                         </div>
+                         </div> 
+                        
+                    
 
 <footer class="footer footernews" >
-          <div class="container" >
-              <div class="row">
-                <div class="col-xs-2 iconnews">
-                    <a href back><span><img class="iconback" src="images/back.svg"></span></a>
-                </div>
-                <div class="col-xs-4 iconnews">
-                    <a href><span><img class="iconback" src="images/twitter.svg"></span></a>
-                </div>  
-                <div class="col-xs-4 iconnews">
-                    <span class="glyphicon glyphicon-comment comment" aria-hidden="true"></span>
-                </div> 
-                <div class="col-xs-2">
+        
+            
+<ul class="nav nav-tabs">
+               
+
+                <div class="col-xs-5 iconnews active">
+                    <a href="news#tab_y" data-toggle="pill"></a>
                     <span data-toggle="dropdown" aria-hidden="true">
-                        <img class="iconback" src="images/profil.svg">
+                        <img class="iconback" src="images/twitter.svg"></span>
+                 
+                <ul class="dropdown-menu drop-up pull-center" role="menu">
+                            <li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Tous les tweets</a></li>
+                            <li ng-class="{ active:news.isSelected(2)}"><a href =""ng-click="news.selectTab(2)">Noob</a></li>
+                            <li ng-class="{ active:news.isSelected(3)}"><a href =""ng-click="news.selectTab(3)">Artheon</a></li>
+                            <li ng-class="{ active:news.isSelected(4)}"><a href =""ng-click="news.selectTab(4)">Gaea</a></li>
+                            <li ng-class="{ active:news.isSelected(5)}"><a href =""ng-click="news.selectTab(5)">Sparadrap</a></li>
+                    </ul>
+                    </div> 
+
+                <div class="col-xs-2 iconnews">
+                    <a href back><span class="glyphicon glyphicon-home comment" aria-hidden="true"><!--<img class="iconback" src="images/back.svg">--></span></a>
+                </div>
+
+                <div class="col-xs-5 iconnews">
+                    <a href="news#tab_z" data-toggle="pill"><span class="glyphicon glyphicon-comment comment" aria-hidden="true"></span></a>
+                </div> 
+
+               <!--<div class="col-xs-2">
+                    <span data-toggle="dropdown" aria-hidden="true">
+                       <img class="iconback" src="images/profil.svg">
                     </span>
                     <ul class="dropdown-menu drop-up pull-right" role="menu">
                             <li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Tous les tweets</a></li>
@@ -71,14 +107,11 @@
                             <li ng-class="{ active:news.isSelected(4)}"><a href =""ng-click="news.selectTab(4)">Gaea</a></li>
                             <li ng-class="{ active:news.isSelected(5)}"><a href =""ng-click="news.selectTab(5)">Sparadrap</a></li>
                     </ul>
-                </div> 
+                </div>-->
+                </ul>
+                
+               
                   
-              
-              
-              </div>
-              
-			
-          </div>
 </footer>
     
 </section>
