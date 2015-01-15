@@ -345,7 +345,7 @@ margin-bottom: 60px;
 }
 
 .accueil {
-  background: url(../images/fond2.jpg) no-repeat center center fixed; 
+  background: url(../images/fond3.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -354,16 +354,14 @@ margin-bottom: 60px;
 
 
 .background {
-    background: url(../images/fond2.jpg) no-repeat center center fixed; 
+    background: url(../images/fond3.jpg) no-repeat center center fixed; 
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
 .gras {
-
     color: #E4E810;
-    
 }
 
 .newsp
@@ -372,3 +370,126 @@ margin-bottom: 60px;
   border:0px;
 }
 
+.btn-default:hover {
+    color: white;
+}
+
+.btn-3:active {
+    background: #b2e810;
+    background-image: -webkit-linear-gradient(top, #b2e810, #71d300);
+    background-image: -moz-linear-gradient(top, #b2e810, #71d300);
+    background-image: -ms-linear-gradient(top, #b2e810, #71d300);
+    background-image: -o-linear-gradient(top, #b2e810, #71d300);
+    background-image: linear-gradient(to bottom, #b2e810, #71d300);
+    text-shadow: 1px 1px #000000;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    border-color: transparent;
+}
+
+.btn-2:active {
+    padding: 20px 25px;
+    border-radius: 7px;
+    background: #19bbca;
+    background-image: -webkit-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -moz-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -ms-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -o-linear-gradient(top, #19bbca, #0086bf);
+    background-image: linear-gradient(to bottom, #19bbca, #0086bf);
+    text-shadow: 1px 1px #000000;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    border-color: transparent;
+    
+}
+
+.btn-1:active {
+    padding: 20px 14px;
+    border-radius: 7px;
+    background: #19bbca;
+    background-image: -webkit-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -moz-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -ms-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -o-linear-gradient(top, #19bbca, #0086bf);
+    background-image: linear-gradient(to bottom, #19bbca, #0086bf);
+    text-shadow: 1px 1px #000000;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    border-color: transparent;
+    
+}
+
+.logoint {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+    
+}
+
+.saison {
+    background: #b2e810;
+    background-image: -webkit-linear-gradient(top, #b2e810, #71d300);
+    background-image: -moz-linear-gradient(top, #b2e810, #71d300);
+    background-image: -ms-linear-gradient(top, #b2e810, #71d300);
+    background-image: -o-linear-gradient(top, #b2e810, #71d300);
+    background-image: linear-gradient(to bottom, #b2e810, #71d300);
+   
+}
+
+.imgsaisons {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.saisonplay {
+    background: #19bbca;
+    background-image: -webkit-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -moz-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -ms-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -o-linear-gradient(top, #19bbca, #0086bf);
+    background-image: linear-gradient(to bottom, #19bbca, #0086bf);
+}
+
+.titlesvideos {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color : white;
+    font-size : 18px;
+    text-shadow: 1px 1px #000000;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.64);
+}
+
+.titlesep {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+
+.btnplayvideo {
+    font-size: 30px;
+}
+
+.espacerow {
+    margin-bottom: 30px;
+}
+
+#miniaturesvideo {
+    width: 350px;
+}
+
+#containervideo {
+    padding-left: 30px;
+    padding-right: 30px;
+}
