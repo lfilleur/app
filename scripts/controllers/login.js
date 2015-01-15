@@ -13,6 +13,13 @@ var app = angular.module('login');
    app.controller('LoginCtrl', function($scope, $http) {
 
       var url = 'http://smartsheep.reaco.fr/php/login.php';
+
+        function httpSuccess (response){
+        
+         $scope.Login = response;
+         
+
+      }
      
       $http.get(url).success(httpSuccess).error(function(){
 
@@ -20,12 +27,7 @@ var app = angular.module('login');
 
       });
 
-       function httpSuccess (response){
-        
-         $scope.Login = response;
-         
-
-      }
+     
 
          $scope.connexion = function(){
         var connected = false;

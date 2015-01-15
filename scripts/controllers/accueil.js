@@ -9,6 +9,6 @@
  */
 var app = angular.module('accueil');
   app.controller('AccueilCtrl', function ($scope) {
-    $scope.pageClass = 'accueil';
+   
   });
  

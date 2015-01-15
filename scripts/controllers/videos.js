@@ -9,5 +9,5 @@
  */
 var app = angular.module('videos');
   app.controller('VideosCtrl', function ($scope) {
-    $scope.pageClass = 'videos';
+  
   });

@@ -87,17 +87,15 @@
 
 
                        <div class="tab-pane " id="tab_d" ng-controller="ListeMonstreCtrl">
-                        <div class="row grimoire">                           
-                          
-                            <a href="carte#expandBete" data-toggle="pill" ><!--ng-click="$scope.currentMonster = item"-->
-                              <div class="col-xs-4 dperso" ng-repeat="m in listeMonstre" >
-                               
-                               <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso imgcenter">
-                               {{m.nom_Bete}}
-                              </div>
-                            </a>
+                        <div class="row grimoire"> 
 
-                           
+                              <div class="col-xs-4 dperso" ng-repeat="m in listeMonstre" >
+                                <a href="carte#expandBete" data-toggle="pill" ng-click="Fiche(m.id_Bete)" >
+                                  <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso imgcenter">
+                                   {{m.nom_Bete}}
+                                </a>
+                              </div>
+
                         </div>
                         <a href="carte#tab_b" data-toggle="pill"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>                  
                     </div>                  
@@ -106,12 +104,13 @@
 
                                                         <!--EXPAND DE LA BETE-->
 
-                        <div class="tab-pane " id="expandBete" ng-controller="FicheMonstreCtrl">
-                          <div class="row grimoire" ng-repeat="m in ficheMonstre">                           
-                            
+                        <div class="tab-pane " id="expandBete" ng-controller="ListeMonstreCtrl" >
+                          <div class="row grimoire"  ng-repeat="m in ficheMonstre">                           
+                           
                             <div class="row">
                                 <div class="col-xs-4">
-                                    <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive">
+                                  <p>hey<p/>
+                                    <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive" >
                                 </div>
                                 <div class="col-xs-8">
                                    <p>{{m.nom_Bete}}</p>

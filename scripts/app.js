@@ -27,17 +27,16 @@ var Cartemod = angular.module('carte',['ngAnimate',
     'ngSanitize',
     'ngTouch',
     'grimoire',
-    'quete1'
+    'quete1',
     ]);
 
 Cartemod.config(function ($routeProvider) {
     $routeProvider
-     
-      
+    
       .when('/quete1', {
         templateUrl: 'views/quete1.html',
         controller: 'Quete1Ctrl'
-      })
+      });
     
   });
 
@@ -48,6 +47,7 @@ var app = angular
     'news',
     'videos',
     'carte',
+    'grimoire',
     'saison1',
     'saison2',
     'saison3',

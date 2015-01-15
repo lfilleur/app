@@ -11,32 +11,72 @@ var app = angular.module('grimoire');
 
   app.controller('ListeMonstreCtrl', function($scope, $http) {
 
+
+             /* Fonction d'affichage de la liste */
       var url = 'http://smartsheep.reaco.fr/php/listeMonstre.php';
-     
-      $http.get(url).success(httpSuccess).error(function(){
-
-         alert('Impossible de trouvé la liste de Monstre');
-
-      });
 
        function httpSuccess (response){
         
          $scope.listeMonstre = response;
          
       }
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouver la liste de Monstre');
+
+      });
+
+      
+
+                  /* Fonction d'affichage de la fiche */
+      $scope.Fiche = function(e){
+
+
+          var url = 'http://smartsheep.reaco.fr/php/ficheMonstre.php?id_Bete=' ;
+          var id =  e;
+          var url2 = url + id;
+
+          
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheMonstre = response; 
+              alert('http ok'+' '+'return' + ' '+ $scope.ficheMonstre);
+                          }
+
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche du monstre' + id);
+
+            });
+
+           } 
+               
+             
+
+      };
+
+     
+
+       
 
       
   });
 
-    app.controller('FicheMonstreCtrl', function($scope,$http) {
+   /* app.controller('FicheMonstreCtrl', function($scope,$http) {
 
 
         var url = 'http://smartsheep.reaco.fr/php/ficheMonstre.php?id_Bete=' ;
-        var id =  $scope.id_Bete;
+        var id =  bete;
         var url2 = url + id;
         
-        /*on regarde si on a deja un id de defini*/  
-        if (id!=undefined){
+       
+        if (id!==undefined){
 
           $http.get(url2).success(httpSuccess).error(function(){
 
@@ -48,11 +88,13 @@ var app = angular.module('grimoire');
              
            function httpSuccess (response){
             
-             $scope.ficheMonstre = response;
+             $scope.ficheMonstre = response;             
 
                         }
+                        alert(bete 'fiche');
+
       
-  });
+  }); */
 
   
 
@@ -63,70 +105,76 @@ var app = angular.module('grimoire');
  app.controller('ListePersoCtrl', function($scope, $http) {
 
       var url = 'http://smartsheep.reaco.fr/php/listePerso.php';
-     
-      $http.get(url).success(httpSuccess).error(function(){
-
-         alert('Impossible de trouvé la liste de Personnages');
-
-      });
 
        function httpSuccess (response){
         
          $scope.listePerso = response;
          
-      }
+      }      
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouver la liste de Personnages');
+
+      });      
 
   });
 
   app.controller('ListeLieuCtrl', function($scope, $http) {
 
       var url = 'http://smartsheep.reaco.fr/php/listeLieu.php';
-     
-      $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouvé la liste de Lieux');
 
-      });
-
-       function httpSuccess (response){
+         function httpSuccess (response){
         
          $scope.listeLieu = response;
          
-      }
+      }     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouver la liste de Lieux');
+
+      });
+
+    
 
   });
     app.controller('ListeStuffCtrl', function($scope, $http) {
 
       var url = 'http://smartsheep.reaco.fr/php/listeStuff.php';
-     
-      $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouvé la liste de Stuff');
-
-      });
 
        function httpSuccess (response){
         
          $scope.listeStuff = response;
          
       }
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouver la liste de Stuff');
+
+      });
+
 
   });
     app.controller('ListeHautFaitCtrl', function($scope, $http) {
 
       var url = 'http://smartsheep.reaco.fr/php/listeHautFait.php';
-     
-      $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouvé la liste de Haut Fait');
-
-      });
-
-       function httpSuccess (response){
+        function httpSuccess (response){
         
          $scope.listeHautfait = response;
          
       }
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouver la liste de Haut Fait');
+
+      });
+
+     
 
   });
 

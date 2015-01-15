@@ -12,6 +12,13 @@ var app = angular.module('saison1');
     
 
       var url = 'http://smartsheep.reaco.fr/php/listeSaison1.php';
+      
+       function httpSuccess (response){
+        
+         $scope.listeSaison1 = response;
+         
+      }
+
      
       $http.get(url).success(httpSuccess).error(function(){
 
@@ -19,12 +26,7 @@ var app = angular.module('saison1');
 
       });
 
-       function httpSuccess (response){
-        
-         $scope.listeSaison1 = response;
-         
-      }
-
+      
   });
    app.filter('trusted', ['$sce', function ($sce) {
     return function(url) {
