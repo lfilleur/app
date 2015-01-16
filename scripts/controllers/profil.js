@@ -15,7 +15,7 @@ var app = angular.module('profil');
 
 
      $scope.listeBete = function(){
-      
+
        $scope.step = 1;
        /* Fonction d'affichage de la liste */
       var url = 'http://smartsheep.reaco.fr/php/listeMonstre.php';
