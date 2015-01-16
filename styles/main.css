@@ -434,12 +434,12 @@ margin-bottom: 60px;
 }
 
 .saison {
-    background: #b2e810;
-    background-image: -webkit-linear-gradient(top, #b2e810, #71d300);
-    background-image: -moz-linear-gradient(top, #b2e810, #71d300);
-    background-image: -ms-linear-gradient(top, #b2e810, #71d300);
-    background-image: -o-linear-gradient(top, #b2e810, #71d300);
-    background-image: linear-gradient(to bottom, #b2e810, #71d300);
+    background: #19bbca;
+    background-image: -webkit-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -moz-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -ms-linear-gradient(top, #19bbca, #0086bf);
+    background-image: -o-linear-gradient(top, #19bbca, #0086bf);
+    background-image: linear-gradient(to bottom, #19bbca, #0086bf);
    
 }
 
@@ -493,3 +493,9 @@ margin-bottom: 60px;
     padding-left: 30px;
     padding-right: 30px;
 }
+
+/*a {
+ text-decoration: none;
+ color: inherit;
+}*/
+
