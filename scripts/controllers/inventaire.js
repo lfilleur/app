@@ -37,12 +37,12 @@ var app = angular.module('grimoire');
           var id =  e;
           var url2 = url + id;
 
-          
+          console.log(e);
 
          function httpSuccess2 (response){
               
                $scope.ficheMonstre = response; 
-              alert('http ok'+' '+'return' + ' '+ $scope.ficheMonstre);
+             /* alert('http ok'+' '+'return' + ' '+ $scope.ficheMonstre); */
                           }
 
 

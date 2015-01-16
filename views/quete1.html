@@ -1,42 +1,49 @@
-<div ng-controller="Quete1Ctrl" ng-init="show=1">
+<div ng-controller="Quete1Ctrl">
 
-	<section id="partie1" ng-show="{{show===1}}" >
+	<section id="partie1" ng-show="partie1" >
 
 			
 			<FORM name="formulaire">
-			<img src="images/perso/5.png">
+			<img src="images/perso/5.png" class="imgfb">
      		
-				<INPUT type= "radio" name="perso" value="ok">							
+				<INPUT type= "radio" name="perso" value="nonok">							
 			
-			<img src="images/perso/6.png">
+			<img src="images/perso/6.png" class="imgfb">
 			
-				<INPUT type= "radio" name="perso" value="nonok">
+				<INPUT type= "radio" name="perso" value="ok">
 			</FORM>
 			<p>{{texte}}</p>
-			<button onclick="queteSuivante()">Go</button>
+			<button ng-click="quete1a()">Go</button>
+
 
 			
 
 	</section>
 
-	<section id="partie2" ng-show="{{show===2}}">
-		
+	<section id="partie2" ng-show="partie2">		
 
-		<p>bla</p>
+		<p>C'est partit, avec Omegazell on ne crain rien !</p>
+		
+		<p>{{texteb}}</p>
+     	<FORM name="formulaireb">	
+				<img src="images/stuff/2.png" >
+     		
+				<INPUT type= "radio" name="arme" value="nonok">							
+			
+			<img src="images/stuff/23.jpg" >
+			
+				<INPUT type= "radio" name="arme" value="ok">
+		</FORM>
+			<button ng-click="quete1b()">Validé</button>
 
 	</section>
 
-	<section id="partie3" ng-show="{{show===3}}">
+	<section id="partie3" ng-show="partie3">
 		
-		<p>blo</p>
+		<p>Te voilà equipé bravo a demain pour de nouvelles aventure chocopops</p>
 
 
 	</section>
 
-	<section id="partie4" ng-show="{{show===4}}">
-		
-		<p>bli</p>
-
-
-	</section>
+	
 </div>
