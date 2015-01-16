@@ -1,53 +1,45 @@
 
 
-<section id="sectionMonstre" ng-controller="ListeMonstreCtrl" > 
+<section  ng-controller="ProfilCtrl" > 
+	<div class="menu-Global-a-gauche">
+	  <button ng-click="listeBete()">Lister les montres</button>
+	  <button ng-click="listePersonnage()">Liste perso</button> 
+	  {{step}}
+	  
+	</div>
 	
-	
-     <div ng-repeat="m in listeMonstre">
+     <div ng-repeat="m in listeMonstre" ng-if="step==1">
+      <div ng-click="FicheBete(m.id_Bete)">
      	<img src="images/monstre/{{m.id_Bete}}.png">
 	     {{m.nom_Bete}}	     
+	 </div>
 	</div>
 
-</section>
-
-<section  id="sectionPerso" ng-controller="ListePersoCtrl" > 
 	
-	
-     <div ng-repeat="p in listePerso">
+     <div ng-repeat="p in listePerso" ng-if="step==2">
      	<img src="images/perso/{{p.id_Personnage}}.png">
 	     {{p.nom_Personnage}}
 	</div>
-
-</section>
-
-<section  id="sectionLieu" ng-controller="ListeLieuCtrl" > 
 	
 	
-     <div ng-repeat="l in listeLieu track by $index">     	
+   <!--  <div ng-repeat="l in listeLieu track by $index" ng-if="step==3">     	
 	     <h2>{{l.nom_Lieu}}</h2>
 	     <h3>{{l.nom_TypeLieu}}</h3>
 	     <img src="images/lieu/{{l.id_Lieu}}.png">
 	</div>
+-->
 
-</section>
-
-<section  id="sectionStuff" ng-controller="ListeStuffCtrl" > 	
-	
-     <div ng-repeat="l in listeStuff track by $index">     	
-	     <h2>{{l.nom_Stuff}}</h2>
-	     <h3>{{l.description_Stuff}}</h3>
-	     <img src="images/stuff/{{l.id_Stuff}}.png">
-	</div>
-
-</section>
-
-
-<section  id="sectionHautFait" ng-controller="ListeHautFaitCtrl" > 	
-	
-     <div ng-repeat="l in listeHautFait track by $index">     	
-	     <h2>{{l.nom_HautFait}}</h2>
-	     <h3>{{l.description_HautFait}}</h3>
-	     <img src="images/stuff/{{l.id_HautFait}}.png">
-	</div>
+	  <div class="row" ng-repeat="m in ficheMonstre" ng-if="step==4">
+    		<div class="col-xs-4">
+	        <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive" >
+    		</div>
+		    <div class="col-xs-8">
+		       <p>{{m.nom_Bete}}</p>
+		       <p>{{m.nom_TypeBete}}</p>
+		    </div>   
+	 </div>
+	 <div class="col-xs-12">
+       <p>{{m.description_Bete}}</p>
+     </div>
 
 </section>

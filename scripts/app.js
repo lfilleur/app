@@ -18,6 +18,8 @@ var Saison5mod = angular.module('saison5',[]);
 var Grimoiremod = angular.module('grimoire',[]);
 var Accueilmod = angular.module('accueil',[]);
 var Quete1mod = angular.module('quete1',[]);
+var Profilmod = angular.module('profil',[]);
+
 
 
 var Cartemod = angular.module('carte',['ngAnimate',
@@ -28,6 +30,7 @@ var Cartemod = angular.module('carte',['ngAnimate',
     'ngTouch',
     'grimoire',
     'quete1',
+    'profil'
     ]);
 
 Cartemod.config(function ($routeProvider) {
@@ -60,7 +63,8 @@ var app = angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'quete1'
+    'quete1',
+    'profil'
     
   ]);
 
@@ -106,6 +110,10 @@ var app = angular
        .when('/quete1', {
         templateUrl: 'views/quete1.html',
         controller: 'Quete1Ctrl'
+      }) 
+      .when('/profil', {
+        templateUrl: 'views/profil.html',
+        controller: 'ProfilCtrl'
       })   	     
       .otherwise({
         redirectTo: '/'
