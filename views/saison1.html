@@ -1,20 +1,40 @@
-<div class="header navbar navbar-default navbar-fixed-top">
-            <a href ="#accueil"> <img id="logo" src="images/logonoob.png"> </a>
+<div class="background">
+
+<div>
+            <a href ="#accueil"> <img class="logoint" src="images/logonoob.png"> </a>
 </div>
 
+
 <section ng-controller="Saison1Ctrl"> 
-<div class="list col-xs-12 videoc">
+<div class="list col-xs-12 videoc container">
 
-
-        <table class="table table-striped tableauVideo">
+       
+    
+<img src="images/miniaturessaisons.png" id="" class="imgcenter img-responsive">
+        <table class="tableauVideo">
         	<tr ng-repeat="v in listeSaison1 | orderBy:'episode_Video'"> 
 		        <td>
-               
-		          <h2 class="titlevideo">{{ v.nom_Video }}</h2>
+              
+                    <div class="row">
+                        <img src="images/saison1/{{v.id_Video}}.png">
+                        <div class="col-xs-4 saison titlesvideos">
+                            <p>Episode {{ v.episode_Video }} </p>
+                        </div>
+                        <div class="col-xs-7 saison titlesep">
+                            <p>{{ v.nom_Video }}</p>
+                        </div>
+                        
+                          
+                    </div> 
+                    <div class="col-xs-11 bgsaison espacesaison">
+                        {{ v.synopsis_Video }}
+                    </div>
+</div>
+		          <!--<h2 class="titlevideo">{{ v.nom_Video }}</h2>
 		          <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }} </p>
 		          <p>Durée :{{ v.duree_Video }}min</p>           
 		          <iframe  src="{{ v.url_Video | trusted }}" frameborder="0" ></iframe>
-              <p>Synopsis : {{ v.synopsis_Video }}</p> 
+              <p>Synopsis : {{ v.synopsis_Video }}</p> -->
 		        	
 		          
 		      	</td>
@@ -32,3 +52,5 @@
 			
           </div>
 </footer>
+
+</div>
