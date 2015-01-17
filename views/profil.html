@@ -1,9 +1,12 @@
 
-
 <section  ng-controller="ProfilCtrl" > 
 	<div class="menu-Global-a-gauche">
-	  <button ng-click="listeBete()">Lister les montres</button>
-	  <button ng-click="listePersonnage()">Liste perso</button> 
+	  <button ng-click="listeBete()">Bestiaire</button>
+	  <button ng-click="listePersonnage()">Personnage</button> 
+	  <button ng-click="listeLieux()">Lieux</button> 
+	  <button ng-click="listeStuffs()">Stuff</button> 
+	  <button ng-click="listeHautFait()">Haut Fait</button> 
+
 	  {{step}}
 	  
 	</div>
@@ -22,14 +25,23 @@
 	</div>
 	
 	
-   <!--  <div ng-repeat="l in listeLieu track by $index" ng-if="step==3">     	
+    <div ng-repeat="l in listeLieu" ng-if="step==3">     	
 	     <h2>{{l.nom_Lieu}}</h2>
 	     <h3>{{l.nom_TypeLieu}}</h3>
 	     <img src="images/lieu/{{l.id_Lieu}}.png">
 	</div>
--->
 
-	  <div class="row" ng-repeat="m in ficheMonstre" ng-if="step==4">
+	 <div ng-repeat="s in listeStuff" ng-if="step==4">
+         <img src="images/stuff/{{s.id_Stuff}}.png">
+        {{s.nom_Stuff}}
+     </div>
+
+      <div ng-if="step==5">
+         <p>Haut fait</p>
+     </div>
+
+
+	  <div class="row" ng-repeat="m in ficheMonstre" ng-if="step==6">
     		<div class="col-xs-4">
 	        <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive" >
     		</div>
@@ -38,8 +50,8 @@
 		       <p>{{m.nom_TypeBete}}</p>
 		    </div>  
 		    <div class="col-xs-12">
-       <p>{{m.description_Bete}}</p>
-     </div> 
+		     	<p>{{m.description_Bete}}</p>
+		    </div> 
 	 </div>
 	 
 

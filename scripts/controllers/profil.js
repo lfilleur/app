@@ -13,12 +13,12 @@ var app = angular.module('profil');
 
     $scope.step = 1;
 
-
+                                                        /*     LISTE BETE     */
      $scope.listeBete = function(){
 
        $scope.step = 1;
        /* Fonction d'affichage de la liste */
-      var url = 'http://smartsheep.reaco.fr/php/listeMonstre.php';
+       var url = 'http://smartsheep.reaco.fr/php/listeMonstre.php';
 
        function httpSuccess (response){
         
@@ -33,7 +33,7 @@ var app = angular.module('profil');
       });
 
        };
-
+                                                /*     LISTE PERSO     */
 
        $scope.listePersonnage = function(){
          $scope.step = 2;
@@ -51,10 +51,78 @@ var app = angular.module('profil');
 
       });      };
 
+                                              /*     LISTE LIEU     */
 
+        $scope.listeLieux = function() {
+
+          $scope.step = 3;
+          var url = 'http://smartsheep.reaco.fr/php/listeLieu.php';
+
+
+         function httpSuccess (response){
+        
+         $scope.listeLieu = response;
+         
+        }     
+
+        $http.get(url).success(httpSuccess).error(function(){
+
+           alert('Impossible de trouver la liste de Lieux');
+
+        });
+    };
+
+                                                  /*     LISTE STUFF     */
+
+      $scope.listeStuffs = function() {
+
+        $scope.step = 4;
+        var url = 'http://smartsheep.reaco.fr/php/listeStuff.php';
+
+         function httpSuccess (response){
+          
+           $scope.listeStuff = response;
+           
+        }
+       
+        $http.get(url).success(httpSuccess).error(function(){
+
+           alert('Impossible de trouver la liste de Stuff');
+
+        });
+
+
+      };
+
+                                          /*     LISTE HAUT FAIT     */
+
+
+       $scope.listeHautFait = function() {
+
+        $scope.step = 5;
+
+        var url = 'http://smartsheep.reaco.fr/php/listeHautFait.php';
+
+        function httpSuccess (response){
+        
+         $scope.listeHautfait = response;
+         
+      }
+     
+      $http.get(url).success(httpSuccess).error(function(){
+
+         alert('Impossible de trouver la liste de Haut Fait');
+
+      });
+
+     
+
+  };
+
+                                              /*     FICHE BETE     */
 
          $scope.FicheBete = function(e){
-           $scope.step = 4;
+           $scope.step = 6;
          
           
           var url = 'http://smartsheep.reaco.fr/php/ficheMonstre.php?id_Bete=' ;

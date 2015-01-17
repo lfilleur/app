@@ -505,3 +505,15 @@ margin-bottom: 60px;
   padding-right: 0px;
 }
 
+.popup-in{
+
+  background-color: white; 
+
+}
+
+.popup-back{
+
+  background-color: black;
+  opacity: 0.4;
+
+}

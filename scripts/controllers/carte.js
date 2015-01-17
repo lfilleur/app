@@ -10,8 +10,16 @@
 var Cartemod = angular.module('carte');
  
 Cartemod.controller('CarteCtrl', function ($scope) {
+
+	$scope.pop = 1;
     
-  
+   $scope.popup = function(){
+   		
+       $scope.pop = 2; 
+       alert($scope.pop);
+   }
+
+
 });
 
 
