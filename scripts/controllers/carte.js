@@ -16,7 +16,6 @@ Cartemod.controller('CarteCtrl', function ($scope) {
    $scope.popup = function(){
    		
        $scope.pop = 2; 
-       
    }
 
 
