@@ -4,15 +4,20 @@
 var app = angular.module('quete1');
    app.controller('Quete1Ctrl', function($scope) {    		
     	
-   			$scope.texte = 'Choisi Omegazell et part à l\'aventure';
-   			$scope.texteb = 'Equipe Omega de son arme préferer et prépare toi au combat';
+   			$scope.texte = '';   		
    			$scope.partie1 = true;
-			$scope.partie2 = false;
-			$scope.partie3 = false;
-			$scope.partie4 = false;
+			$scope.omega1 = false;
+			$scope.omega2 = false;
+			$scope.omega3 = false;
+			$scope.omega4 = false;
+			$scope.omega5 = false;
+			$scope.gaea1 = false;
+			$scope.gaea2 = false;
+			$scope.gaea3 = false;
+			
 
 													/* QUETE 1 PARTIE A */
-   			$scope.quete1a = function(){
+   			$scope.quete1Start = function(){
 
    				var valeur = '';
 				var i = 0;
@@ -26,20 +31,20 @@ var app = angular.module('quete1');
 							valeur = document.formulaire.perso[i].value;
 
 
-							if (valeur==='ok'){
+							if (valeur==='omega'){
 
-				      			$scope.partie1= false;
-				      			$scope.partie2= true;				      			
-
-				      		}
-
-				      		else if (valeur==='nonok') {
-
-				      			
-				 				$scope.texte = 'Ceci n\'est pas le bon héro';
+				      			$scope.partie1 = false;
+				      			$scope.omega1 = true;				      			
 
 				      		}
+
+				      		else if (valeur==='gaea') {
+
 				      			
+				 				$scope.partie1 = false;
+				 				$scope.gaea1 = true;
+				      		}
+
 							
 						}
 
@@ -51,43 +56,48 @@ var app = angular.module('quete1');
    			};
 
 
-   															/* QUETE 1 PARTIE B */
+   															/* QUETE omega  */
 
-   			$scope.quete1b = function(){
+   			$scope.queteOmegaA = function(){
 
-   				var valeur = '';
-				var i = 0;
-				
-				//je parcour mon formulaire
-				for (i=0; i<document.formulaireb.arme.length; i++) {
-
-						//je verifie que jai bien selectioné un bouton
-						if (document.formulaireb.arme[i].checked) { 
-
-							valeur = document.formulaireb.arme[i].value;
-
-
-							if (valeur==='ok'){
-
-				      			$scope.partie1= false;
-				      			$scope.partie2=false;
-				      			$scope.partie3=true;				      			
-
-				      		}
-
-				      		else if (valeur==='nonok') {
-
-				      			
-				 				$scope.texteb = 'Omegazell ne sait pas manié d\'aussi grande lame';
-
-				      		}
-				      			
-							
-						}
-
-					}
+   							$scope.omega1 = false;     			
+							$scope.omega2 = true;				
 
    			};
+   			$scope.queteOmegaB = function(){
+
+   							$scope.omega2 = false;     			
+							$scope.omega3 = true;				
+
+   			};
+   			$scope.queteOmegaC = function(){
+
+   							$scope.omega3 = false;     			
+							$scope.omega4 = true;				
+
+   			};
+   			$scope.queteOmegaD = function(){
+
+   							$scope.omega4 = false;     			
+							$scope.omega5 = true;				
+
+   			};
+
+   														/* QUETE Gaea  */
+
+   			$scope.queteGaeaA = function(){
+
+   							$scope.gaea1 = false;     			
+							$scope.gaea2 = true;				
+
+   			};
+   			$scope.queteGaeaB = function(){
+
+   							$scope.gaea2 = false;     			
+							$scope.gaea3 = true;				
+
+   			};
+   			
 
 
 		});

@@ -129,7 +129,7 @@ var app = angular.module('profil');
           var id =  e;
           var url2 = url + id;
 
-          console.log(e);
+         /* console.log(e);*/
 
          function httpSuccess2 (response){
               
