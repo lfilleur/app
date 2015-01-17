@@ -1,3 +1,4 @@
+<div ng-controller="CarteCtrl">
 <div class="image">     
   <img src="images/carte1.svg" alt="carte noob" usemap="#carte" /> 
    <map name="carte">
@@ -12,16 +13,35 @@
                 <img src="/images/inventaire.png" id="inventaire">
            </p>
           
-           <p data-toggle="modal" data-target="#myModal1"> <!-- LES ANCRES -->
-                <img src="/images/bonus.png" id="bonus">
+           <p> <!-- LES ANCRES -->
+                <img src="/images/bonus.png" id="bonus" ng-click="popup();">
            </p>
           
            <p>
                 <a href="#quete1"><img src="/images/aide.png" id="aide" ></a>
            </p>
+           
               
    
    </div>   
+
+
+
+      <div  class="popup-back" ng-if="pop==2"> 
+    
+        
+        <div class="popup-in">
+
+          <div class="popup-content">
+            <div class="col-xs-12">
+              <p>coucou je suis la pop up</p>
+            </div>
+          </div>
+
+        </div>
+
+           
+     </div> 
 
 
       <!-- ICI Jappelle mes vue partiel-->
@@ -56,3 +76,4 @@
 </footer>
 
  
+</div>

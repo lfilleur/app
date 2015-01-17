@@ -499,6 +499,7 @@ margin-bottom: 60px;
  color: inherit;
 }*/
 
+
 .bgsaison {
     background-color: rgba(241, 242, 242, 0.85);
 }
@@ -509,3 +510,35 @@ margin-bottom: 60px;
 
 .vignette {
     
+}
+
+.iconsposition
+
+{
+  padding-right: 0px;
+}
+
+.popup-in
+{
+
+  background-color: white; 
+  position: absolute;
+left: 5%;
+top: 10%;
+width: 580px;
+height: 280px;
+}
+
+.popup-back
+{
+
+  background-color: black;
+  position: absolute;
+left: 0%;
+top: 0%;
+width: 640px;
+height: 360px;
+background-color: rgba(255, 255, 255, 0.4);
+
+}
+
