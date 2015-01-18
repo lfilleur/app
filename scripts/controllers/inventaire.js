@@ -68,39 +68,7 @@ var app = angular.module('grimoire');
       
   });
 
-   /* app.controller('FicheMonstreCtrl', function($scope,$http) {
-
-
-        var url = 'http://smartsheep.reaco.fr/php/ficheMonstre.php?id_Bete=' ;
-        var id =  bete;
-        var url2 = url + id;
-        
-       
-        if (id!==undefined){
-
-          $http.get(url2).success(httpSuccess).error(function(){
-
-             alert('Impossible de trouvé la fiche du monstre');
-
-          });
-
-         } 
-             
-           function httpSuccess (response){
-            
-             $scope.ficheMonstre = response;             
-
-                        }
-                        alert(bete 'fiche');
-
-      
-  }); */
-
-  
-
-
-
- 
+   
 
  app.controller('ListePersoCtrl', function($scope, $http) {
 

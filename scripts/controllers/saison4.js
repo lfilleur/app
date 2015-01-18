@@ -33,26 +33,5 @@ var app = angular.module('saison4');
     };
 }]);
 
-
-  /*,function urlVideo($scope){
-
-	var $url = $scope.items.url;
- 	return '<iframe width="560" height="315" src="'+ $url +'" frameborder="0" allowfullscreen></iframe>';
-
- }
-
-   
-
-app.directive('Saison1Dir', function($scope) {
-  
-  			var $url = $scope.items.url;
-
-  		return '<iframe width="560" height="315" src="'+ $url +'" frameborder="0" ></iframe>';
-  
-  
-});
-
-*/
-  
   
   

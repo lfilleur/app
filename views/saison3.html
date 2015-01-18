@@ -1,31 +1,24 @@
-<div class="header navbar navbar-default navbar-fixed-top">
-            <a href ="#accueil"> <img id="logo" src="images/logonoob.png"> </a>
+<div class="header navbar navbar-default navbar-fixed-top"> 
+	<a href="#accueil"> <img id="logo" src="images/logonoob.png"> </a>
 </div>
-
-<section ng-controller="Saison3Ctrl"> 
-<div class="list col-xs-12 videoc" >
-
+<section ng-controller="Saison3Ctrl">
+    <div class="list col-xs-12 videoc">
         <table class="table table-striped tableauVideo">
-        	<tr ng-repeat="v in listeSaison3 | orderBy:'episode_Video'"  > 
-		        <td>
+            <tr ng-repeat="v in listeSaison3 | orderBy:'episode_Video'">
+                <td>
+                     <h2 class="titlevideo">{{ v.nom_Video }}</h2>
 
-		          <h2 class="titlevideo">{{ v.nom_Video }}</h2>
-		          <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }}</p>
-		          <p>Durée :{{ v.duree_Video }}min</p> 	           
-		          <iframe  src="{{ v.url_Video | trusted }}" frameborder="0" ></iframe>
-		          <p>Synopsis : {{ v.synopsis_Video }}</p>
-		          
-		      	</td>
-     		 </tr>
-      </table>
-       
-
-      </div>
+                    <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }}</p>
+                    <p>Durée :{{ v.duree_Video }}min</p>
+                    <iframe src="{{ v.url_Video | trusted }}" frameborder="0"></iframe>
+                    <p>Synopsis : {{ v.synopsis_Video }}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
-
-<footer class="footer" >
-          <div class="container" >
-              <a href back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-			
-          </div>
+<footer class="footer">
+    <div class="container"> 
+    	<a href back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    </div>
 </footer>

@@ -15,7 +15,6 @@ var Saison2mod = angular.module('saison2',[]);
 var Saison3mod = angular.module('saison3',[]);
 var Saison4mod = angular.module('saison4',[]);
 var Saison5mod = angular.module('saison5',[]);
-var Grimoiremod = angular.module('grimoire',[]);
 var Accueilmod = angular.module('accueil',[]);
 var Quete1mod = angular.module('quete1',[]);
 var Profilmod = angular.module('profil',[]);
@@ -28,7 +27,6 @@ var Cartemod = angular.module('carte',['ngAnimate',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'grimoire',
     'quete1',
     'profil'
     ]);
@@ -50,7 +48,6 @@ var app = angular
     'news',
     'videos',
     'carte',
-    'grimoire',
     'saison1',
     'saison2',
     'saison3',

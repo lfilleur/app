@@ -63,6 +63,7 @@ var app = angular.module('bonus');
       }
 
   });
+
 // ajouter autrebonus
 
   	
