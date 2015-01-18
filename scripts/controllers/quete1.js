@@ -67,7 +67,7 @@ var app = angular.module('quete1');
    			$scope.queteOmegaB = function(){
 
    							$scope.omega2 = false;     			
-							$scope.omega3 = true;				
+							$scope.omega3 = true;
 
    			};
    			$scope.queteOmegaC = function(){

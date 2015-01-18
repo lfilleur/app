@@ -37,9 +37,12 @@
 	</section>
 
 
-	<section id="omega3" ng-show="omega3">
-		
-		<p>video</p>
+	<section id="omega3" ng-if="omega3"> <!--NG IF CAR RETIRE DU DOM POUR EVITER AUTOPLAY-->
+		<video width="50%" height="50%" id="video-omega" autoplay> 
+		  <source src="videos/1.mp4" type="video/mp4">
+		  
+		</video>
+	
 		<button ng-click="queteOmegaC()">Suivant</button>
 
 	</section>
@@ -74,9 +77,12 @@
 
 	</section>
 
-	<section id="gaea3" ng-show="gaea3">	
+	<section id="gaea3" ng-if="gaea3">	
 		
-		<p>image bravo tu a gagné pleins de truc</p>
+		<video width="50%" height="50%" id="video-omega" autoplay> 
+		  <source src="videos/1.mp4" type="video/mp4">
+		  
+		</video>
 
 	</section>
 
