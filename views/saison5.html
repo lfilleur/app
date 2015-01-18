@@ -1,24 +1,45 @@
-<div class="header navbar navbar-default navbar-fixed-top">
- <a href="#accueil"> <img id="logo" src="images/logonoob.png"> </a>
-</div>
-<section ng-controller="Saison5Ctrl">
-    <div class="list col-xs-12 videoc">
-        <table class="table table-striped tableauVideo">
-            <tr ng-repeat="v in listeSaison5 | orderBy:'episode_Video'">
-                <td>
-                     <h2 class="titlevideo">{{ v.nom_Video }}</h2>
-
-                    <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }}</p>
-                    <p>Durée :{{ v.duree_Video }}min</p>
-                    <iframe src="{{ v.url_Video | trusted }}" frameborder="0"></iframe>
-                    <p>Synopsis : {{ v.synopsis_Video }}</p>
-                </td>
-            </tr>
-        </table>
+<div class="background">
+    <div> 
+        <a href="#accueil"> <img class="logoint" src="images/logonoob.png"> </a>
     </div>
-</section>
+    <section ng-controller="Saison5Ctrl">
+        <div class="list col-xs-12 container">
+            <img src="images/miniaturessaison5.png" id="" class="imgcenter img-responsive">
+            <table class="tableauVideo">
+                <tr ng-repeat="v in listeSaison5 | orderBy:'episode_Video'">
+                    <td> 
+                       
+                            <!--<div class="col-xs-4 saison titlesvideos">
+                                <p>Episode {{ v.episode_Video }}</p>
+                            </div>
+                            <div class="col-xs-6 saison titlesep">
+                                <p>{{ v.nom_Video }}</p>
+                            </div>-->
+                        <div class="col-xs-10 saison titlesep">
+                                <p>Episode {{ v.episode_Video }}  :      {{ v.nom_Video }}</p>
+                            </div>
+                            
+                            
+                            
+                            <div class="col-xs-2">
+                                <img src="images/saison5/{{v.id_Video}}.png" class="vignette">
+                            </div>
+                        
+                        <div class="col-xs-11 bgsaison espacesaison">{{ v.synopsis_Video }}</div>
+                        
+                        <!--<h2 class="titlevideo">{{ v.nom_Video }}</h2>
+                      <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }} </p>
+                      <p>Durée :{{ v.duree_Video }}min</p>           
+                      <iframe  src="{{ v.url_Video | trusted }}" frameborder="0" ></iframe>
+                  <p>Synopsis : {{ v.synopsis_Video }}</p> -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
 <footer class="footer">
-    <div class="container">
-     <a href back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <div class="container"> 
+        <a href back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
     </div>
 </footer>
