@@ -11,9 +11,12 @@ var app = angular.module('quete1');
 			$scope.omega3 = false;
 			$scope.omega4 = false;
 			$scope.omega5 = false;
+			$scope.omega6 = false;
 			$scope.gaea1 = false;
 			$scope.gaea2 = false;
 			$scope.gaea3 = false;
+			$scope.gaea4 = false;
+			$scope.gaea5 = false;
 			
 
 													/* QUETE 1 PARTIE A */
@@ -83,6 +86,14 @@ var app = angular.module('quete1');
 
    			};
 
+   				$scope.queteOmegaE = function(){
+
+   							$scope.omega5 = false;     			
+							$scope.omega6 = true;				
+
+   			};
+
+
    														/* QUETE Gaea  */
 
    			$scope.queteGaeaA = function(){
@@ -97,6 +108,21 @@ var app = angular.module('quete1');
 							$scope.gaea3 = true;				
 
    			};
+   			
+   			$scope.queteGaeaC = function(){
+
+   							$scope.gaea3 = false;     			
+							$scope.gaea4 = true;				
+
+   			};
+
+   			$scope.queteGaeaD = function(){
+
+   							$scope.gaea4 = false;     			
+							$scope.gaea5 = true;				
+
+   			};
+   			
    			
 
 

@@ -542,3 +542,56 @@ background-color: rgba(255, 255, 255, 0.4);
 
 }
 
+
+.fondquete {
+  background: url(../images/quete/Quete1/start/fond.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.imgquete1
+
+{
+  max-width: 90%;
+  padding-top: 23px;
+}
+
+.imgquete2
+
+{
+  max-width: 100%;
+
+}
+
+.imgquete3
+
+{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.quete
+{
+  margin-right: 0px;
+}
+
+
+.croix
+
+{
+  position:absolute;
+  top:8px;
+  right:0;
+  width:90px;
+}
+
+.fleche
+
+{
+  position: absolute;
+  top:140px;
+  right: 0;
+}
