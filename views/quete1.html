@@ -2,29 +2,22 @@
 
 <div class="fondquete">
 	<section id="partie1" ng-show="partie1" >
-			
-			<FORM name="formulaire">
 
+			<div class="row quete">
 
-<div class="row quete">
-	<div class="col-xs-4">
-				<img src="images/quete/Quete1/start/titre.jpg" class="img-responsive imgquete3">
-	</div>
+				<div class="col-xs-4">
+							<img src="images/quete/Quete1/start/titre.jpg" class="img-responsive imgquete3">
+				</div>
 
+				<div class="col-xs-4" ng-click="quete1Start('gaea')">
+							<img src="images/quete/Quete1/start/gaea.png" class="img-responsive imgquete1 imgcenter">
+			     </div>		
 
-	<div class="col-xs-4">
-				<img src="images/quete/Quete1/start/gaea.png" class="img-responsive imgquete1 imgcenter">
-     </div>		
-				<INPUT type= "radio" name="perso" value="gaea">						
-	<div class="col-xs-4">		
-				<img src="images/quete/Quete1/start/omega.png" class="img-responsive imgquete2">
-	</div>		
-				<INPUT type= "radio" name="perso" value="omega">
-
-			</FORM>
-
-			<button ng-click="quete1Start()">Go</button>	
-</div>
+				<div class="col-xs-4" ng-click="quete1Start('omega')">		
+							<img src="images/quete/Quete1/start/omega.png" class="img-responsive imgquete2">
+				</div>								
+					
+			</div>
 	</section>
 </div>
 

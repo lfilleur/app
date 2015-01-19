@@ -20,7 +20,7 @@ var app = angular.module('quete1');
 			
 
 													/* QUETE 1 PARTIE A */
-   			$scope.quete1Start = function(){
+   		/*	$scope.quete1Start = function(){
 
    				var valeur = '';
 				var i = 0;
@@ -54,6 +54,25 @@ var app = angular.module('quete1');
 						
 
 					}
+
+
+   			}; */
+   			$scope.quete1Start = function(e){
+
+   				
+   				if (e==='omega'){
+
+				      			$scope.partie1 = false;
+				      			$scope.omega1 = true;				      			
+
+				      		}
+
+				      		else if (e==='gaea') {
+
+				      			
+				 				$scope.partie1 = false;
+				 				$scope.gaea1 = true;
+				      		}
 
 
    			};
