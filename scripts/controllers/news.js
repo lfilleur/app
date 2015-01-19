@@ -7,10 +7,7 @@
 var app = angular.module('news');
 
 
-  app.controller('NewsCtrl', function ($scope) {
-          
-
-      
+  app.controller('NewsCtrl', function () {      
     
 	this.tab=2;
 	this.selectTab=function(setTab){

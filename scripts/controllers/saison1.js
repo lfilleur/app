@@ -9,9 +9,7 @@
  */
 var app = angular.module('saison1');
    app.controller('Saison1Ctrl', function($scope, $http) {
-
-
-    var played = '0';    
+   
 
       var url = 'http://smartsheep.reaco.fr/php/listeSaison1.php';
       
