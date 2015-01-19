@@ -9,7 +9,9 @@
  */
 var app = angular.module('saison1');
    app.controller('Saison1Ctrl', function($scope, $http) {
-    
+
+
+    var played = '0';    
 
       var url = 'http://smartsheep.reaco.fr/php/listeSaison1.php';
       
@@ -28,11 +30,16 @@ var app = angular.module('saison1');
 
       
   });
-   app.filter('trusted', ['$sce', function ($sce) {
+
+
+/*Fonction pour autorisé un iframe youtube*/
+/*   app.filter('trusted', ['$sce', function ($sce) {
     return function(url) {
         return $sce.trustAsResourceUrl(url);
     };
+
 }]);
+*/
 
 
   
