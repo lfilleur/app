@@ -268,18 +268,15 @@ margin-bottom: 60px;
     font-size: 28px;
 }
 
-.footernews {
-    padding-top: 10px;
-}
 
 .iconnews {
     text-align: center;
-    padding-top: 5px;
 }
 
 .videoc
 {
   padding-left: 0px;
+    padding-right: 0px;
 }
 
 .btncontainer {
@@ -525,11 +522,6 @@ margin-bottom: 60px;
 
 }
 
-.iconsposition
-
-{
-  padding-right: 0px;
-}
 
                             /*  CARTE  */
 .popup-in
@@ -618,3 +610,25 @@ background-color: rgba(255, 255, 255, 0.4);
     background-color: black;
 }
 
+.nav-tabs {
+    border-bottom: none;
+}
+
+.footernews {
+    padding-top: 10px;
+    border-top: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.home {
+    padding-left: 7px;
+}
+
+.footercustom {
+    border-top: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.backvideos {
+    padding-top: 8px;
+}

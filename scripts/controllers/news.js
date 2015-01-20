@@ -9,7 +9,7 @@ var app = angular.module('news');
 
   app.controller('NewsCtrl', function () {      
     
-	this.tab=2;
+	this.tab=1;
 	this.selectTab=function(setTab){
 		this.tab=setTab;
 	};
