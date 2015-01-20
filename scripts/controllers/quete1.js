@@ -138,7 +138,7 @@ var app = angular.module('quete1');
    			$scope.queteGaeaD = function(){
 
    							$scope.gaea4 = false;     			
-							$scope.gaea5 = true;				
+							$scope.gaea5 = true;			
 
    			};
    			
