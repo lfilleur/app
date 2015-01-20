@@ -577,6 +577,7 @@ background-color: rgba(255, 255, 255, 0.4);
 .imgquete2
 {   
   max-width: 100%;
+    padding-top: 27px;
 }
 
 .imgquete3
@@ -593,17 +594,26 @@ background-color: rgba(255, 255, 255, 0.4);
 
 .croix
 {
-  position:absolute;
-  top:8px;
-  right:0;
-  width:90px;
+    position:absolute;
+    top:8px;
+    right:8px;
+    width:40px;
+    color:white;
+    font-size: 40px;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+    
+    
 }
 
 .fleche
 {
   position: absolute;
-  top:140px;
-  right: 0;
+  top:150px;
+  right: 7px;
+  width:40px;
+  color:white;
+  font-size: 40px;   
+  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
 }
 
 .bloctweet {
@@ -631,4 +641,17 @@ background-color: rgba(255, 255, 255, 0.4);
 
 .backvideos {
     padding-top: 8px;
+}
+
+
+/*TEST QUETE 1*/
+
+.containerquete {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 10px;
+}
+
+.persoquete {
+    width: 91%;
 }
