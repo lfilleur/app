@@ -111,7 +111,7 @@ var app = angular
       .when('/profil', {
         templateUrl: 'views/profil.html',
         controller: 'ProfilCtrl'
-      })   	     
+      }) 
       .otherwise({
         redirectTo: '/'
       });
