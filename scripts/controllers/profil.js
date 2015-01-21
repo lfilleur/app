@@ -118,6 +118,27 @@ var app = angular.module('profil');
      
 
   };
+                                    /*     LISTE BONUS     */
+
+    $scope.listeBonus = function() {
+
+        $scope.step = 7;
+        var url = 'http://smartsheep.reaco.fr/php/listeBonus.php';
+
+         function httpSuccess (response){
+          
+           $scope.listeBonuss = response;
+           
+        }
+       
+        $http.get(url).success(httpSuccess).error(function(){
+
+           alert('Impossible de trouver la liste de Bonus');
+
+        });
+
+
+      };
 
                                               /*     FICHE BETE     */
 
@@ -147,15 +168,160 @@ var app = angular.module('profil');
 
             });
 
-           } 
-               
+           }               
+             
+
+      };                                  /*     FICHE PERSO     */
+
+
+    
+        $scope.FichePerso = function(e){
+
+           $scope.step = 8;
+                   
+          var url = 'http://smartsheep.reaco.fr/php/fichePerso.php?id_Personnage=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         function httpSuccess2 (response){
+              
+               $scope.fichePerso = response; 
+          
+                          }
+
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche du Personnage' + id);
+
+            });
+
+           }               
+             
+
+      };
+                                                /*     FICHE LIEU    */
+
+        $scope.FicheLieu = function(e){
+
+           $scope.step = 9;
+                   
+          var url = 'http://smartsheep.reaco.fr/php/ficheLieu.php?id_Lieu=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheLieu = response; 
+          
+                          }
+
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche du lieu' + id);
+
+            });
+
+           }               
              
 
       };
 
+                                        /*     FICHE STUFF    */
 
-    
+        $scope.FicheStuff = function(e){
 
+           $scope.step = 10;
+                   
+          var url = 'http://smartsheep.reaco.fr/php/ficheStuff.php?id_Stuff=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheStuff = response; 
+          
+                          }
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche du Stuff' + id);
+
+            });
+
+           }               
+             
+
+      };                      /*     FICHE BONUS   */
+
+        $scope.FicheBonus = function(e){
+
+           $scope.step = 11;
+                   
+          var url = 'http://smartsheep.reaco.fr/php/ficheBonus.php?id_Bonus=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheBonuss = response; 
+          
+                          }
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche du Bonus' + id);
+
+            });
+
+           }               
+             
+
+      };  
+               /*     FICHE HAUT FAIT   */
+
+        $scope.FicheHautFait = function(e){
+
+           $scope.step = 12;
+                   
+          var url = 'http://smartsheep.reaco.fr/php/ficheHautFait.php?id_HautFait=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheHautFait = response; 
+          
+                          }
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche du Haut Fait' + id);
+
+            });
+
+           }               
+             
+
+      };  
+                
+                                            
 
       
   });

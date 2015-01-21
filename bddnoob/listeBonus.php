@@ -22,9 +22,9 @@ try {
     exit;
 }
 
-$arrayHautFait = array();
+$arrayBonus = array();
 
-$req = "SELECT id_HautFait , nom_HautFait, description_HautFait FROM hautfait WHERE statut_HautFait = 1";
+$req = "SELECT id_Bonus , nom_Bonus, description_Bonus,urlVideo_Bonus FROM bonus WHERE statut_Bonus = 1";
 
 $res = null;
 # Perform the query
@@ -43,11 +43,11 @@ try{
 # Collect the results
 while($obj = mysqli_fetch_object($res)) {
     
-    $obj->nom_HautFait =  utf8_encode($obj->nom_HautFait);
-    array_push($arrayHautFait,$obj);
+    $obj->nom_Bonus =  utf8_encode($obj->nom_Bonus);
+    array_push($arrayBonus,$obj);
 }
 
 # JSON-encode and return the response
-echo json_encode($arrayHautFait);  
+echo json_encode($arrayBonus);  
 
 ?>

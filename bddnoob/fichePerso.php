@@ -22,12 +22,12 @@ try {
 }
 
 
-$arrayMonstre = array();
+$arrayPersonnage = array();
 
-if(isset($_GET["id_Bete"])) {
+if(isset($_GET["id_Personnage"])) {
     
 
-    $req = "SELECT id_Bete , nom_Bete, nom_TypeBete ,description_Bete FROM bete INNER JOIN typebete ON bete.TypeBete_id_typeBete = typebete.id_TypeBete WHERE id_bete=".$_GET["id_Bete"]." AND statut_Bete = 0";
+    $req = "SELECT id_Personnage , nom_Personnage ,description_Personnage,faction_Personnage FROM personnage WHERE id_Personnage=".$_GET["id_Personnage"]." AND statut_Personnage = 0";
     
     $res = null;
     # Perform the query
@@ -46,15 +46,15 @@ if(isset($_GET["id_Bete"])) {
     # Collect the results
     while($obj = mysqli_fetch_object($res)) {
         
-        //        $monstre = new Monstre;
-        //        $monstre->id = $obj->id_Bete;
-        //        $monstre->nom = $obj->nom_Bete;
-        //        $monstre->description = addslashes($obj->description_Bete);
+        //        $Personnage = new Personnage;
+        //        $Personnage->id = $obj->id_Personnage;
+        //        $Personnage->nom = $obj->nom_Personnage;
+        //        $Personnage->description = addslashes($obj->description_Personnage);
         
-        $obj->description_Bete =  utf8_encode($obj->description_Bete);
-        $obj->nom_Bete =  utf8_encode($obj->nom_Bete);
+        $obj->description_Personnage =  utf8_encode($obj->description_Personnage);
+        $obj->nom_Personnage =  utf8_encode($obj->nom_Personnage);
         
-        array_push($arrayMonstre,$obj);
+        array_push($arrayPersonnage,$obj);
         
         
     }
@@ -62,6 +62,6 @@ if(isset($_GET["id_Bete"])) {
 }
 
 # JSON-encode and return the response
-echo json_encode($arrayMonstre);  
+echo json_encode($arrayPersonnage);  
 
 ?>

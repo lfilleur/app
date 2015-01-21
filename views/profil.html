@@ -5,12 +5,12 @@
 	  <button ng-click="listePersonnage()">Personnage</button> 
 	  <button ng-click="listeLieux()">Lieux</button> 
 	  <button ng-click="listeStuffs()">Stuff</button> 
-	  <button ng-click="listeHautFait()">Haut Fait</button> 
-
+	  <button ng-click="listeHautFait()">Haut Fait</button>
+	  <button ng-click="listeBonus()">Bonus</button> 
 	  {{step}}
 	  
 	</div>
-	
+																<!--LiSTE-->
      <div ng-repeat="m in listeMonstre" ng-if="step==1">
       <div ng-click="FicheBete(m.id_Bete)">
      	<img src="images/monstre/{{m.id_Bete}}.png">
@@ -20,26 +20,43 @@
 
 	
      <div ng-repeat="p in listePerso" ng-if="step==2">
-     	<img src="images/perso/{{p.id_Personnage}}.png">
-	     {{p.nom_Personnage}}
+     	<div ng-click="FichePerso(p.id_Personnage)">
+	     	<img src="images/perso/{{p.id_Personnage}}.png">
+		     {{p.nom_Personnage}}
+		 </div>
 	</div>
 	
 	
-    <div ng-repeat="l in listeLieu" ng-if="step==3">     	
+    <div ng-repeat="l in listeLieu" ng-if="step==3">
+   	 <div ng-click="FicheLieu(l.id_Lieu)">     	
 	     <h2>{{l.nom_Lieu}}</h2>
 	     <h3>{{l.nom_TypeLieu}}</h3>
 	     <img src="images/lieu/{{l.id_Lieu}}.png">
+	  </div>
 	</div>
 
 	 <div ng-repeat="s in listeStuff" ng-if="step==4">
-         <img src="images/stuff/{{s.id_Stuff}}.png">
-        {{s.nom_Stuff}}
+	 	<div ng-click="FicheStuff(s.id_Stuff)">
+	         <img src="images/stuff/{{s.id_Stuff}}.png">
+	        {{s.nom_Stuff}}
+    	</div>
      </div>
 
-      <div ng-if="step==5">
-         <p>Haut fait</p>
+      <div ng-repeat="h in listeHautfait" ng-if="step==5">
+      	<div ng-click="FicheHautFait(h.id_HautFait)">
+	         <img src="images/hautfait/{{h.id_HautFait}}.png">
+	        {{h.nom_HautFait}}
+    	</div>
      </div>
 
+     <div ng-repeat="b in listeBonuss" ng-if="step==7">
+     	<div ng-click="FicheBonus(b.id_Bonus)">
+	         <img src="images/bonus/{{b.id_Bonus}}.png">
+	        {{b.nom_Bonus}}
+    	</div>
+     </div>
+
+																	<!--FICHE-->
 
 	  <div class="row" ng-repeat="m in ficheMonstre" ng-if="step==6">
     		<div class="col-xs-4">
@@ -53,6 +70,82 @@
 		     	<p>{{m.description_Bete}}</p>
 		    </div> 
 	 </div>
+
+	   <div class="row" ng-repeat="p in fichePerso" ng-if="step==8">
+    		<div class="col-xs-4">
+	     		<img src="images/perso/{{p.id_Personnage}}.png">
+    		</div>
+		    <div class="col-xs-8">
+		       <p>{{p.nom_Personnage}}</p>
+		       <p>{{p.faction_Personnage}}
+		    </div>  
+		    <div class="col-xs-12">
+		     	<p>{{p.description_Personnage}}</p>
+		    </div> 
+	 </div>
+
+	  <div class="row" ng-repeat="l in ficheLieu" ng-if="step==9">
+    		<div class="col-xs-4">
+	    		 <img src="images/lieu/{{l.id_Lieu}}.png">
+    		</div>
+		    <div class="col-xs-8">
+		       <p>{{l.nom_Lieu}}</p>
+		       <h3>{{l.nom_TypeLieu}}</h3>
+		    </div>  
+		    <div class="col-xs-12">
+		     	<p>{{l.description_Lieu}}</p>
+		    </div> 
+	 </div>
+
+	  <div class="row" ng-repeat="l in ficheStuff" ng-if="step==10">
+    		<div class="col-xs-4">
+	    		 <img src="images/stuff/{{l.id_Stuff}}.png">
+    		</div>
+		    <div class="col-xs-8">
+		       <p>{{l.nom_Stuff}}</p>
+		    </div>  
+		    <div class="col-xs-12">
+		     	<p>{{l.description_Stuff}}</p>
+		    </div> 
+	 </div>
+
+	 <div class="row" ng-repeat="l in ficheStuff" ng-if="step==10">
+    		<div class="col-xs-4">
+	    		 <img src="images/stuff/{{l.id_Stuff}}.png">
+    		</div>
+		    <div class="col-xs-8">
+		       <p>{{l.nom_Stuff}}</p>
+		    </div>  
+		    <div class="col-xs-12">
+		     	<p>{{l.description_Stuff}}</p>
+		    </div> 
+	 </div>
+
+	 <div class="row" ng-repeat="b in ficheBonuss" ng-if="step==11">
+    		<div class="col-xs-4">
+	    		 <img src="images/bonus/{{b.id_Bonus}}.png">
+    		</div>
+		    <div class="col-xs-8">
+		       <p>{{b.nom_Bonus}}</p>
+		    </div>  
+		    <div class="col-xs-12">
+		     	<p>{{b.description_Bonus}}</p>
+		    </div> 
+	 </div>
+
+	  <div class="row" ng-repeat="b in ficheHautFait" ng-if="step==12">
+    		<div class="col-xs-4">
+	    		 <img src="images/hautfait/{{b.id_HautFait}}.png">
+    		</div>
+		    <div class="col-xs-8">
+		       <p>{{b.nom_HautFait}}</p>
+		    </div>  
+		    <div class="col-xs-12">
+		     	<p>{{b.description_HautFait}}</p>
+		    </div> 
+	 </div>
+
+
 	 
 
 </section>
