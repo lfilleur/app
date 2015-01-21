@@ -134,8 +134,43 @@
         </div>
         <footer class="footer footernews">
             <ul class="nav nav-tabs">
-                <div class="col-xs-5 iconnews active"> <a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
+                <div class="col-xs-5 iconb active"> <a href back><span><img class="iconback" src="images/back.svg">
+                    </span></a>
+
+                </div>
+                <div class="col-xs-2 iconnews home"> <a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
                         <img class="iconback" src="images/tweet.svg"></span>
+
+                    </a>
+                    <ul class="dropdown-menu drop-up" role="menu">
+                        <li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Noob</a>
+
+                        </li>
+                        <li ng-class="{ active:news.isSelected(2)}"><a href="" ng-click="news.selectTab(2)">Artheon</a>
+
+                        </li>
+                        <li ng-class="{ active:news.isSelected(3)}"><a href="" ng-click="news.selectTab(3)">Gaea</a>
+
+                        </li>
+                        <li ng-class="{ active:news.isSelected(4)}"><a href="" ng-click="news.selectTab(4)">Sparadrap</a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-xs-5 iconactus"> <a href="news#tab_z" data-toggle="pill"><span><img class="iconback" src="images/article.svg"></span></a>
+
+                </div>
+            </ul>
+        </footer>
+    </section>
+</div>
+
+
+
+
+<a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
+                        <img class="iconback" src="images/back.svg"></span>
 
                     </a>
                     <ul class="dropdown-menu drop-up pull-center" role="menu">
@@ -152,15 +187,3 @@
 
                         </li>
                     </ul>
-                </div>
-                <div class="col-xs-2 iconnews home"> <a href="#accueil"><span><img class="iconback" src="images/home.svg">
-                    </span></a>
-
-                </div>
-                <div class="col-xs-5 iconnews"> <a href="news#tab_z" data-toggle="pill"><span><img class="iconback" src="images/article.svg"></span></a>
-
-                </div>
-            </ul>
-        </footer>
-    </section>
-</div>
