@@ -1,25 +1,16 @@
 <div ng-controller="Quete1Ctrl">
 
-<!--<div class="fondquete" ng-if="partie1">
-	<section id="partie1"  >
 
-			<div class="row quete">
 
-				<div class="col-xs-4">
-							<img src="images/quete/Quete1/start/titre.jpg" class="img-responsive imgquete3">
-				</div>
+<section id="initial" ng-if="initial">	
+		
+		<div class="col-xs-12 imgsaisons">
+			<img src="images/quete/Quete1/omega/1.jpg" class="img-responsive"> 
+			<a href ="#carte"><span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span></a>
+			<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="quete1Start()"></span>
+		</div>
 
-				<div class="col-xs-4" ng-click="quete1Start('gaea')">
-							<img src="images/quete/Quete1/start/gaea.png" class="img-responsive imgquete1 imgcenter">
-			     </div>		
-
-				<div class="col-xs-4" ng-click="quete1Start('omega')">		
-							<img src="images/quete/Quete1/start/omega.png" class="img-responsive imgquete2">
-				</div>								
-					
-			</div>
-	</section>
-</div>-->
+</section>
 
 <div class="fondquete" ng-if="partie1">
 	<section id="partie1"  >
@@ -30,11 +21,11 @@
 							<img src="images/quete/Quete1/start/titre.jpg" class="img-responsive">
 				</div>
 
-				<div class="col-xs-4" ng-click="quete1Start('gaea')">
+				<div class="col-xs-4" ng-click="quete1Choix('gaea')">
 							<img src="images/quete/Quete1/start/gaea.png" class="img-responsive persoquete">
 			     </div>		
 
-				<div class="col-xs-4" ng-click="quete1Start('omega')">		
+				<div class="col-xs-4" ng-click="quete1Choix('omega')">		
 							<img src="images/quete/Quete1/start/omega.png" class="img-responsive persoquete">
 				</div>								
 					
@@ -42,72 +33,57 @@
 	</section>
 </div>
 
-
-
-
-
-
-
-
 														<!--OMEGA-->
-	<section id="omega1" ng-if="omega1">	
-		
-		<div class="col-xs-12 imgsaisons">
-		<img src="images/quete/Quete1/omega/1.jpg" class="img-responsive"> 
-		<a href ="#carte"><span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span></a>
-		<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="queteOmegaA()"></span>
-		</div>
-
-	</section>
+	
 
 
-	<section id="omega2" ng-if="omega2">
+	<section id="omega1" ng-if="omega1">
 		
 		<div class="col-xs-12 imgsaisons">
 		<img src="images/quete/Quete1/omega/2.jpg" class="img-responsive">
 		<a href ="#carte"><span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span></a>
-		<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="queteOmegaB()"></span>		
+		<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="queteOmegaA()"></span>		
 		</div>
 
 
 	</section>
 
 
-	<section id="omega3" ng-if="omega3"> <!--NG IF CAR RETIRE DU DOM POUR EVITER AUTOPLAY-->
+	<section id="omega2" ng-if="omega2"> <!--NG IF CAR RETIRE DU DOM POUR EVITER AUTOPLAY-->
 		<video width="50%" height="50%" id="video-omega" autoplay> 
 		  <source src="videos/1.mp4" type="video/mp4">
 		  
 		</video>
 	
-		<button ng-click="queteOmegaC()">Suivant</button>
+		<button ng-click="queteOmegaB()">Suivant</button>
 
 	</section>
 
 
-	<section id="omega4" ng-if="omega4">
+	<section id="omega3" ng-if="omega3">
 		
 		<div class="col-xs-12 imgsaisons">
 		<img src="images/quete/Quete1/omega/3.jpg" class="img-responsive">
 		<a href ="#carte"><span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span></a>
-		<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="queteOmegaD()"></span>	
+		<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="queteOmegaC()"></span>	
 		</div>
 
 
 	</section>
 
-	<section id="omega" ng-if="omega5">
+	<section id="omega4" ng-if="omega4">
 		
 		<div class="col-xs-12 imgsaisons">
 		<img src="images/quete/Quete1/omega/4.jpg" class="img-responsive">
 		<a href ="#carte"><span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span></a>
-		<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="queteOmegaE()"></span>	
+		<span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true" ng-click="queteOmegaD()"></span>	
 		</div>
 
 		
 
 	</section>
 
-	<section id="omega6" ng-if="omega6">		
+	<section id="omega5" ng-if="omega5">		
 		
 		<p>Image bravo tu as gagné</p>
 

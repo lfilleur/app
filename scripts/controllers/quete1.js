@@ -4,8 +4,9 @@
 var app = angular.module('quete1');
    app.controller('Quete1Ctrl', function($scope) {    		
     	
-   			$scope.texte = '';   		
-   			$scope.partie1 = true;
+   			$scope.texte = '';   
+   			$scope.initial= true;		
+   			$scope.partie1 = false;
 			$scope.omega1 = false;
 			$scope.omega2 = false;
 			$scope.omega3 = false;
@@ -57,7 +58,13 @@ var app = angular.module('quete1');
 
 
    			}; */
-   			$scope.quete1Start = function(e){
+   			$scope.quete1Start = function(){
+
+   							$scope.initial= false;     			
+							$scope.partie1 = true;				
+
+   			};
+   			$scope.quete1Choix = function(e){
 
    				
    				if (e==='omega'){
