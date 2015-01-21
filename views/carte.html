@@ -1,29 +1,33 @@
 <div ng-controller="CarteCtrl">
 <div class="image">     
-  <img src="images/carte1.svg" alt="carte noob" usemap="#carte" /> 
+  <img src="images/carte.svg" alt="carte noob" usemap="#carte" /> 
    <map name="carte">
     <area shape="rect" coords="682,704,705,727" href="#index" alt="Accueil" />
     <area shape="rect" coords="579,644,598,668" href="#profil"   />
 
   </map>
 
-   <div>   <!-- MON MENU QUI APPELLE LES PANEL QUI SONT SENSER ETRE INCLUS-->
+   <div class="menuicone">   <!-- MON MENU QUI APPELLE LES PANEL QUI SONT SENSER ETRE INCLUS-->
       
           <p data-toggle="modal" data-target="#myModal">
-                <img src="images/grimoire.svg" id="grimoire">
+                <img src="images/grim.svg" class="grimoire imgcenter">
            </p>
           
-           <p> <!-- LES ANCRES -->
-                <img src="images/bonus.png" id="bonus" ng-click="popup();">
+           <p data-toggle="modal" data-target="#myModal1"> <!-- LES ANCRES ng-click="popup();"-->
+               <img src="images/bonus.svg" class="bonus imgcenter">
            </p>
           
            <p>
-                <a href="#quete1"><img src="images/aide.png" id="aide" ></a>
+                <a href="#quete1"><img src="images/icone-tuto.svg" class="aide imgcenter"></a>
            </p>
            
               
    
    </div>   
+
+            <p>
+                <img src="images/profil.svg" class="profil">
+           </p>
 
 
 <div  class="popup-back" ng-if="pop==2"> 
@@ -67,11 +71,8 @@
     
 <footer id="footercarte" >
           <div class="container" >
-              <a href back><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+              <a href back><span><img class="iconback" src="images/back.svg"></span></a>
           </div>
-           <div class="infos" >
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          </div> 
 </footer>
 
  

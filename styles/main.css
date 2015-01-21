@@ -157,23 +157,32 @@
     text-transform: uppercase;
 }
 
-#grimoire {
+.grimoire {
+  width: 70%;
+}
+
+.bonus {
+    width:80%;
+}
+
+.aide {
+    width:50%;
+}
+
+.profil
+
+{
     position: fixed;
-    top: 10px;
+    bottom:10px;
+    right: 10px;
+    width:25%;
+}
+
+.menuicone
+{
+    position: fixed;
+    top:10px;
     left: 10px;
-    width: 45px;
-}
-
-#bonus {
-    position: fixed;
-    top: 60px;
-    left: 10px;  
-}
-
-#aide {
-    position: fixed;
-    top: 110px;
-    left: 10px; 
 }
 
  #footercarte {
