@@ -672,3 +672,11 @@ background-color: rgba(255, 255, 255, 0.4);
 .persoquete {
     width: 91%;
 }
+
+/*ARTICLES*/
+
+.padarticles {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+}

@@ -5,62 +5,8 @@
     <section class="panel newsp" ng-controller="NewsCtrl as news">
         <div class="modal-dialog">
             <div class="tab-content col-xs-12 videoc">
-                <div class="tab-pane active" id="tab_y">
-                    <!--<div class="panel" ng-show="news.isSelected(1)">
-                    https://dev.twitter.com/web/embedded-timelines#customization pour custom <a class="twitter-timeline bloctweet" href="https://twitter.com/Noob_la_serie" data-widget-id="539786771002052609" data-chrome="noheader noborders noscrollbar">Tweets de @Noob_la_serie</a>
-
-                    <script class="bloctweet">
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>   <a class="twitter-timeline bloctweet" href="https://twitter.com/ArtheonNoob" data-widget-id="539787475779325952" data-chrome="noheader noborders noscrollbar">Tweets de @ArtheonNoob</a>
-
-                    <script>
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>   <a class="twitter-timeline bloctweet" href="https://twitter.com/gaeaguildenoob" data-widget-id="540155119481131008" data-chrome="noheader noborders noscrollbar">Tweets de @gaeaguildenoob</a>
-
-                    <script>
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script> <a class="twitter-timeline" href="https://twitter.com/sparadrapNooB" data-widget-id="540156831830925312" data-chrome="noheader noborders noscrollbar">Tweets de @sparadrapNooB</a>
-
-                    <script>
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>
-                </div>-->
+                <div class="tab-pane active" id="tab_y" ng-if="twitter">
+                   
                     <div class="panel" ng-show="news.isSelected(1)"> <a class="twitter-timeline" href="https://twitter.com/Noob_la_serie" data-widget-id="539786771002052609" data-chrome="noheader noborders noscrollbar">Tweets de @Noob_la_serie</a>
 
                         <script>
@@ -121,13 +67,100 @@
                             }(document, "script", "twitter-wjs");
                         </script>
                     </div>
+                    
+                    
+                    <div class="panel" ng-show="news.isSelected(5)"><a class="twitter-timeline" href="https://twitter.com/JulienZell" data-widget-id="557999496274395138" data-chrome="noheader noborders noscrollbar">Tweets de @JulienZell</a>
+                        <script>
+                            !function(d,s,id){
+                                var js,fjs=d.getElementsByTagName(s)[0],
+                                    p=/^http:/.test(d.location)?'http':'https';
+                                if(!d.getElementById(id))
+                                {js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                                 fjs.parentNode.insertBefore(js,fjs);
+                                }
+                            }(document,"script","twitter-wjs");
+                        </script>
+                    </div>
+                    
+                    <div class="panel" ng-show="news.isSelected(6)"><a class="twitter-timeline" href="https://twitter.com/YstosNoob" data-widget-id="558000472884531200" data-chrome="noheader noborders noscrollbar">Tweets de @YstosNoob</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <script>
+                            !function(d,s,id){
+                                var js,fjs=d.getElementsByTagName(s)[0],
+                                    p=/^http:/.test(d.location)?'http':'https';
+                                if(!d.getElementById(id))
+                                {js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                                 fjs.parentNode.insertBefore(js,fjs);
+                                }
+                            }(document,"script","twitter-wjs");
+                        </script>
+                    </div>
+                    
+                    
+                    
                 </div>
-                <div class="tab-pane row" id="tab_z">
-                    <div class="col-xs-12">
-                        <p>Clara</p>
-                        <p>Classement : 3200/3200</p>
-                        <p>Grade : Novice</p>
-                        <p>Niveau : 1</p>
+                
+                
+                
+                
+                
+                
+                <div class="tab-pane" id="tab_z" ng-if="articles">
+                    <div class="row">
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/1.jpg">
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/2.jpg">
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/3.jpg">
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="col-xs-8">prout2
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/4.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 padarticles">
+                             <img class="img-responsive" src="images/articles/5.jpg">
+                        </div>
+                        <div class="col-xs-8">prout
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 padarticles">
+                             <img class="img-responsive" src="images/articles/6.jpg">
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/7.jpg">
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/8.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">prout5
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/9.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/10.jpg">
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/11.jpg">
+                        </div>
+                        <div class="col-xs-4 padarticles">
+                            <img class="img-responsive" src="images/articles/12.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xs-12">prout7
                     </div>
                 </div>
             </div>
@@ -138,7 +171,7 @@
                     </span></a>
 
                 </div>
-                <div class="col-xs-2 iconnews home"> <a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
+                <div class="col-xs-2 iconnews home" ng-if="twitter"> <a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
                         <img class="iconback" src="images/tweet.svg"></span>
 
                     </a>
@@ -155,35 +188,28 @@
                         <li ng-class="{ active:news.isSelected(4)}"><a href="" ng-click="news.selectTab(4)">Sparadrap</a>
 
                         </li>
+                        <li ng-class="{ active:news.isSelected(5)}"><a href="" ng-click="news.selectTab(5)">OmegaZell</a>
+
+                        </li>
+                         <li ng-class="{ active:news.isSelected(6)}"><a href="" ng-click="news.selectTab(6)">Ystos</a>
+
+                        </li>
                     </ul>
 
                 </div>
-                <div class="col-xs-5 iconactus"> <a href="news#tab_z" data-toggle="pill"><span><img class="iconback" src="images/article.svg"></span></a>
+            
+                 <div class="col-xs-2 iconnews home" ng-if="articles"> 
+                     
+                     <a href="#news" ng-click="change2()"><img class="iconback" src="images/tweet.svg"></a>               
+
+
+                </div>
+            
+                <div class="col-xs-5 iconactus" ng-click="change()"> 
+                    <a href="news#tab_z" data-toggle="pill"><span><img class="iconback" src="images/article.svg"></span></a>
 
                 </div>
             </ul>
         </footer>
     </section>
 </div>
-
-
-
-
-<a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
-                        <img class="iconback" src="images/back.svg"></span>
-
-                    </a>
-                    <ul class="dropdown-menu drop-up pull-center" role="menu">
-                        <li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Noob</a>
-
-                        </li>
-                        <li ng-class="{ active:news.isSelected(2)}"><a href="" ng-click="news.selectTab(2)">Artheon</a>
-
-                        </li>
-                        <li ng-class="{ active:news.isSelected(3)}"><a href="" ng-click="news.selectTab(3)">Gaea</a>
-
-                        </li>
-                        <li ng-class="{ active:news.isSelected(4)}"><a href="" ng-click="news.selectTab(4)">Sparadrap</a>
-
-                        </li>
-                    </ul>
