@@ -76,7 +76,17 @@
         <script src="scripts/controllers/quete1.js"></script>
         <script src="scripts/controllers/profil.js"></script>
 
+<script type="application/javascript" src="/scripts/iscroll-4/src/iscroll.js"></script>
 
+<script type="text/javascript">
+var myScroll;
+function loaded() {
+myScroll = new iScroll('wrapper',
+{ zoom:true, zoomMax: 4 });
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
   
 
 

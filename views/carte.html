@@ -1,11 +1,11 @@
 <div ng-controller="CarteCtrl">
-<div class="image">     
-  <img src="images/carte.svg" alt="carte noob" usemap="#carte" class="zoomCarte"/> 
+<div class="image"> <div id="wrapper">    
+  <img src="images/carte.svg" alt="carte noob" usemap="#carte" /> <!--class="zoomCarte"-->
    <map name="carte">
     <area shape="rect" coords="682,704,705,727" href="#index" alt="Accueil" />
     <area shape="rect" coords="579,644,598,668" href="#profil"   />
 
-  </map>
+  </map></div>
 
    <div class="menuicone">   <!-- MON MENU QUI APPELLE LES PANEL QUI SONT SENSER ETRE INCLUS-->
       
@@ -77,3 +77,5 @@
 
  
 </div>
+
+<script>loaded();</script>
