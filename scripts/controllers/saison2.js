@@ -20,7 +20,7 @@ var app = angular.module('saison2');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la saison 2');
+         alert('Impossible de trouver la saison 2, connexion internet défaillante');
 
       });
 
