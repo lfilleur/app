@@ -23,7 +23,7 @@ var app = angular.module('grimoire');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Monstre');
+         alert('Impossible de trouver la liste de Monstre, connexion internet défaillante');
 
       });
 
@@ -51,7 +51,7 @@ var app = angular.module('grimoire');
 
             $http.get(url2).success(httpSuccess2).error(function(){
 
-               alert('Impossible de trouver la fiche du monstre' + id);
+               alert('Impossible de trouver la fiche du monstre, connexion internet défaillante');
 
             });
 
@@ -82,7 +82,7 @@ var app = angular.module('grimoire');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Personnages');
+         alert('Impossible de trouver la liste de Personnages, connexion internet défaillante');
 
       });      
 
@@ -100,7 +100,7 @@ var app = angular.module('grimoire');
       }     
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Lieux');
+         alert('Impossible de trouver la liste de Lieux, connexion internet défaillante');
 
       });
 
@@ -120,7 +120,7 @@ var app = angular.module('grimoire');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Stuff');
+         alert('Impossible de trouver la liste de Stuff, connexion internet défaillante');
 
       });
 
@@ -138,7 +138,7 @@ var app = angular.module('grimoire');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Haut Fait');
+         alert('Impossible de trouver la liste de Haut Fait, connexion internet défaillante');
 
       });
 

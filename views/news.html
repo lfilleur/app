@@ -1,66 +1,11 @@
 <div class="background">
-    <div> <a href="#accueil"> <img class="logoint" src="images/logonoob.png"> </a>
+    <div> <a href="#accueil"> <img class="logoint" src="images/logonoob.png" alt=""> </a>
 
     </div>
     <section class="panel newsp" ng-controller="NewsCtrl as news">
         <div class="modal-dialog">
             <div class="tab-content col-xs-12 videoc">
-                <div class="tab-pane active" id="tab_y">
-                    <!--<div class="panel" ng-show="news.isSelected(1)">
-                    https://dev.twitter.com/web/embedded-timelines#customization pour custom <a class="twitter-timeline bloctweet" href="https://twitter.com/Noob_la_serie" data-widget-id="539786771002052609" data-chrome="noheader noborders noscrollbar">Tweets de @Noob_la_serie</a>
-
-                    <script class="bloctweet">
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>   <a class="twitter-timeline bloctweet" href="https://twitter.com/ArtheonNoob" data-widget-id="539787475779325952" data-chrome="noheader noborders noscrollbar">Tweets de @ArtheonNoob</a>
-
-                    <script>
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>   <a class="twitter-timeline bloctweet" href="https://twitter.com/gaeaguildenoob" data-widget-id="540155119481131008" data-chrome="noheader noborders noscrollbar">Tweets de @gaeaguildenoob</a>
-
-                    <script>
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script> <a class="twitter-timeline" href="https://twitter.com/sparadrapNooB" data-widget-id="540156831830925312" data-chrome="noheader noborders noscrollbar">Tweets de @sparadrapNooB</a>
-
-                    <script>
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>
-                </div>-->
+                <div class="tab-pane active" id="tab_y" ng-if="twitter">
                     <div class="panel" ng-show="news.isSelected(1)"> <a class="twitter-timeline" href="https://twitter.com/Noob_la_serie" data-widget-id="539786771002052609" data-chrome="noheader noborders noscrollbar">Tweets de @Noob_la_serie</a>
 
                         <script>
@@ -121,69 +66,213 @@
                             }(document, "script", "twitter-wjs");
                         </script>
                     </div>
+                    <div class="panel" ng-show="news.isSelected(5)"><a class="twitter-timeline" href="https://twitter.com/JulienZell" data-widget-id="557999496274395138" data-chrome="noheader noborders noscrollbar">Tweets de @JulienZell</a>
+
+                        <script>
+                            ! function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                        </script>
+                    </div>
+                    <div class="panel" ng-show="news.isSelected(6)"><a class="twitter-timeline" href="https://twitter.com/YstosNoob" data-widget-id="558000472884531200" data-chrome="noheader noborders noscrollbar">Tweets de @YstosNoob</a>
+
+                        <script>
+                            ! function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                        </script>
+                        <script>
+                            ! function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                        </script>
+                    </div>
                 </div>
-                <div class="tab-pane row" id="tab_z">
-                    <div class="col-xs-12">
-                        <p>Clara</p>
-                        <p>Classement : 3200/3200</p>
-                        <p>Grade : Novice</p>
-                        <p>Niveau : 1</p>
+                <div class="tab-pane" id="tab_z" ng-if="articles">
+                    <div class="container containerarticles">
+                        <div class="row">
+                            <div class="col-xs-4 padarticles" data-toggle="modal" data-target="#myModal2">
+                                <img class="img-responsive" src="images/articles/1.jpg">
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/2.jpg">
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/3.jpg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8 border1 padarticles textarticles1">
+                                <p class="textearticle"><b>[BANDE ANNONCE]</b>  <i class="date">01/12/2014</i>
+                                </p>
+                                <p class="textearticle"><i>Noob film 1</i>
+                                </p>
+                                <hr class="hrcustom">
+                                <p class="textearticle1"><i><b>Voici toutes les bandes annonce du film 1 de la trilogie ! [...] </b></i>
+                                    
+                                </p>
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/4.jpg"alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/5.jpg"alt="">
+                            </div>
+                            <div class="col-xs-8 border2 textarticles2">
+                                <p class="textearticle"><b>[AVANT PREMIERE]</b>  <i class="date">19/09/2014</i>
+                                </p>
+                                <p class="textearticle"><i>Le film Noob au Grand Rex</i>
+                                </p>
+                                <hr class="hrcustom">
+                                <p class="textearticle2"><i><b>Salut à tous ! C'est officiel ! Le film 1 de la trilogie sera [...]</b></i> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/6.jpg"alt="">
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/7.jpg"alt="">
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/8.jpg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8 border3 textarticles1">
+                                <p class="textearticle"><b>[OLYDRI EDITIONS]</b>  <i class="date">10/06/2014</i>
+                                </p>
+                                <p class="textearticle"><i>Les chroniques d'Olydri</i>
+                                </p>
+                                <hr class="hrcustom">
+                                <p class="textearticle2"><i><b>Et si vous deveniez un auteur racontant une aventure [...]</b></i> 
+                                </p>
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/9.jpg"alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/10.jpg"alt="">
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/11.jpg"alt="">
+                            </div>
+                            <div class="col-xs-4 padarticles">
+                                <img class="img-responsive" src="images/articles/12.jpg"alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-xs-12 border4 textarticles3">
+                            <p class="textearticle"><b>[COULISSES]</b>  <i class="date">28/04/2014</i>
+                            </p>
+                            <p class="textearticle"><i>Les chroniques d'Olydri</i>
+                            </p>
+                            <hr class="hrcustom">
+                            <p class="textearticle"><i><b>Nous allons poster de temps en temps des vidéos brèves et d'autres plus complètes sur les coulisses de la trilogie Noob. Restez à l'affut les amis !  [...]  </b></i>
+                            </p>
+                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer class="footer footernews">
-            <ul class="nav nav-tabs">
-                <div class="col-xs-5 iconb active"> <a href back><span><img class="iconback" src="images/back.svg">
+            </div>
+        
+        
+        <!--MODAL-->
+        
+ <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modalnews">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title textearticle" id="myModalLabel">[TRILOGIE] <i class="date">13/10/2014 à 21h16</i></h4>
+          <p class="subtitle">Les sources s'affichent enfin !</p>
+      </div>
+        <hr class="hrcustommodal">
+      <div class="modal-body textmodal">
+        <p>Dans les romans <strong>Noob</strong>, le background est infiniment plus développé que dans la web-série. C'est normal, puisque ces médias ont une approche différente et complémentaire (ce n'est pas pour rien que Noob est une licence transmédia). Dans les épisodes, nous privilégions la comédie et les relations entre les personnages alors que dans les romans, nous allons plus loin en les immergeant en plus dans les légendes et les rouages d'un univers <strong>riche et complexe</strong> (sans être compliqué), et ceci sans aucune contrainte logistique. Dans la <strong>trilogie</strong>, grâce au budget des fans, nous sommes en mesure de proposer un compromis comme en attestent ces visuels, mettant enfin en scènes certains PNJ jusque là jamais apparus.</p>
+
+<p>Voici donc respectivement : <strong>Sin</strong>, la Source de l'infini, <strong>Saralzar</strong>, la Source du Chaos, <strong>Lys</strong>, la Source de la vie et <strong>Ark'hen</strong>, la Source de la mort. Il reste encore <strong>Dörtos</strong>, la Source du néant, mais ce sera dans les films suivants. </p>
+          <div class="row">
+            <div class="col-xs-6"><img src="images/articles/modal1.jpg" class="img-responsive shadowarticles" data-toggle="modal" data-target="#myModal3"></div>
+              <div class="col-xs-6"><img src="images/articles/modal2.jpg" class="img-responsive shadowarticles"></div>
+          </div>
+          </br>
+          <div class="row">
+            <div class="col-xs-6"><img src="images/articles/modal3.jpg" class="img-responsive shadowarticles"></div>
+              <div class="col-xs-6"><img src="images/articles/modal4.jpg" class="img-responsive shadowarticles"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!--END MODAL-->
+
+            <footer class="footer footernews">
+                <ul class="nav nav-tabs">
+                    <div class="col-xs-5 iconb active"> <a href back><span><img class="iconback" src="images/back.svg"alt="">
                     </span></a>
 
-                </div>
-                <div class="col-xs-2 iconnews home"> <a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
-                        <img class="iconback" src="images/tweet.svg"></span>
+                    </div>
+                    <div class="col-xs-2 iconnews home" ng-if="twitter"> <a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
+                        <img class="iconback" src="images/tweet.svg"alt=""></span>
 
-                    </a>
-                    <ul class="dropdown-menu drop-up" role="menu">
-                        <li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Noob</a>
+                        </a>
+                        <ul class="dropdown-menu drop-up" role="menu">
+                            <li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Noob</a>
 
-                        </li>
-                        <li ng-class="{ active:news.isSelected(2)}"><a href="" ng-click="news.selectTab(2)">Artheon</a>
+                            </li>
+                            <li ng-class="{ active:news.isSelected(2)}"><a href="" ng-click="news.selectTab(2)">Artheon</a>
 
-                        </li>
-                        <li ng-class="{ active:news.isSelected(3)}"><a href="" ng-click="news.selectTab(3)">Gaea</a>
+                            </li>
+                            <li ng-class="{ active:news.isSelected(3)}"><a href="" ng-click="news.selectTab(3)">Gaea</a>
 
-                        </li>
-                        <li ng-class="{ active:news.isSelected(4)}"><a href="" ng-click="news.selectTab(4)">Sparadrap</a>
+                            </li>
+                            <li ng-class="{ active:news.isSelected(4)}"><a href="" ng-click="news.selectTab(4)">Sparadrap</a>
 
-                        </li>
-                    </ul>
+                            </li>
+                            <li ng-class="{ active:news.isSelected(5)}"><a href="" ng-click="news.selectTab(5)">OmegaZell</a>
 
-                </div>
-                <div class="col-xs-5 iconactus"> <a href="news#tab_z" data-toggle="pill"><span><img class="iconback" src="images/article.svg"></span></a>
+                            </li>
+                            <li ng-class="{ active:news.isSelected(6)}"><a href="" ng-click="news.selectTab(6)">Ystos</a>
 
-                </div>
-            </ul>
-        </footer>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 iconnews home" ng-if="articles"> <a href="#news" ng-click="change2()"><img class="iconback" src="images/tweet.svg"alt=""></a> 
+                    </div>
+                    <div class="col-xs-5 iconactus" ng-click="change()"> <a href="news#tab_z" data-toggle="pill"><span><img class="iconback" src="images/article.svg"alt=""></span></a>
+
+                    </div>
+                </ul>
+            </footer>
     </section>
 </div>
-
-
-
-
-<a href="news#tab_y" data-toggle="pill"></a><span data-toggle="dropdown" aria-hidden="true">
-                        <img class="iconback" src="images/back.svg"></span>
-
-                    </a>
-                    <ul class="dropdown-menu drop-up pull-center" role="menu">
-                        <li ng-class="{ active:news.isSelected(1)}"><a href="" ng-click="news.selectTab(1)">Noob</a>
-
-                        </li>
-                        <li ng-class="{ active:news.isSelected(2)}"><a href="" ng-click="news.selectTab(2)">Artheon</a>
-
-                        </li>
-                        <li ng-class="{ active:news.isSelected(3)}"><a href="" ng-click="news.selectTab(3)">Gaea</a>
-
-                        </li>
-                        <li ng-class="{ active:news.isSelected(4)}"><a href="" ng-click="news.selectTab(4)">Sparadrap</a>
-
-                        </li>
-                    </ul>
+    

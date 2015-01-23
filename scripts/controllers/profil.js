@@ -47,7 +47,7 @@ var app = angular.module('profil');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Monstre');
+         alert('Impossible de trouver la liste de Monstre, connexion internet défaillante');
 
       });
 
@@ -66,7 +66,7 @@ var app = angular.module('profil');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Personnages');
+         alert('Impossible de trouver la liste de Personnages, connexion internet défaillante');
 
       });      };
 
@@ -86,7 +86,7 @@ var app = angular.module('profil');
 
         $http.get(url).success(httpSuccess).error(function(){
 
-           alert('Impossible de trouver la liste de Lieux');
+           alert('Impossible de trouver la liste de Lieux, connexion internet défaillante');
 
         });
     };
@@ -106,7 +106,7 @@ var app = angular.module('profil');
        
         $http.get(url).success(httpSuccess).error(function(){
 
-           alert('Impossible de trouver la liste de Stuff');
+           alert('Impossible de trouver la liste de Stuff, connexion internet défaillante');
 
         });
 
@@ -130,7 +130,7 @@ var app = angular.module('profil');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouver la liste de Haut Fait');
+         alert('Impossible de trouver la liste de Haut Fait, connexion internet défaillante');
 
       });
 
@@ -152,7 +152,7 @@ var app = angular.module('profil');
        
         $http.get(url).success(httpSuccess).error(function(){
 
-           alert('Impossible de trouver la liste de Bonus');
+           alert('Impossible de trouver la liste de Bonus, connexion internet défaillante');
 
         });
 
@@ -183,7 +183,7 @@ var app = angular.module('profil');
 
             $http.get(url2).success(httpSuccess2).error(function(){
 
-               alert('Impossible de trouver la fiche du monstre' + id);
+               alert('Impossible de trouver la fiche du monstre, connexion internet défaillante');
 
             });
 
@@ -214,7 +214,7 @@ var app = angular.module('profil');
 
             $http.get(url2).success(httpSuccess2).error(function(){
 
-               alert('Impossible de trouver la fiche du Personnage' + id);
+               alert('Impossible de trouver la fiche du Personnage, connexion internet défaillante');
 
             });
 
@@ -244,7 +244,7 @@ var app = angular.module('profil');
 
             $http.get(url2).success(httpSuccess2).error(function(){
 
-               alert('Impossible de trouver la fiche du lieu' + id);
+               alert('Impossible de trouver la fiche du lieu, connexion internet défaillante');
 
             });
 
@@ -274,7 +274,7 @@ var app = angular.module('profil');
 
             $http.get(url2).success(httpSuccess2).error(function(){
 
-               alert('Impossible de trouver la fiche du Stuff' + id);
+               alert('Impossible de trouver la fiche du Stuff, connexion internet défaillante');
 
             });
 
@@ -302,7 +302,7 @@ var app = angular.module('profil');
 
             $http.get(url2).success(httpSuccess2).error(function(){
 
-               alert('Impossible de trouver la fiche du Bonus' + id);
+               alert('Impossible de trouver la fiche du Bonus, connexion internet défaillante');
 
             });
 
@@ -331,7 +331,7 @@ var app = angular.module('profil');
 
             $http.get(url2).success(httpSuccess2).error(function(){
 
-               alert('Impossible de trouver la fiche du Haut Fait' + id);
+               alert('Impossible de trouver la fiche du Haut Fait, connexion internet défaillante');
 
             });
 

@@ -789,4 +789,182 @@ left: 10px;
 }
 
 
+/*ARTICLES*/
+
+.padarticles {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+}
+
+.textearticle {
+    margin : 0 0 3px;
+    font-family: 'Lato', sans-serif;
+}
+
+.border1 {
+    border-left: 10px solid #E44C9B;
+    padding-left: 5px;
+    background-color: white;
+}
+
+.border2 {
+    border-left: 10px solid #EDEC7E;
+    padding-left: 5px;
+    background-color: white;
+}
+
+.border3 {
+    border-left: 10px solid #478FCD;
+    padding-left: 5px;
+    background-color: white;
+}
+
+.border4 {
+    border-left: 10px solid #C95955;
+    padding-left: 5px;
+    background-color: white;
+}
+
+.titresarticles {
+    font-weight: 300;
+}
+
+.hrcustom {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.date {
+    font-size: 10px;
+}
+    
+.textarticles1 {
+    width: 218px;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.textarticles2 {
+    width: 218px;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+.textarticles3 {
+    margin-left: 3px;
+    width: 332px;
+}
+
+.textearticle1 {
+    margin : 0 0 3px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 4px;
+}
+
+.textearticle2 {
+    margin : 0 0 3px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+}
+
+.containerarticles {
+    margin-bottom: 70px;
+}
+
+.textmodal {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.hrcustommodal {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.modalnews {
+    border-radius: 0;
+}
+
+.shadowarticles {
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow:    3px 3px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow:         3px 3px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+.subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+.zoomCarte{
+
+  zoom:3;
+
+}
+
+/* Styles pour telephone en paysage */
+@media only screen and (min-width : 370px)  {
+
+
+    /*Accueil*/  
+
+.imgaventure {
+    height: 330px;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+  }
+.btncontainer {
+ padding-top: 0px;
+ padding-left: 0px; 
+}
+.btnplay {
+left: 90px;
+right: 0;
+padding-top: 0;
+position: relative; 
+}
+
+.col-xs-offset-4 {
+margin-left: inherit;
+}
+.col-xs-8 {
+width: inherit;
+
+
+}
+.portraitbtn2{
+padding-top: 110px;
+}
+.portraitbtn3{
+padding-top: 110px;
+}
+
+.portraitbtn1{
+
+  padding-top: 50px;
+}
+
+
+    /*webserie*/ 
+    .titlevideoP{ 
+padding-left: 50px;
+padding-right:  155px;
+;
+}
+.img-mini-portrait{
+width: 400px;}
+
+}
 

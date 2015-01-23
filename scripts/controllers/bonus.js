@@ -15,7 +15,7 @@ var app = angular.module('bonus');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouvé la liste de Video Bonus');
+         alert('Impossible de trouver la liste de Video Bonus, connexion internet défaillante');
 
       });
 
@@ -34,7 +34,7 @@ var app = angular.module('bonus');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouvé la liste de BD');
+         alert('Impossible de trouver la liste de BD, connexion internet défaillante');
 
       });
 
@@ -52,7 +52,7 @@ var app = angular.module('bonus');
      
       $http.get(url).success(httpSuccess).error(function(){
 
-         alert('Impossible de trouvé la liste de Croquis');
+         alert('Impossible de trouver la liste de Croquis, connexion internet défaillante');
 
       });
 
