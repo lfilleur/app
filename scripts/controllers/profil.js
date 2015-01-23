@@ -11,9 +11,28 @@ var app = angular.module('profil');
 
   app.controller('ProfilCtrl', function($scope, $http) {
 
-    $scope.step = 1;
+    $scope.step = 13;
 
-                                                        /*     LISTE BETE     */
+           $scope.grimoire = function(){
+
+       $scope.step = 14;
+      
+     
+         
+      };
+
+
+ $scope.profilm = function(){
+
+       $scope.step = 13;
+      
+     
+         
+      };                
+
+
+
+                                                    /*     LISTE BETE     */
      $scope.listeBete = function(){
 
        $scope.step = 1;

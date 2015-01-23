@@ -533,30 +533,6 @@ margin-bottom: 60px;
 
 
                             /*  CARTE  */
-.popup-in
-{
-
-  background-color: white; 
-  position: absolute;
-left: 5%;
-top: 10%;
-width: 580px;
-height: 280px;
-}
-
-.popup-back
-{
-
-  background-color: black;
-  position: absolute;
-left: 0%;
-top: 0%;
-width: 640px;
-height: 360px;
-background-color: rgba(255, 255, 255, 0.4);
-
-}
-
 
 .footer {
     z-index: 3
@@ -660,6 +636,145 @@ background-color: rgba(255, 255, 255, 0.4);
     text-align: left;
 }
 
+.parcheminpop {
+
+position: absolute;
+top: 0;
+right: 116px;
+max-width: 80%;
+z-index: 999;
+}
+
+.modal-content {
+
+background: none;
+-webkit-box-shadow: none; 
+ box-shadow: none; 
+ border: none; 
+
+}
+
+.contenubete{
+  z-index: 1000;
+  position: relative;
+  top:55px;
+  left:70px;
+}
+
+.contenuperso{
+  z-index: 1000;
+  position: relative;
+  top:55px;
+  left:115px;
+}
+
+.contenulieu{
+  z-index: 1000;
+  position: relative;
+  top:65px;
+  left:70px;
+}
+
+.contenustuff{
+  z-index: 1000;
+  position: relative;
+  top:65px;
+  left:115px;
+}
+
+.contenuhf{
+  z-index: 1000;
+  position: relative;
+  top:55px;
+  left:105px;
+}
+
+.contenuprofil{
+  z-index: 1000;
+  position: relative;
+  top:55px;
+  left:55px;
+}
+
+.contenuliste{
+  z-index: 1000;
+  position: relative;
+}
+
+
+
+.textpop
+{
+  text-align: center;
+}
+
+.contenudelapopg{
+  z-index: 1000;
+  position: relative;
+  padding: 0px;
+left: 230px;
+height: 100%;
+}
+
+.modal.in .modal-dialog {
+
+width: 100%;
+
+}
+
+.menuprofil{
+position: absolute;
+top: 13px;
+left: 48px;
+z-index: 1;
+height: 55px;
+width: 119px;
+}
+
+.menugrim{
+position: absolute;
+top: 81px;
+left: 48px;
+z-index: 1;
+height: 55px;
+}
+
+.menuhf{
+position: absolute;
+top: 150px;
+left: 48px;
+z-index: 1;
+height: 55px;
+}
+
+.imgbete{
+  width: 85px;
+  height:85px;
+}
+
+.modalt{
+  height: 100%;
+}
+
+.menugauchepop{
+position: absolute;
+left: 60px;
+top: 80px;
+height: 100%;
+padding: 0px;
+}
+
+.taillegrim{
+  max-width: 70%;
+}
+
+.positiongrim{
+ position: absolute;
+top: 40px;
+left: 10px;
+}
+
+
 
 /*TEST QUETE 1*/
 
@@ -672,3 +787,6 @@ background-color: rgba(255, 255, 255, 0.4);
 .persoquete {
     width: 91%;
 }
+
+
+
