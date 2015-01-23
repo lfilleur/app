@@ -110,9 +110,9 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="tab_z" ng-if="articles">
-                    <div class="container">
+                    <div class="container containerarticles">
                         <div class="row">
-                            <div class="col-xs-4 padarticles">
+                            <div class="col-xs-4 padarticles" data-toggle="modal" data-target="#myModal2">
                                 <img class="img-responsive" src="images/articles/1.jpg">
                             </div>
                             <div class="col-xs-4 padarticles">
@@ -147,7 +147,7 @@
                                 <p class="textearticle"><i>Le film Noob au Grand Rex</i>
                                 </p>
                                 <hr class="hrcustom">
-                                <p class="textearticle"><i><b>Salut à tous ! C'est officiel ! Le film 1 de la trilogie sera [...]</b></i> 
+                                <p class="textearticle2"><i><b>Salut à tous ! C'est officiel ! Le film 1 de la trilogie sera [...]</b></i> 
                                 </p>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                                 <p class="textearticle"><i>Les chroniques d'Olydri</i>
                                 </p>
                                 <hr class="hrcustom">
-                                <p class="textearticle"><i><b>Et si vous deveniez un auteur racontant une aventure officielle au sein de l'univers d'Olydri commun à Noob et Néogicia ?   [...] </b></i> 
+                                <p class="textearticle2"><i><b>Et si vous deveniez un auteur racontant une aventure [...]</b></i> 
                                 </p>
                             </div>
                             <div class="col-xs-4 padarticles">
@@ -202,6 +202,39 @@
                 </div>
             </div>
             </div>
+        
+        
+        <!--MODAL-->
+        
+ <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modalnews">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title textearticle" id="myModalLabel">[TRILOGIE] <i class="date">13/10/2014 à 21h16</i></h4>
+          <p class="subtitle">Les sources s'affichent enfin !</p>
+      </div>
+        <hr class="hrcustommodal">
+      <div class="modal-body textmodal">
+        <p>Dans les romans <strong>Noob</strong>, le background est infiniment plus développé que dans la web-série. C'est normal, puisque ces médias ont une approche différente et complémentaire (ce n'est pas pour rien que Noob est une licence transmédia). Dans les épisodes, nous privilégions la comédie et les relations entre les personnages alors que dans les romans, nous allons plus loin en les immergeant en plus dans les légendes et les rouages d'un univers <strong>riche et complexe</strong> (sans être compliqué), et ceci sans aucune contrainte logistique. Dans la <strong>trilogie</strong>, grâce au budget des fans, nous sommes en mesure de proposer un compromis comme en attestent ces visuels, mettant enfin en scènes certains PNJ jusque là jamais apparus.</p>
+
+<p>Voici donc respectivement : <strong>Sin</strong>, la Source de l'infini, <strong>Saralzar</strong>, la Source du Chaos, <strong>Lys</strong>, la Source de la vie et <strong>Ark'hen</strong>, la Source de la mort. Il reste encore <strong>Dörtos</strong>, la Source du néant, mais ce sera dans les films suivants. </p>
+          <div class="row">
+            <div class="col-xs-6"><img src="images/articles/modal1.jpg" class="img-responsive shadowarticles" data-toggle="modal" data-target="#myModal3"></div>
+              <div class="col-xs-6"><img src="images/articles/modal2.jpg" class="img-responsive shadowarticles"></div>
+          </div>
+          </br>
+          <div class="row">
+            <div class="col-xs-6"><img src="images/articles/modal3.jpg" class="img-responsive shadowarticles"></div>
+              <div class="col-xs-6"><img src="images/articles/modal4.jpg" class="img-responsive shadowarticles"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!--END MODAL-->
+
             <footer class="footer footernews">
                 <ul class="nav nav-tabs">
                     <div class="col-xs-5 iconb active"> <a href back><span><img class="iconback" src="images/back.svg"alt="">
