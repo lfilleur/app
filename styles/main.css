@@ -720,9 +720,45 @@ background-color: rgba(255, 255, 255, 0.4);
 }
 
 .date {
-    font-size: 12px;
+    font-size: 10px;
 }
     
+.textarticles1 {
+    width: 218px;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.textarticles2 {
+    width: 218px;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+.textarticles3 {
+    margin-left: 3px;
+    width: 332px;
+}
+
+.textearticle1 {
+    margin : 0 0 3px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .zoomCarte{
 
