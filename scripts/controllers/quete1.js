@@ -58,6 +58,14 @@ var app = angular.module('quete1');
 
 
    			}; */
+
+   			$scope.win = function(){
+
+
+   				document.getElementById('myTune').play();
+   				
+
+   			}
    			$scope.quete1Start = function(){
 
    							$scope.initial= false;     			
