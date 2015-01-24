@@ -248,7 +248,7 @@
          </div>-->
 
 
-         <div ng-controller="ProfilCtrl" class="modalt">
+         <div ng-controller="BonusCtrl" class="modalt">
 
    
             <div class="modal-content">
@@ -260,18 +260,21 @@
 
                   <div class="col-xs-3 menugauchepop">       
                    
-                    <img src="images/menuvideo.png" class="img-responsive menuprofil" ng-click="profilm()">
-                    <img src="images/menubd.png" class="img-responsive menugrim" ng-click="grimoire()">
-                    <img src="images/menucroquis.png" class="img-responsive menuhf" ng-click="listeHautFait()">
+                    <img src="images/menuvideo.png" class="img-responsive menuprofil" ng-click="ListeBonusV()">
+                    <img src="images/menubd.png" class="img-responsive menugrim" ng-click="ListeBonusBD()">
+                    <img src="images/menucroquis.png" class="img-responsive menuhf" ng-click="ListeBonusC()">
 
                   </div>
 
 
                                                 <!--Videos-->
 
-                    <div class="col-xs-9 contenudelapopg">
+                    <div class="col-xs-9 contenudelapopg" >
                           <img src="images/parcheminpop.png" class="img-responsive parcheminpop">    
 
+                             <div ng-if="step==1"><p>jjojo</p></div>
+                              <div ng-if="step==2"><p>emilien</p></div>
+                             <div ng-if="step==3"><p>clara</p></div>
 
 
 

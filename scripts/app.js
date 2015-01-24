@@ -18,6 +18,8 @@ var Saison5mod = angular.module('saison5',[]);
 var Accueilmod = angular.module('accueil',[]);
 var Quete1mod = angular.module('quete1',[]);
 var Profilmod = angular.module('profil',[]);
+var Bonusmod = angular.module('bonus',[]);
+
 
 
 
@@ -28,7 +30,8 @@ var Cartemod = angular.module('carte',['ngAnimate',
     'ngSanitize',
     'ngTouch',
     'quete1',
-    'profil'
+    'profil',
+    'bonus'
     ]);
 
 Cartemod.config(function ($routeProvider) {
@@ -61,7 +64,8 @@ var app = angular
     'ngSanitize',
     'ngTouch',
     'quete1',
-    'profil'
+    'profil',
+    'bonus'
     
   ]);
 
