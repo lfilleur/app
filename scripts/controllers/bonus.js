@@ -79,6 +79,98 @@ var app = angular.module('bonus');
      
 
   };
+
+   $scope.FicheBonusV = function(e){
+           $scope.step = 4;
+         
+          
+          var url = 'http://smartsheep.reaco.fr/php/ficheBonusV.php?id_Bonus=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         /* console.log(e);*/
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheBonusV = response; 
+             /* alert('http ok'+' '+'return' + ' '+ $scope.ficheMonstre); */
+                          }
+
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche bonus vidéo, connexion internet défaillante');
+
+            });
+
+           }               
+             
+
+      }; 
+       $scope.FicheBonusBD = function(e){
+           $scope.step = 5;
+         
+          
+          var url = 'http://smartsheep.reaco.fr/php/ficheBonusBD.php?id_Bonus=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         /* console.log(e);*/
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheBonusBD = response; 
+             /* alert('http ok'+' '+'return' + ' '+ $scope.ficheMonstre); */
+                          }
+
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche bonus BD, connexion internet défaillante');
+
+            });
+
+           }               
+             
+
+      }; 
+        $scope.FicheBonusC = function(e){
+           $scope.step = 6;
+         
+          
+          var url = 'http://smartsheep.reaco.fr/php/ficheBonusC.php?id_Bonus=' ;
+          var id =  e;
+          var url2 = url + id;
+
+         /* console.log(e);*/
+
+         function httpSuccess2 (response){
+              
+               $scope.ficheBonusC = response; 
+             /* alert('http ok'+' '+'return' + ' '+ $scope.ficheMonstre); */
+                          }
+
+
+          /*on regarde si on a deja un id de defini*/  
+          if (id!==undefined){
+
+            $http.get(url2).success(httpSuccess2).error(function(){
+
+               alert('Impossible de trouver la fiche croquis, connexion internet défaillante');
+
+            });
+
+           }               
+             
+
+      }; 
+ 
  
 
 
