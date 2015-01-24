@@ -1,4 +1,4 @@
-<div class="modal-dialog">
+<!--<div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -12,10 +12,10 @@
                     </ul>
                   </div>
                  
-                                                                  <!--PROFIL -->
+                                                                  <!PROFIL -->
 
 
-                  <div class="tab-content col-xs-9">
+                 <!-- <div class="tab-content col-xs-9">
                     <div class="tab-pane active row" id="tab_a">
                         <div class="col-xs-4">
                             <img src="images/Couette.png" class="img-responsive">
@@ -44,10 +44,10 @@
                     </div>
 
 
-                                                                  <!--MENU GRIMOIRE -->
+                                                                  <!MENU GRIMOIRE -->
 
 
-                    <div class="tab-pane row" id="tab_b">
+                   <!-- <div class="tab-pane row" id="tab_b">
                         <div class="row grimoire">
 
                             <a href="carte#tab_d" data-toggle="pill">
@@ -83,10 +83,10 @@
                           </div>
                         </div>
                    
-                                                     <!-- AFFICHAGE DE LA LISTE DE BETES-->
+                                                     <! AFFICHAGE DE LA LISTE DE BETES-->
 
 
-                       <div class="tab-pane " id="tab_d" ng-controller="ListeMonstreCtrl">
+                       <!--<div class="tab-pane " id="tab_d" ng-controller="ListeMonstreCtrl">
                         <div class="row grimoire"> 
 
                               <div class="col-xs-4 dperso" ng-repeat="m in listeMonstre" >
@@ -102,9 +102,9 @@
 
 
 
-                                                        <!--EXPAND DE LA BETE-->
+                                                        <!EXPAND DE LA BETE-->
 
-                        <div class="tab-pane " id="expandBete" ng-controller="ListeMonstreCtrl" >
+                        <!--<div class="tab-pane " id="expandBete" ng-controller="ListeMonstreCtrl" >
                           <div class="row grimoire"  ng-repeat="m in ficheMonstre">                           
                            
                             <div class="row">
@@ -132,11 +132,11 @@
         
 
 
-                                                      <!-- PERSONNAGES -->
+                                                      <!- PERSONNAGES -->
 
 
 
-                     <div class="tab-pane" id="tab_g" ng-controller="ListePersoCtrl" > 
+                   <!--  <div class="tab-pane" id="tab_g" ng-controller="ListePersoCtrl" > 
   
                        <div class="row grimoire">
                         <a href="carte#{{p.nom_Personnage}}" data-toggle="pill">
@@ -151,10 +151,10 @@
 
      
 
-                                                            <!--LIEUX-->
+                                                            <!-LIEUX-->
 
                      
-                      <div class="tab-pane" id="tab_h" ng-controller="ListeLieuCtrl" > 
+                     <!-- <div class="tab-pane" id="tab_h" ng-controller="ListeLieuCtrl" > 
   
                        <div class="row grimoire">
                         <a href="carte#{{l.nom_Lieu}}" data-toggle="pill">
@@ -167,11 +167,11 @@
                   <a href="carte#tab_b" data-toggle="pill"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
                 </div>
 
-                                                            <!--STUFF-->
+                                                            <!STUFF-->
 
 
                      
-                      <div class="tab-pane" id="tab_i" ng-controller="ListeStuffCtrl" > 
+                     <!-- <div class="tab-pane" id="tab_i" ng-controller="ListeStuffCtrl" > 
   
                        <div class="row grimoire">
                         <a href="carte#{{l.nom_Stuff}}" data-toggle="pill">
@@ -185,10 +185,10 @@
                 </div>
 
 
-                                                                 <!--HAUTS FAITS -->
+                                                                 <!HAUTS FAITS -->
 
 
-                      <div class="tab-pane" id="tab_c">
+                      <!--<div class="tab-pane" id="tab_c">
                         <div class="row grimoire">
                     <a href="carte#tab_f" data-toggle="pill">
                     <div class="col-xs-4">
@@ -245,4 +245,52 @@
                </div>     
              </div>
            </div>
-         </div>
+         </div>-->
+
+
+         <div ng-controller="ProfilCtrl" class="modalt">
+
+   
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="row modalt">
+
+                  <div class="col-xs-3 menugauchepop">       
+                   
+                    <img src="images/menuvideo.png" class="img-responsive menuprofil" ng-click="profilm()">
+                    <img src="images/menubd.png" class="img-responsive menugrim" ng-click="grimoire()">
+                    <img src="images/menucroquis.png" class="img-responsive menuhf" ng-click="listeHautFait()">
+
+                  </div>
+
+
+                                                <!--Videos-->
+
+                    <div class="col-xs-9 contenudelapopg">
+                          <img src="images/parcheminpop.png" class="img-responsive parcheminpop">    
+
+
+
+
+                                                <!--BD-->
+
+
+
+
+
+                                                <!--Croquis-->
+
+
+
+
+
+
+                                                
+
+                </div>
+            </div>    
+          </div>
+        </div>

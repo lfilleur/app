@@ -965,5 +965,11 @@ padding: 0px;
 top: 40px;
 left: 10px;
 }
+
+.positionlieu{
+max-width: 65%;
+position: absolute;
+top: 30px;
+left: 20px;
 }
 
