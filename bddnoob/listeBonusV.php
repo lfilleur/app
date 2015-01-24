@@ -24,7 +24,7 @@ try {
 
 $arrayBonus = array();
 
-$req = "SELECT id_Bonus , nom_Bonus, description_Bonus,urlVideo_Bonus FROM bonus WHERE statut_Bonus = 1";
+$req = "SELECT id_Bonus , nom_Bonus, description_Bonus,urlVideo_Bonus FROM bonus WHERE statut_Bonus = 1 and Type ='Video'";
 
 $res = null;
 # Perform the query
