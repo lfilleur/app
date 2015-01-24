@@ -973,3 +973,30 @@ top: 30px;
 left: 20px;
 }
 
+.positionbonus{
+ position: absolute;
+top: 40px;
+left: 30px;
+}
+
+.scrolltext{
+overflow-y: scroll;
+position: absolute;
+top: 170px;
+left: 15px;
+height: 65%;
+width: 65%;
+}
+
+
+.expandlieu{
+ position: relative;
+top: 50px;
+left: 25px;
+}
+
+.expandlieutext{
+ position: relative;
+top: 50px;
+left: 15px;
+}

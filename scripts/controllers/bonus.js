@@ -13,6 +13,8 @@ var app = angular.module('bonus');
 
     $scope.step = 1;
 
+    
+
       $scope.ListeBonusV=function(){
             $scope.step = 1;
 

@@ -272,23 +272,49 @@
                     <div class="col-xs-9 contenudelapopg" >
                           <img src="images/parcheminpop.png" class="img-responsive parcheminpop">    
 
-                             <div ng-if="step==1"><p>jjojo</p></div>
-                              <div ng-if="step==2"><p>emilien</p></div>
-                             <div ng-if="step==3"><p>clara</p></div>
+                             <div class="row taillegrim positiongrim" ng-if="step==1">  
+                                <div class="col-xs-12 contenuliste textpop" ng-repeat="b in listeBV">
+                                  <div ng-click="FicheBonus(b.id_Bonus)">
+                                     <img src="images/videobonus/{{b.id_Bonus}}.png" class="img-responsive hperso imgcenter backvideos">
+                                       {{b.nom_Bonus}}
+                                  </div>
+                              </div>
+                            </div>
 
 
 
                                                 <!--BD-->
 
+                                <div class="row taillegrim positionbonus" ng-if="step==2">  
+                                <div class="col-xs-6 contenuliste textpop" ng-repeat="b in listeBBD">
+                                  <div ng-click="FicheBonus(b.id_Bonus)">
+                                     <img src="images/bdbonus/{{b.id_Bonus}}.png" class="img-responsive hperso imgcenter backvideos">
+                                       {{b.nom_Bonus}}
+                                  </div>
+                              </div>
+                            </div>
 
-
+                              
 
 
                                                 <!--Croquis-->
 
+                                 
+                                     <div class="row taillegrim positionbonus" ng-if="step==3">  
+                                <div class="col-xs-6 contenuliste textpop" ng-repeat="b in listeBC">
+                                  <div ng-click="FicheBonus(b.id_Bonus)">
+                                     <img src="images/croquisbonus/{{b.id_Bonus}}.png" class="img-responsive hperso imgcenter backvideos">
+                                       {{b.nom_Bonus}}
+                                  </div>
+                              </div>
+                            </div>
 
 
 
+                                                <!--Expand Bonus-->
+
+
+                                
 
 
                                                 
@@ -296,4 +322,5 @@
                 </div>
             </div>    
           </div>
-        </div>
+           </div>
+    
