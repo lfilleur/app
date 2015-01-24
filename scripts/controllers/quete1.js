@@ -58,6 +58,8 @@ var app = angular.module('quete1');
 
 
    			}; */
+
+   			
    			$scope.quete1Start = function(){
 
    							$scope.initial= false;     			

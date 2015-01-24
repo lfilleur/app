@@ -13,16 +13,17 @@ var app = angular.module('bonus');
 
     $scope.step = 1;
 
-    
 
-      $scope.ListeBonusV=function(){
+      $scope.ListeBonusV =  function(){
+
+
             $scope.step = 1;
 
       var url = 'http://smartsheep.reaco.fr/php/listeBonusV.php';
 
         function httpSuccess (response){
         
-         $scope.listeBV= response;
+         $scope.listeBV = response;
          
       }
      
@@ -37,14 +38,14 @@ var app = angular.module('bonus');
 
  
 
-           $scope.ListeBonusBD= function() {
+           $scope.ListeBonusBD = function() {
             $scope.step = 2;
 
       var url = 'http://smartsheep.reaco.fr/php/listeBonusBD.php';
 
         function httpSuccess (response){
         
-         $scope.listeBBD= response;
+         $scope.listeBBD = response;
          
       }
      
@@ -58,14 +59,14 @@ var app = angular.module('bonus');
 
   };
 
-         $scope.ListeBonusC= function(){
+         $scope.ListeBonusC = function(){
 
           $scope.step = 3;
       var url = 'http://smartsheep.reaco.fr/php/listeBonusC.php';
 
         function httpSuccess (response){
         
-         $scope.listeBC= response;
+         $scope.listeBC = response;
          
       }
      

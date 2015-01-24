@@ -15,20 +15,16 @@ var app = angular.module('profil');
 
            $scope.grimoire = function(){
 
-       $scope.step = 14;
-      
-     
+              $scope.step = 14;          
          
       };
 
 
- $scope.profilm = function(){
+       $scope.profilm = function(){
 
-       $scope.step = 13;
-      
-     
-         
-      };                
+           $scope.step = 13;    
+           
+        };                
 
 
 
