@@ -81,6 +81,7 @@
                     </div>
                   </td>
                 </tr>
+
                   </table>
 
                    
@@ -99,7 +100,10 @@
                {{m.nom_Bete}}      
               </div>
           </div>
-          
+           <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
+
         </div>
         
            
@@ -111,6 +115,9 @@
          {{p.nom_Personnage}}
      </div>
   </div>
+   <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
  </div>
 
 
@@ -122,6 +129,9 @@
        {{l.nom_Lieu}}
     </div>
   </div>
+   <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
 </div>
 
 
@@ -133,6 +143,9 @@
           {{s.nom_Stuff}}
       </div>
      </div>
+      <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
   </div>
  
                                                       <!--Expand Fiches-->
@@ -149,6 +162,9 @@
         <div class="col-xs-12 scrolltext">
           <p>{{m.description_Bete}}</p>
         </div> 
+        <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
    </div>
 
      <div class="row contenuliste" ng-repeat="l in ficheLieu" ng-if="step==9">
@@ -162,6 +178,9 @@
         <div class="col-xs-12 scrolltext">
           <p>{{l.description_Lieu}}</p>
         </div> 
+        <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
    </div>
 
       <div class="row contenuliste" ng-repeat="p in fichePerso" ng-if="step==8">
@@ -175,6 +194,9 @@
         <div class="col-xs-12 scrolltext">
           <p>{{p.description_Personnage}}</p>
         </div> 
+        <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
    </div>
 
 
@@ -188,6 +210,9 @@
         <div class="col-xs-12 scrolltext">
           <p>{{l.description_Stuff}}</p>
         </div> 
+        <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
    </div>
 
 
@@ -206,6 +231,9 @@
                          
                     
                   </div>
+                  <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
                   </div>
 
 
@@ -221,6 +249,9 @@
         <div class="col-xs-12 scrolltext">
           <p>{{b.description_HautFait}}</p>
         </div> 
+        <div class="col-xs-2 iconb active contenuliste retourmenu"> 
+            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
+          </div>
    </div>
 
 

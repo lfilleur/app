@@ -10,10 +10,11 @@
 var app = angular.module('bonus');
 
   app.controller('BonusCtrl', function($scope, $http) {
+            $scope.step = 1;
 
-    $scope.step = 1;
 
 
+   
       $scope.ListeBonusV =  function(){
 
 

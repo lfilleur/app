@@ -19,6 +19,7 @@ Cartemod.controller('CarteCtrl', function ($scope) {
    };
 
 
+
 });
 
 
