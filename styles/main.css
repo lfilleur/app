@@ -1024,6 +1024,37 @@ right: -50px;
 
 }
 
+.posexpandbete
+{
+position: relative;
+top: 40px;
+left: 20px;
+}
+
+.posexpandbetes
+{
+position: relative;
+top: 70px;
+left: 20px;
+}
+
+.imgexpandbete{
+  max-width: 80%;
+}
+
+.posexpandstuff
+{
+position: relative;
+top: 70px;
+}
+
+.positionhaf{
+ position: absolute;
+top: 40px;
+left: 20px;
+}
+
+
 }
 
 
