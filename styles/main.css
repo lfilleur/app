@@ -1013,6 +1013,14 @@ width: 180px;
 .positionheader {
     padding: 0;
 
+}.iconbackg{
+width: 24px;
+}
+.retourmenu{
+ position: absolute;
+bottom: 0;
+right: -50px;
+
 }
 }
 
