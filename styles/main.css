@@ -978,7 +978,7 @@ left: 20px;
 .positionbonus{
  position: absolute;
 top: 40px;
-left: 30px;
+left: 50px;
 }
 
 .scrolltext{
@@ -1011,6 +1011,8 @@ width: 180px;
     
 .positionheader {
     padding: 0;
+    z-index: 9999;
+    position: relative;
 
 }.iconbackg{
 width: 24px;
@@ -1021,6 +1023,7 @@ bottom: 0;
 right: -50px;
 
 }
+
 }
 
 
