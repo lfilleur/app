@@ -1092,8 +1092,8 @@ a:hover {
 .titleprofil {
     font-size: 22px;
     font-weight: 900;
-   color : #f26722;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+   color : #78d302;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 .subprofil {
@@ -1113,6 +1113,20 @@ a:hover {
 }
 
 .progress-bar {
-    background-color: #f8d360;
+    background: #9de00b; /* Old browsers */
+    background: -moz-linear-gradient(top, #9de00b 0%, #71d100 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9de00b), color-stop(100%,#71d100)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #9de00b 0%,#71d100 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #9de00b 0%,#71d100 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #9de00b 0%,#71d100 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #9de00b 0%,#71d100 100%); /* W3C */
+}
+
+.textgrimoire {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(160, 156, 135);
+    
 }
 
