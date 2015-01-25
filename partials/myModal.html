@@ -254,7 +254,9 @@
             <div class="modal-content">
 
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span>
+                </button>
               </div>
               <div class="row modalt">
 
@@ -270,7 +272,8 @@
                                                 <!--Videos-->
 
                     <div class="col-xs-9 contenudelapopg" >
-                          <img src="images/parcheminpop.png" class="img-responsive parcheminpop">    
+                          <img src="images/parcheminpop.png" class="img-responsive parcheminpop"> 
+
 
                              <div class="row taillegrim positiongrim" ng-if="step==1">  
                                 <div class="col-xs-12 contenuliste textpop" ng-repeat="b in listeBV">
@@ -316,11 +319,33 @@
                                <div class="row taillegrim positiongrim" ng-if="step==4">  
                                 <div class="col-xs-12 contenuliste textpop" ng-repeat="b in ficheBonusV">
                                   
-                                     <img src="images/videobonus/{{b.id_Bonus}}.png" class="img-responsive hperso imgcenter backvideos">
+                                     <img src="images/videobonus/{{b.id_Bonus}}.png" class="img-responsive">
                                        {{b.nom_Bonus}}
                                 
                               </div>
                             </div>
+
+
+                              <div class="row taillegrim positiongrim" ng-if="step==5">  
+                                <div class="col-xs-4 expandbdc contenuliste textpop" ng-repeat="b in ficheBonusBD">
+                                  
+                                     <img src="images/bdbonus/{{b.id_Bonus}}.png" class="img-responsive">
+                                       {{b.nom_Bonus}}
+                                
+                              </div>
+                            </div>
+
+
+                              <div class="row taillegrim positiongrim" ng-if="step==6">  
+                                <div class="col-xs-4 expandbdc contenuliste textpop" ng-repeat="b in ficheBonusC">
+                                  
+                                     <img src="images/croquisbonus/{{b.id_Bonus}}.png" class="img-responsive">
+                                       {{b.nom_Bonus}}
+                                
+                              </div>
+                            </div>
+
+                            
 
                                 
                                 
