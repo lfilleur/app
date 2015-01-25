@@ -637,7 +637,7 @@ margin-bottom: 60px;
 }
 
 
-
+.
 
 
 /*TEST QUETE 1*/
@@ -886,6 +886,9 @@ background: none;
   position: relative;
   top:55px;
   left:55px;
+  font-family: 'Lato';
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .contenuliste{
@@ -904,7 +907,7 @@ background: none;
   z-index: 1000;
   position: relative;
   padding: 0px;
-left: 230px;
+left: 210px;
 height: 100%;
 }
 
@@ -950,8 +953,8 @@ height: 55px;
 
 .menugauchepop{
 position: absolute;
-left: 60px;
-top: 80px;
+left: 40px;
+top: 60px;
 height: 100%;
 padding: 0px;
 }
@@ -1006,5 +1009,25 @@ position: relative;
 left: 90px;
 width: 180px;
 }
+    
+.positionheader {
+    padding: 0;
 
+}
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn-default:active {
+    color: white;
+}
+
+.btn-default:focus {
+    color: white;
 }
