@@ -159,7 +159,10 @@
 
 .grimoire {
   width: 70%;
+text-align: center;
 }
+
+
 
 .bonus {
     width:80%;
@@ -210,16 +213,12 @@
 }
 
 #pbar {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #lvl {
     margin-left: 2px;
     margin-right: 7px;
-}
-
-.grimoire {
-    text-align: center;
 }
 
 .imggrimoire {
@@ -885,7 +884,7 @@ background: none;
   z-index: 1000;
   position: relative;
   top:55px;
-  left:55px;
+  left:30px;
   font-family: 'Lato';
     font-weight: 700;
     font-size: 15px;
@@ -1040,6 +1039,7 @@ a:hover {
 
 .btn-default:focus {
     color: white;
+    
 }
 
 .contenuquete {
@@ -1047,3 +1047,38 @@ a:hover {
     margin-left: 0;
     padding-top: 10px;
 }
+
+#emilien {
+    width: 100px;
+    height: auto;
+}
+
+/*PROFIL*/
+
+.titleprofil {
+    font-size: 22px;
+    font-weight: 900;
+   color : #f26722;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.subprofil {
+    font-weight: 400;
+}
+
+.exp {
+    text-align: center;
+}
+
+.progress {
+    margin-bottom: 5px;
+}
+
+.avatar {
+    padding-top: 15px;
+}
+
+.progress-bar {
+    background-color: #f8d360;
+}
+
