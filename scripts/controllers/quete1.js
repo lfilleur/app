@@ -2,26 +2,26 @@
 
 
 var app = angular.module('quete1');
-   app.controller('Quete1Ctrl', function($scope) {    		
-    	
-   			$scope.texte = '';   
-   			$scope.initial= true;		
-   			$scope.partie1 = false;
-			$scope.omega1 = false;
-			$scope.omega2 = false;
-			$scope.omega3 = false;
-			$scope.omega4 = false;
-			$scope.omega5 = false;
-			$scope.omega6 = false;
-			$scope.gaea1 = false;
-			$scope.gaea2 = false;
-			$scope.gaea3 = false;
-			$scope.gaea4 = false;
-			$scope.gaea5 = false;
-			
+app.controller('Quete1Ctrl', function ($scope) {
 
-													/* QUETE 1 PARTIE A */
-   		/*	$scope.quete1Start = function(){
+    $scope.texte = '';
+    $scope.initial = true;
+    $scope.partie1 = false;
+    $scope.omega1 = false;
+    $scope.omega2 = false;
+    $scope.omega3 = false;
+    $scope.omega4 = false;
+    $scope.omega5 = false;
+    $scope.omega6 = false;
+    $scope.gaea1 = false;
+    $scope.gaea2 = false;
+    $scope.gaea3 = false;
+    $scope.gaea4 = false;
+    $scope.gaea5 = false;
+
+
+    /* QUETE 1 PARTIE A */
+    /*	$scope.quete1Start = function(){
 
    				var valeur = '';
 				var i = 0;
@@ -59,106 +59,97 @@ var app = angular.module('quete1');
 
    			}; */
 
-   			
-   			$scope.quete1Start = function(){
 
-   							$scope.initial= false;     			
-							$scope.partie1 = true;				
+    $scope.quete1Start = function () {
 
-   			};
-   			$scope.quete1Choix = function(e){
+        $scope.initial = false;
+        $scope.partie1 = true;
 
-   				
-   				if (e==='omega'){
-
-				      			$scope.partie1 = false;
-				      			$scope.omega1 = true;				      			
-
-				      		}
-
-				      		else if (e==='gaea') {
-
-				      			
-				 				$scope.partie1 = false;
-				 				$scope.gaea1 = true;
-				      		}
+    };
+    $scope.quete1Choix = function (e) {
 
 
-   			};
+        if (e === 'omega') {
+
+            $scope.partie1 = false;
+            $scope.omega1 = true;
+
+        } else if (e === 'gaea') {
 
 
-   															/* QUETE omega  */
-
-   			$scope.queteOmegaA = function(){
-
-   							$scope.omega1 = false;     			
-							$scope.omega2 = true;				
-
-   			};
-   			$scope.queteOmegaB = function(){
-
-   							$scope.omega2 = false;     			
-							$scope.omega3 = true;
-
-   			};
-   			$scope.queteOmegaC = function(){
-
-   							$scope.omega3 = false;     			
-							$scope.omega4 = true;				
-
-   			};
-   			$scope.queteOmegaD = function(){
-
-   							$scope.omega4 = false;     			
-							$scope.omega5 = true;				
-
-   			};
-
-   				$scope.queteOmegaE = function(){
-
-   							$scope.omega5 = false;     			
-							$scope.omega6 = true;				
-
-   			};
+            $scope.partie1 = false;
+            $scope.gaea1 = true;
+        }
 
 
-   														/* QUETE Gaea  */
-
-   			$scope.queteGaeaA = function(){
-
-   							$scope.gaea1 = false;     			
-							$scope.gaea2 = true;				
-
-   			};
-   			$scope.queteGaeaB = function(){
-
-   							$scope.gaea2 = false;     			
-							$scope.gaea3 = true;				
-
-   			};
-   			
-   			$scope.queteGaeaC = function(){
-
-   							$scope.gaea3 = false;     			
-							$scope.gaea4 = true;				
-
-   			};
-
-   			$scope.queteGaeaD = function(){
-
-   							$scope.gaea4 = false;     			
-							$scope.gaea5 = true;			
-
-   			};
-   			
-   			
+    };
 
 
-		});
-      	
-      	
+    /* QUETE omega  */
+
+    $scope.queteOmegaA = function () {
+
+        $scope.omega1 = false;
+        $scope.omega2 = true;
+
+    };
+    $scope.queteOmegaB = function () {
+
+        $scope.omega2 = false;
+        $scope.omega3 = true;
+
+    };
+    $scope.queteOmegaC = function () {
+
+        $scope.omega3 = false;
+        $scope.omega4 = true;
+
+    };
+    $scope.queteOmegaD = function () {
+
+        $scope.omega4 = false;
+        $scope.omega5 = true;
+
+    };
+
+    $scope.queteOmegaE = function () {
+
+        $scope.omega5 = false;
+        $scope.omega6 = true;
+
+    };
+
+
+    /* QUETE Gaea  */
+
+    $scope.queteGaeaA = function () {
+
+        $scope.gaea1 = false;
+        $scope.gaea2 = true;
+
+    };
+    $scope.queteGaeaB = function () {
+
+        $scope.gaea2 = false;
+        $scope.gaea3 = true;
+
+    };
+
+    $scope.queteGaeaC = function () {
+
+        $scope.gaea3 = false;
+        $scope.gaea4 = true;
+
+    };
+
+    $scope.queteGaeaD = function () {
+
+        $scope.gaea4 = false;
+        $scope.gaea5 = true;
+
+    };
 
 
 
-  
 
+});

@@ -1,64 +1,36 @@
 <div ng-controller="CarteCtrl">
-<div class="image">     
-  <img src="images/carte.jpg" alt="carte noob" usemap="#carte" id="carte"/> 
-   <map name="carte">
-    <area shape="rect" coords="2738,1125,2800,1205" href="#quete1" alt="quete" />
-  
-  </map>
-
-   <div class="menuicone">   <!-- MON MENU QUI APPELLE LES PANEL QUI SONT SENSER ETRE INCLUS-->
-      
-          <p data-toggle="modal" data-target="#myModal1">
+    <div class="image">
+        <img src="images/carte.jpg" alt="carte noob" usemap="#carte" id="carte" />
+        <map name="carte">
+            <area shape="rect" coords="2738,1125,2800,1205" href="#quete1" alt="quete" />
+        </map>
+        <div class="menuicone">
+            <!-- MON MENU QUI APPELLE LES PANEL QUI SONT SENSER ETRE INCLUS-->
+            <p data-toggle="modal" data-target="#myModal1">
                 <img src="images/GRIM.svg" class="grimoire imgcenter">
-           </p>
-          
-           <p data-toggle="modal" data-target="#myModal"> 
-               <img src="images/BONUS.svg" class="bonus imgcenter">
-           </p>
-          
-           <p>
-                <a href="#quete1"><img src="images/icone-tuto.svg" class="aide imgcenter"></a>
-           </p>
-           
-              
-   
-   </div>   
+            </p>
+            <p data-toggle="modal" data-target="#myModal">
+                <img src="images/BONUS.svg" class="bonus imgcenter">
+            </p>
+            <p> <a href="#quete1"><img src="images/icone-tuto.svg" class="aide imgcenter"></a>
 
-            <p>
-                <img src="images/profil.svg" class="profil">
-           </p>
-
-
-
-
-      <!-- ICI Jappelle mes vue partiel-->
-       <div role="tabpanel"> 
-    
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-include="'partials/myModal.html'">
-          
-           </div>
-     </div>  
-   
-
+            </p>
+        </div>
+        <p>
+            <img src="images/profil.svg" class="profil">
+        </p>
         <!-- ICI Jappelle mes vue partiel-->
         <div role="tabpanel">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-include="'partials/myModal.html'"></div>
+        </div>
+        <!-- ICI Jappelle mes vue partiel-->
+        <div role="tabpanel">
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-include="'partials/myModal1.html'"></div>
+        </div>
+    </div>
+    <footer id="footercarte">
+        <div class="container"> <a href="#accueil"><span><img class="iconback" src="images/back.svg"></span></a>
 
-           <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"ng-include="'partials/myModal1.html'">
-       
-          </div>
-    </div>       
-    
-
-</div>   
-    
-    
-    
-<footer id="footercarte" >
-          <div class="container" >
-              <a href="#accueil"><span><img class="iconback" src="images/back.svg"></span></a>
-          </div>
-</footer>
-
- 
+        </div>
+    </footer>
 </div>
-

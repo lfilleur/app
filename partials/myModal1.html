@@ -1,263 +1,210 @@
+<div ng-controller="ProfilCtrl" class="modalt">
+    <div class="modal-content">
+        <div class="modal-header positionheader">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span>
 
-   <div ng-controller="ProfilCtrl" class="modalt">
-
-   
-            <div class="modal-content">
-
-              <div class="modal-header positionheader">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span class="glyphicon glyphicon-remove croix" aria-hidden="true"></span>
-                </button>
-              </div>
-              <div class="row modalt">
-
-                  <div class="col-xs-3 menugauchepop">       
-                   
-                    <img src="images/menuprofil.png" class="img-responsive menuprofil" ng-click="profilm()">
-                    <img src="images/menugrim.png" class="img-responsive menugrim" ng-click="grimoire()">
-                    <img src="images/menuhf.png" class="img-responsive menuhf" ng-click="listeHautFait()">
-
-                  </div>
-
-
-                         
-                                          <!--Profil-->
-
-
-
-
-                          <div class="col-xs-9 contenudelapopg">
-                          <img src="images/parcheminpop.png" class="img-responsive parcheminpop">             
-                            <div ng-if="step==13">
-                              <div class="row contenuprofil">
-                              <div class="col-xs-3 avatar">
+            </button>
+        </div>
+        <div class="row modalt">
+            <div class="col-xs-3 menugauchepop">
+                <img src="images/menuprofil.png" class="img-responsive menuprofil" ng-click="profilm()">
+                <img src="images/menugrim.png" class="img-responsive menugrim" ng-click="grimoire()">
+                <img src="images/menuhf.png" class="img-responsive menuhf" ng-click="listeHautFait()">
+            </div>
+            <!--Profil-->
+            <div class="col-xs-9 contenudelapopg">
+                <img src="images/parcheminpop.png" class="img-responsive parcheminpop">
+                <div ng-if="step==13">
+                    <div class="row contenuprofil">
+                        <div class="col-xs-3 avatar">
                             <img src="images/emilien.png" id="emilien">
                         </div>
                         <div class="col-xs-8">
                             <p class="titleprofil">Emilien</p>
-                            <p>Classement : <font class="subprofil">3200/3200</font></p>
-                            <p>Grade : <font class="subprofil">Novice</font></p>
-                            <p>Niveau : <font class="subprofil">1</font></p>
+                            <p>Classement : <font class="subprofil">3200/3200</font>
+                            </p>
+                            <p>Grade : <font class="subprofil">Novice</font>
+                            </p>
+                            <p>Niveau : <font class="subprofil">1</font>
+                            </p>
                         </div>
-                      </div>
-                        <div class="col-xs-7 contenuprofil" id="pbar">
-                            <div class="progress">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"                                                                         style="width: 50%">
-                              </div>
-                            </div>
-                            <div class="exp">500/1000 xp</div>
+                    </div>
+                    <div class="col-xs-7 contenuprofil" id="pbar">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
                         </div>
-                        
-                             
-                             
-                             </div> 
-                                                     
-
-
-                                                            <!--Grimoire-->
-
-                  <div ng-if="step==14">
-                    <table>
-                      <tr>  
-                      <td>
-                    <div class="contenubete textpop" ng-click="listeBete()">
-                      <img src="images/monstre/0.png" class="img-responsive imgbete"><font class="textgrimoire">Bestiaire</font>
+                        <div class="exp">500/1000 xp</div>
                     </div>
-                  </td>
-                      <td>
-                    <div class="contenuperso textpop" ng-click="listePersonnage()">
-                        <img src="images/perso/0.png" class="img-responsive imgbete"><font class="textgrimoire">Personnages</font>
-                    </div>
-                  </td>
-                </tr>
-
-                  <tr>  
-                      <td>
-                    <div class="contenulieu textpop" ng-click="listeLieux()">
-                        <img src="images/lieu/0.png" class="img-responsive imgbete"><font class="textgrimoire">Lieux</font>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="contenustuff textpop" ng-click="listeStuffs()">
-                        <img src="images/stuff/0.png" class="img-responsive imgbete"><font class="textgrimoire">Stuff</font>
-                    </div>
-                  </td>
-                </tr>
-
-                  </table>
-
-                   
-                    
-
-                  </div>
-
-                                          <!--Grimoire partie 2-->
-       
-     
-        <div class="row taillegrim positiongrim" ng-if="step==1">  
-
-         <div class="col-xs-4 contenuliste textpop" ng-repeat="m in listeMonstre" >
-             <div ng-click="FicheBete(m.id_Bete)">
-              <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso imgcenter backvideos">
-               {{m.nom_Bete}}      
-              </div>
-          </div>
-           <div class="col-xs-2 iconb active contenuliste retourmenu"> 
-            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-
-        </div>
-        
-           
-     
-        <div class="row taillegrim positiongrim" ng-if="step==2">  
-      <div class="col-xs-4 contenuliste textpop" ng-repeat="p in listePerso" >
-      <div ng-click="FichePerso(p.id_Personnage)">
-        <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive hperso imgcenter backvideos">
-         {{p.nom_Personnage}}
-     </div>
-  </div>
-   <div class="col-xs-2 iconb active contenuliste retourmenu"> 
-            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
- </div>
-
-
-
-        <div class="row positionlieu" ng-if="step==3">
-    <div class="col-xs-4 contenuliste textpop" ng-repeat="l in listeLieu" >
-     <div ng-click="FicheLieu(l.id_Lieu)">      
-       <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive hperso imgcenter">
-       {{l.nom_Lieu}}
-    </div>
-  </div>
-   <div class="col-xs-2 iconb active contenuliste retourmenu"> 
-            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-</div>
-
-
- 
-        <div class="row taillegrim positiongrim" ng-if="step==4">
- <div class="col-xs-4 contenuliste textpop" ng-repeat="s in listeStuff" >
-    <div ng-click="FicheStuff(s.id_Stuff)">
-           <img src="images/stuff/{{s.id_Stuff}}.png" class="img-responsive hperso imgcenter">
-          {{s.nom_Stuff}}
-      </div>
-     </div>
-      <div class="col-xs-2 iconb active contenuliste retourmenu"> 
-            <span ng-click="backmenu()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-  </div>
- 
-                                                      <!--Expand Fiches-->
-
-    <div class="row contenuliste" ng-repeat="m in ficheMonstre" ng-if="step==6">
-        <div class="col-xs-4 posexpandbete">
-          <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive imgexpandbete " >
-        </div>
-        <div class="col-xs-8 posexpandbetes">
-            <p>Nom:</p><p>{{m.nom_Bete}}</p>
-           <p>Type:</p><p>{{m.nom_TypeBete}}</p>
-        </div>  
-      
-        <div class="col-xs-12 scrolltext">
-           <p>Description:</p><p>{{m.description_Bete}}</p>
-        </div> 
-        <div class="col-xs-2 iconb active contenuliste retourmenu2"> 
-            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-   </div>
-
-     <div class="row contenuliste" ng-repeat="l in ficheLieu" ng-if="step==9">
-        <div class="col-xs-4 posexpandbete">
-           <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive imgexpandbete">
-        </div>
-        <div class="col-xs-8 posexpandbetes">
-           <p>Nom:</p> <p>{{l.nom_Lieu}}</p>
-            <p>Type:</p><p>{{l.nom_TypeLieu}}</p>
-        </div>  
-        <div class="col-xs-12 scrolltext">
-           <p>Description:</p><p>{{l.description_Lieu}}</p>
-        </div> 
-        <div class="col-xs-2 iconb active contenuliste retourmenu2"> 
-            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-   </div>
-
-      <div class="row contenuliste" ng-repeat="p in fichePerso" ng-if="step==8">
-        <div class="col-xs-4 posexpandbete">
-          <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive imgexpandbete">
-        </div>
-        <div class="col-xs-8 posexpandbetes">
-            <p>Nom:</p><p>{{p.nom_Personnage}}</p>
-            <p>Faction:</p><p>{{p.faction_Personnage}}
-        </div>  
-        <div class="col-xs-12 scrolltext">
-           <p>Description:</p><p>{{p.description_Personnage}}</p>
-        </div> 
-        <div class="col-xs-2 iconb active contenuliste retourmenu2"> 
-            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-   </div>
-
-
-     <div class="row contenuliste" ng-repeat="l in ficheStuff" ng-if="step==10">
-        <div class="col-xs-4 posexpandbete">
-           <img src="images/stuff/{{l.id_Stuff}}.png" class="img-responsive imgexpandbete">
-        </div>
-        <div class="col-xs-8 posexpandstuff">
-            <p>Nom:</p><p>{{l.nom_Stuff}}</p>
-        </div>  
-        <div class="col-xs-12 scrolltext">
-           <p>Description:</p><p>{{l.description_Stuff}}</p>
-        </div> 
-        <div class="col-xs-2 iconb active contenuliste retourmenu2"> 
-            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-   </div>
-
-
-                                                      <!--Haut-Faits-->
-
-                    <div ng-if="step==5">
-                          <div class="row taillegrim positionhaf">
-                          <div class="col-xs-4 contenuliste textpop" ng-repeat="h in listeHautfait" >
-                          
-                            <div ng-click="FicheHautFait(h.id_HautFait)">
-                               <img src="images/recompense/{{h.id_HautFait}}.png" class="img-responsive imgcenter">
-                              {{h.nom_HautFait}}
-                          </div>
-                        
-                         </div>
-                         
-                    
-                  </div>
-                  <div class="col-xs-2 iconb active contenuliste retourmenu"> 
-            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-                  </div>
-
-
-                                                    <!--Expand Haut-Faits-->
-
-      <div class="row contenuliste" ng-repeat="b in ficheHautFait" ng-if="step==12">
-        <div class="col-xs-4 posexpandbete">
-           <img src="images/recompense/{{b.id_HautFait}}.png" class="img-responsive imgexpandbete">
-        </div>
-        <div class="col-xs-8 posexpandstuff">
-            <p>Nom:</p><p>{{b.nom_HautFait}}</p>
-        </div>  
-        <div class="col-xs-12 scrolltext">
-           <p>Description:</p><p>{{b.description_HautFait}}</p>
-        </div> 
-        <div class="col-xs-2 iconb active contenuliste retourmenu2"> 
-            <span  ng-click="grimoire()" ><img class="iconbackg" src="images/back.svg"></span>
-          </div>
-   </div>
-
-
                 </div>
-            </div>    
-          </div>
+                <!--Grimoire-->
+                <div ng-if="step==14">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="contenubete textpop" ng-click="listeBete()">
+                                    <img src="images/monstre/0.png" class="img-responsive imgbete"><font class="textgrimoire">Bestiaire</font>
 
+                                </div>
+                            </td>
+                            <td>
+                                <div class="contenuperso textpop" ng-click="listePersonnage()">
+                                    <img src="images/perso/0.png" class="img-responsive imgbete"><font class="textgrimoire">Personnages</font>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="contenulieu textpop" ng-click="listeLieux()">
+                                    <img src="images/lieu/0.png" class="img-responsive imgbete"><font class="textgrimoire">Lieux</font>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="contenustuff textpop" ng-click="listeStuffs()">
+                                    <img src="images/stuff/0.png" class="img-responsive imgbete"><font class="textgrimoire">Stuff</font>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--Grimoire partie 2-->
+                <div class="row taillegrim positiongrim" ng-if="step==1">
+                    <div class="col-xs-4 contenuliste textpop" ng-repeat="m in listeMonstre">
+                        <div ng-click="FicheBete(m.id_Bete)">
+                            <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso imgcenter backvideos">{{m.nom_Bete}}</div>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <div class="row taillegrim positiongrim" ng-if="step==2">
+                    <div class="col-xs-4 contenuliste textpop" ng-repeat="p in listePerso">
+                        <div ng-click="FichePerso(p.id_Personnage)">
+                            <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive hperso imgcenter backvideos">{{p.nom_Personnage}}</div>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <div class="row positionlieu" ng-if="step==3">
+                    <div class="col-xs-4 contenuliste textpop" ng-repeat="l in listeLieu">
+                        <div ng-click="FicheLieu(l.id_Lieu)">
+                            <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive hperso imgcenter">{{l.nom_Lieu}}</div>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <div class="row taillegrim positiongrim" ng-if="step==4">
+                    <div class="col-xs-4 contenuliste textpop" ng-repeat="s in listeStuff">
+                        <div ng-click="FicheStuff(s.id_Stuff)">
+                            <img src="images/stuff/{{s.id_Stuff}}.png" class="img-responsive hperso imgcenter">{{s.nom_Stuff}}</div>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <!--Expand Fiches-->
+                <div class="row contenuliste" ng-repeat="m in ficheMonstre" ng-if="step==6">
+                    <div class="col-xs-4 posexpandbete">
+                        <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive imgexpandbete ">
+                    </div>
+                    <div class="col-xs-8 posexpandbetes">
+                        <p>Nom:</p>
+                        <p>{{m.nom_Bete}}</p>
+                        <p>Type:</p>
+                        <p>{{m.nom_TypeBete}}</p>
+                    </div>
+                    <div class="col-xs-12 scrolltext">
+                        <p>Description:</p>
+                        <p>{{m.description_Bete}}</p>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <div class="row contenuliste" ng-repeat="l in ficheLieu" ng-if="step==9">
+                    <div class="col-xs-4 posexpandbete">
+                        <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive imgexpandbete">
+                    </div>
+                    <div class="col-xs-8 posexpandbetes">
+                        <p>Nom:</p>
+                        <p>{{l.nom_Lieu}}</p>
+                        <p>Type:</p>
+                        <p>{{l.nom_TypeLieu}}</p>
+                    </div>
+                    <div class="col-xs-12 scrolltext">
+                        <p>Description:</p>
+                        <p>{{l.description_Lieu}}</p>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <div class="row contenuliste" ng-repeat="p in fichePerso" ng-if="step==8">
+                    <div class="col-xs-4 posexpandbete">
+                        <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive imgexpandbete">
+                    </div>
+                    <div class="col-xs-8 posexpandbetes">
+                        <p>Nom:</p>
+                        <p>{{p.nom_Personnage}}</p>
+                        <p>Faction:</p>
+                        <p>{{p.faction_Personnage}}</div>
+                    <div class="col-xs-12 scrolltext">
+                        <p>Description:</p>
+                        <p>{{p.description_Personnage}}</p>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <div class="row contenuliste" ng-repeat="l in ficheStuff" ng-if="step==10">
+                    <div class="col-xs-4 posexpandbete">
+                        <img src="images/stuff/{{l.id_Stuff}}.png" class="img-responsive imgexpandbete">
+                    </div>
+                    <div class="col-xs-8 posexpandstuff">
+                        <p>Nom:</p>
+                        <p>{{l.nom_Stuff}}</p>
+                    </div>
+                    <div class="col-xs-12 scrolltext">
+                        <p>Description:</p>
+                        <p>{{l.description_Stuff}}</p>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <!--Haut-Faits-->
+                <div ng-if="step==5">
+                    <div class="row taillegrim positionhaf">
+                        <div class="col-xs-4 contenuliste textpop" ng-repeat="h in listeHautfait">
+                            <div ng-click="FicheHautFait(h.id_HautFait)">
+                                <img src="images/recompense/{{h.id_HautFait}}.png" class="img-responsive imgcenter">{{h.nom_HautFait}}</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+                <!--Expand Haut-Faits-->
+                <div class="row contenuliste" ng-repeat="b in ficheHautFait" ng-if="step==12">
+                    <div class="col-xs-4 posexpandbete">
+                        <img src="images/recompense/{{b.id_HautFait}}.png" class="img-responsive imgexpandbete">
+                    </div>
+                    <div class="col-xs-8 posexpandstuff">
+                        <p>Nom:</p>
+                        <p>{{b.nom_HautFait}}</p>
+                    </div>
+                    <div class="col-xs-12 scrolltext">
+                        <p>Description:</p>
+                        <p>{{b.description_HautFait}}</p>
+                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

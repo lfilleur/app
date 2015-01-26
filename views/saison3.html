@@ -1,32 +1,20 @@
 <div class="background">
-    <div> 
-        <a href="#accueil"> <img class="logoint" src="images/logonoob.png"> </a>
+    <div> <a href="#accueil"> <img class="logoint" src="images/logonoob.png"> </a>
+
     </div>
     <section ng-controller="Saison3Ctrl">
         <div class="list col-xs-12 container">
             <img src="images/miniaturessaison3.png" id="" class="imgcenter img-responsive">
             <table class="tableauVideo">
                 <tr ng-repeat="v in listeSaison3 | orderBy:'episode_Video'">
-                    <td> 
-                       
-                            <!--<div class="col-xs-4 saison titlesvideos">
-                                <p>Episode {{ v.episode_Video }}</p>
-                            </div>
-                            <div class="col-xs-6 saison titlesep">
-                                <p>{{ v.nom_Video }}</p>
-                            </div>-->
+                    <td>
                         <div class="col-xs-10 saison titlesep">
-                                <p>Episode {{ v.episode_Video }}  :      {{ v.nom_Video }}</p>
-                            </div>
-                            
-                            
-                            
-                            <div class="col-xs-2">
-                                    <a href="{{v.url_Video}}"><img src="images/saison3/{{v.id_Video}}.png" class="vignette"></a>
-                            </div>
-                        
+                            <p>Episode {{ v.episode_Video }} : {{ v.nom_Video }}</p>
+                        </div>
+                        <div class="col-xs-2"> <a href="{{v.url_Video}}"><img src="images/saison3/{{v.id_Video}}.png" class="vignette"></a>
+
+                        </div>
                         <div class="col-xs-11 bgsaison espacesaison">{{ v.synopsis_Video }}</div>
-                        
                         <!--<h2 class="titlevideo">{{ v.nom_Video }}</h2>
                       <p>Saison: {{ v.saison_Video }} Episode: {{ v.episode_Video }} </p>
                       <p>Durée :{{ v.duree_Video }}min</p>           
@@ -39,14 +27,14 @@
     </section>
 </div>
 <footer class="footer footernews">
-            <ul class="nav nav-tabs">
-                <div class="col-xs-5 iconb active"> <a href back><span><img class="iconback" src="images/back.svg">
+    <ul class="nav nav-tabs">
+        <div class="col-xs-5 iconb active"> <a href back><span><img class="iconback" src="images/back.svg">
                     </span></a>
 
-                </div>
-                <div class="col-xs-2 iconnews home"> <a href="#accueil"><span><img class="iconback" src="images/home.svg">
+        </div>
+        <div class="col-xs-2 iconnews home"> <a href="#accueil"><span><img class="iconback" src="images/home.svg">
                     </span></a>
 
-                </div>
-            </ul>
-        </footer>
+        </div>
+    </ul>
+</footer>
