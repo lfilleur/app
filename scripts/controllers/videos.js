@@ -8,6 +8,6 @@
  * Controller of the videos
  */
 var app = angular.module('videos');
-  app.controller('VideosCtrl', function ($scope) {
+  app.controller('VideosCtrl', function () {
   
   });

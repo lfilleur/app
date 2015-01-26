@@ -14,7 +14,7 @@ app.controller('ProfilCtrl', function ($scope, $http) {
     $scope.step = 13;
     $scope.backmenu = function () {
         $scope.step = 14;
-    }
+    };
 
     $scope.grimoire = function () {
 

@@ -8,7 +8,7 @@
  * Controller of the accueil
  */
 var app = angular.module('accueil');
-  app.controller('AccueilCtrl', function ($scope) {
+  app.controller('AccueilCtrl', function () {
    
   });
  
