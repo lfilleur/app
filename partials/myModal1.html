@@ -71,138 +71,125 @@
                 </div>
                 <!--Grimoire partie 2-->
                 <div class="row taillegrim positiongrim" ng-if="step==1">
-                    <div class="col-xs-4 contenuliste textpop" ng-repeat="m in listeMonstre">
+                    <div class="col-xs-4 contenuliste textpop textgrimoire2" ng-repeat="m in listeMonstre">
                         <div ng-click="FicheBete(m.id_Bete)">
-                            <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive hperso imgcenter backvideos">{{m.nom_Bete}}</div>
+                            <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive imgcenter backvideos">{{m.nom_Bete}}</div>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
-
+                    <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
                 <div class="row taillegrim positiongrim" ng-if="step==2">
-                    <div class="col-xs-4 contenuliste textpop" ng-repeat="p in listePerso">
+                    <div class="col-xs-4 contenuliste textpop textgrimoire2" ng-repeat="p in listePerso">
                         <div ng-click="FichePerso(p.id_Personnage)">
-                            <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive hperso imgcenter backvideos">{{p.nom_Personnage}}</div>
+                            <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive imgcenter backvideos">{{p.nom_Personnage}}</div>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
-
+                   <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
                 <div class="row positionlieu" ng-if="step==3">
-                    <div class="col-xs-4 contenuliste textpop" ng-repeat="l in listeLieu">
+                    <div class="col-xs-4 contenuliste textpop textgrimoire2" ng-repeat="l in listeLieu">
                         <div ng-click="FicheLieu(l.id_Lieu)">
-                            <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive hperso imgcenter">{{l.nom_Lieu}}</div>
+                            <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive imgcenter">{{l.nom_Lieu}}</div>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
-
-                    </div>
+                    <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
+                    </div>>
                 </div>
                 <div class="row taillegrim positiongrim" ng-if="step==4">
-                    <div class="col-xs-4 contenuliste textpop" ng-repeat="s in listeStuff">
+                    <div class="col-xs-4 contenuliste textpop textgrimoire2" ng-repeat="s in listeStuff">
                         <div ng-click="FicheStuff(s.id_Stuff)">
-                            <img src="images/stuff/{{s.id_Stuff}}.png" class="img-responsive hperso imgcenter">{{s.nom_Stuff}}</div>
+                            <img src="images/stuff/{{s.id_Stuff}}.png" class="img-responsive imgcenter">{{s.nom_Stuff}}</div>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
-
+                   <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
                 <!--Expand Fiches-->
-                <div class="row contenuliste" ng-repeat="m in ficheMonstre" ng-if="step==6">
+                <div class="row contenuliste fiches" ng-repeat="m in ficheMonstre" ng-if="step==6">
                     <div class="col-xs-4 posexpandbete">
                         <img src="images/monstre/{{m.id_Bete}}.png" class="img-responsive imgexpandbete ">
                     </div>
                     <div class="col-xs-8 posexpandbetes">
-                        <p>Nom:</p>
-                        <p>{{m.nom_Bete}}</p>
-                        <p>Type:</p>
-                        <p>{{m.nom_TypeBete}}</p>
+                        <p>Nom :</p>
+                        <p class="subprofil">{{m.nom_Bete}}</p>
+                        <p>Type :</p>
+                        <p class="subprofil">{{m.nom_TypeBete}}</p>
                     </div>
                     <div class="col-xs-12 scrolltext">
-                        <p>Description:</p>
-                        <p>{{m.description_Bete}}</p>
+                        <p>Description :</p>
+                        <p class="subprofil">{{m.description_Bete}}</p>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
-
+                   <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
-                <div class="row contenuliste" ng-repeat="l in ficheLieu" ng-if="step==9">
-                    <div class="col-xs-4 posexpandbete">
-                        <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive imgexpandbete">
+                <div class="row contenuliste fiches" ng-repeat="l in ficheLieu" ng-if="step==9">
+                    <div class="col-xs-3 posexpandbete">
+                        <img src="images/lieu/{{l.id_Lieu}}.png" class="img-responsive">
                     </div>
-                    <div class="col-xs-8 posexpandbetes">
-                        <p>Nom:</p>
-                        <p>{{l.nom_Lieu}}</p>
-                        <p>Type:</p>
-                        <p>{{l.nom_TypeLieu}}</p>
+                    <div class="col-xs-8 posexpandbetes titrefiche">
+                        <p>Nom : <font class=" subprofil subprofilsmall">{{l.nom_Lieu}}</font></p>
+                        <p>Type : <font class="subprofil subprofilsmall">{{l.nom_TypeLieu}}</font></p>
                     </div>
                     <div class="col-xs-12 scrolltext">
-                        <p>Description:</p>
-                        <p>{{l.description_Lieu}}</p>
+                        <p>Description :</p>
+                        <p class="subprofil">{{l.description_Lieu}}</p>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
-
+                   <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
-                <div class="row contenuliste" ng-repeat="p in fichePerso" ng-if="step==8">
-                    <div class="col-xs-4 posexpandbete">
-                        <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive imgexpandbete">
+                <div class="row contenuliste fiches" ng-repeat="p in fichePerso" ng-if="step==8">
+                    <div class="col-xs-3 posexpandbete">
+                        <img src="images/perso/{{p.id_Personnage}}.png" class="img-responsive">
                     </div>
-                    <div class="col-xs-8 posexpandbetes">
-                        <p>Nom:</p>
-                        <p>{{p.nom_Personnage}}</p>
-                        <p>Faction:</p>
-                        <p>{{p.faction_Personnage}}</div>
+                    <div class="col-xs-8 posexpandbetes titrefiche">
+                        <p>Nom : <font class="subprofil">{{p.nom_Personnage}}</font></p>
+                        
+                        <p>Faction : <font class="subprofil">{{p.faction_Personnage}}</font></p>
+                        </div>
                     <div class="col-xs-12 scrolltext">
-                        <p>Description:</p>
-                        <p>{{p.description_Personnage}}</p>
+                        <p>Description :</p>
+                        <p class="subprofil">{{p.description_Personnage}}</p>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
-
+                   <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
-                <div class="row contenuliste" ng-repeat="l in ficheStuff" ng-if="step==10">
-                    <div class="col-xs-4 posexpandbete">
-                        <img src="images/stuff/{{l.id_Stuff}}.png" class="img-responsive imgexpandbete">
+                <div class="row contenuliste fiches" ng-repeat="l in ficheStuff" ng-if="step==10">
+                    <div class="col-xs-3 posexpandbete">
+                        <img src="images/stuff/{{l.id_Stuff}}.png" class="img-responsive">
                     </div>
-                    <div class="col-xs-8 posexpandstuff">
-                        <p>Nom:</p>
-                        <p>{{l.nom_Stuff}}</p>
+                    <div class="col-xs-8 posexpandstuff titrefiche">
+                        <p>Nom : <font class="subprofil subprofilsmall">{{l.nom_Stuff}}</font></p>
+                        
                     </div>
                     <div class="col-xs-12 scrolltext">
-                        <p>Description:</p>
-                        <p>{{l.description_Stuff}}</p>
+                        <p>Description :</p>
+                        <p class="subprofil">{{l.description_Stuff}}</p>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
-
+                    <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
                 <!--Haut-Faits-->
                 <div ng-if="step==5">
                     <div class="row taillegrim positionhaf">
-                        <div class="col-xs-4 contenuliste textpop" ng-repeat="h in listeHautfait">
+                        <div class="col-xs-4 contenuliste textpop textgrimoire2" ng-repeat="h in listeHautfait">
                             <div ng-click="FicheHautFait(h.id_HautFait)">
                                 <img src="images/recompense/{{h.id_HautFait}}.png" class="img-responsive imgcenter">{{h.nom_HautFait}}</div>
                         </div>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
-
+                   <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
                 <!--Expand Haut-Faits-->
-                <div class="row contenuliste" ng-repeat="b in ficheHautFait" ng-if="step==12">
-                    <div class="col-xs-4 posexpandbete">
-                        <img src="images/recompense/{{b.id_HautFait}}.png" class="img-responsive imgexpandbete">
+                <div class="row contenuliste fiches" ng-repeat="b in ficheHautFait" ng-if="step==12">
+                    <div class="col-xs-3 posexpandbete">
+                        <img src="images/recompense/{{b.id_HautFait}}.png" class="img-responsive">
                     </div>
-                    <div class="col-xs-8 posexpandstuff">
-                        <p>Nom:</p>
-                        <p>{{b.nom_HautFait}}</p>
+                    <div class="col-xs-8 posexpandstuff titrefiche">
+                        <p>Nom : <font class="subprofil">{{b.nom_HautFait}}</font></p>
                     </div>
                     <div class="col-xs-12 scrolltext">
-                        <p>Description:</p>
-                        <p>{{b.description_HautFait}}</p>
+                        <p>Description :</p>
+                        <p class="subprofil">{{b.description_HautFait}}</p>
                     </div>
-                    <div class="col-xs-2 iconb active contenuliste retourmenu2"> <span ng-click="grimoire()"><img class="iconbackg" src="images/back.svg"></span>
-
+                   <div class="col-xs-2 iconb active contenuliste retourm"> <span ng-click="backmenu()"><img class="iconbackg" src="images/back.svg"></span>
                     </div>
                 </div>
             </div>
