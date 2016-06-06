@@ -15,21 +15,21 @@
             <div class="col-xs-9 contenudelapopg">
                 <img src="images/parcheminpop.png" class="img-responsive parcheminpop">
                 <div class="row taillegrim positionbonus" ng-if="step==1">
-                    <div class="col-xs-6 contenuliste textpop textgrimoire2" ng-repeat="b in listeBV">
+                    <div class="col-xs-6 contenuliste textpop" ng-repeat="b in listeBV">
                         <div ng-click="FicheBonusV(b.id_Bonus)">
                             <img src="images/videobonus/{{b.id_Bonus}}.png" class="img-responsive hperso imgcenter backvideos">{{b.nom_Bonus}}</div>
                     </div>
                 </div>
                 <!--BD-->
                 <div class="row taillegrim positionbonus" ng-if="step==2">
-                    <div class="col-xs-6 contenuliste textpop textgrimoire2" ng-repeat="b in listeBBD">
+                    <div class="col-xs-6 contenuliste textpop" ng-repeat="b in listeBBD">
                         <div ng-click="FicheBonusBD(b.id_Bonus)">
                             <img src="images/bdbonus/{{b.id_Bonus}}.png" class="img-responsive hperso imgcenter backvideos">{{b.nom_Bonus}}</div>
                     </div>
                 </div>
                 <!--Croquis-->
                 <div class="row taillegrim positionbonus" ng-if="step==3">
-                    <div class="col-xs-6 contenuliste textpop textgrimoire2" ng-repeat="b in listeBC">
+                    <div class="col-xs-6 contenuliste textpop" ng-repeat="b in listeBC">
                         <div ng-click="FicheBonusC(b.id_Bonus)">
                             <img src="images/croquisbonus/{{b.id_Bonus}}.png" class="img-responsive hperso imgcenter backvideos">{{b.nom_Bonus}}</div>
                     </div>
@@ -44,9 +44,8 @@
                         <img src="images/bdbonus/{{b.id_Bonus}}.png" class="img-responsive">{{b.nom_Bonus}}</div>
                 </div>
                 <div class="row taillegrim positiongrim" ng-if="step==6">
-                    <div class="col-xs-4 expandbdc contenuliste textpop titrefiche" ng-repeat="b in ficheBonusC">
+                    <div class="col-xs-4 expandbdc contenuliste textpop" ng-repeat="b in ficheBonusC">
                         <img src="images/croquisbonus/{{b.id_Bonus}}.png" class="img-responsive">{{b.nom_Bonus}}</div>
-                    
                 </div>
             </div>
         </div>

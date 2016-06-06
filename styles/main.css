@@ -971,10 +971,9 @@ left: 10px;
 .positionlieu{
 max-width: 65%;
 position: absolute;
-top: 50px;
-left: 30px;
+top: 30px;
+left: 20px;
 }
-    
 
 .positionbonus{
  position: absolute;
@@ -1134,30 +1133,3 @@ a:hover {
     
 }
 
-.textgrimoire2 {
-    font-family: 'Lato';
-    font-weight: 400;
-    font-size: 15px;
-    color: rgb(160, 156, 135);
-    
-}
-
-.fiches {
-    font-family: 'Lato';
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.titrefiche {
-    font-size: 18px;
-}
-
-.retourm {
-    position : fixed;
-    top: 280px;
-    left: 525px;
-}
-
-.subprofilsmall {
-    font-size: 14px;
-}
